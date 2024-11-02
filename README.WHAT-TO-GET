@@ -1,0 +1,56 @@
+What you need to get the system working:
+
+If you're installing from 3.5" floppies, get the files:
+
+	./386bsd/floppies/3in/dist.fs
+	./386bsd/floppies/3in/bin/*
+	./386bsd/floppies/3in/src/*	(OPTIONAL -- the source on floppies)
+
+If you're installing from 5.25" floppies, get the files:
+
+	./386bsd/floppies/5in/dist.fs
+	./386bsd/floppies/5in/bin/*
+	./386bsd/floppies/5in/src/*	(OPTIONAL -- the source on floppies)
+
+In addition, if you're installing from an MS-DOS system, you must get:
+
+	./rawrite/*
+
+to allow you to put the disk images on floppies from DOS.
+
+
+How to put things on floppies:
+
+For DOS, use rawrite -- see the rawrite documentation -- I can't
+figure it out, because I no longer have a DOS system to try it on. 8-)
+
+For SunOS on Sparcstations (3.5" floppies only):
+
+	For each disk image, use the command:
+
+	dd if=<filename> of=/dev/rfd0
+
+For NeXT Mach (3.5" floppies only):
+
+	For each disk image, use the command:
+
+	dd if=<filename> of=/dev/rfd0b
+
+For AIX on an RS/6000 (probably w/Gnu dd, 3.5" floppies only):
+
+	For each disk image, use the command:
+
+	dd if=<filename> of=/dev/rfd0 bs=18b
+
+Note that with the exception of the boot disk, the disks are just
+one big compressed tar archive.
+
+Therefore, if, during installation, you have problems with the 'mr'
+command, try 'mr'ing a disk at a time into a file, then catting
+the resulting files together, *then* uncompressing and untarring
+that large file.
+
+---
+If you find a problem with this documentation, please tell me...
+Chris Demetriou
+cgd@agate.berkeley.edu

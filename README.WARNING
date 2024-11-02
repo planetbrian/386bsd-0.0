@@ -1,0 +1,38 @@
+WARNING FILE FOR 386BSD DISTRIBUTION ON agate.berkeley.edu
+
+			-[Fri Mar 13 04:28:31 1992 by cgd@agate.berkeley.edu]-
+
+THIS IS NOT CURRENTLY A STABLE SYSTEM, AND IS DEFINITELY FOR
+EXPERIMENTERS ONLY, AT THIS POINT.
+
+Some of the dangers of using it are outlined here:
+
+(1) It does not co-exist with DOS -- AT ALL.  It requires that you
+	destroy all data on the disk you're installing it on.
+
+(2) It currently works on about half of the machines tested.
+	(of course, it needs a 386/486 and math co...)
+	HOWEVER, IF IT DOES NOT WORK, IT WILL DUMP CORE ON TO YOUR
+	HARD DRIVE, THEREBY DESTROYING SOME, IF NOT ALL, OF THE
+	DATA ON IT.
+
+(3) It tends to panic often, and has a good number of known (fatal) bugs.
+	(I've had it panic about 11 times in the last 24 hours, but
+	those were 24 hours of reasonably heavy use...)
+	Therefore, it currently cannot be considered 'safe' to store
+	important data on the system.
+
+THIS IS BY NO MEANS A COMPREHENSIVE LIST OF THE PROBLEMS THAT
+THE SYSTEM CURRENTLY HAS.  IT IS MEANT AS A REPRESENTATIVE
+WARNING OF POSSIBLY GREATER PROBLEMS.
+See 386bsd/README for a(n incomplete) list of known bugs.
+
+note that only you can be held responsible for the trouble you
+cause yourself by installing this... 8-)
+
+
+----
+please all distribution and documentation problems to me.
+
+Chris Demetriou
+cgd@agate.berkeley.edu

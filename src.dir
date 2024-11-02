@@ -1,0 +1,3473 @@
+total 207
+dr-xrwxr-x  8 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x  5 6058     system        512 Mar 16 16:58 ..
+-r--r--r--  1 6058     system       2614 Mar 11 14:48 COPYRIGHT
+-r--r--r--  1 6058     system     155875 Mar 13 11:30 MANIFEST
+-r--r--r--  1 6058     system      16615 Mar  3 13:06 README
+-r--r--r--  1 6058     system      10082 Mar  3 13:06 REGISTRATION
+dr-xrwxr-x  6 6058     system       1024 Mar 16 16:27 etc
+dr-xrwxr-x 15 6058     system        512 Mar 16 16:26 libexec
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 sbin
+dr-xrwxr-x  4 6058     system        512 Mar 16 16:25 sys.386bsd
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 usr.bin
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 usr.sbin
+
+etc:
+total 56
+dr-xrwxr-x  6 6058     system       1024 Mar 16 16:27 .
+dr-xrwxr-x  8 6058     system        512 Mar 16 16:28 ..
+-r--r--r--  1 6058     system       1992 Apr  8  1991 MAKEDEV.local
+-r--r--r--  1 6058     system       2781 Mar  2 16:22 Makefile
+-r--r--r--  1 6058     system       1008 Jan 10  1991 aliases
+-r--r--r--  1 6058     system        448 Jun 30  1990 crontab
+-r--r--r--  1 6058     system         38 Jun 30  1990 csh.cshrc
+-r--r--r--  1 6058     system         38 Jun 30  1990 csh.login
+-r--r--r--  1 6058     system         39 Jun 30  1990 csh.logout
+-r--r--r--  1 6058     system       3386 May 24  1991 daily
+-r--r--r--  1 6058     system        412 Jun 30  1990 dm.conf
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 etc.i386
+-r--r--r--  1 6058     system         72 May 24  1990 ftpusers
+-r--r--r--  1 6058     system       3008 Mar 27  1991 gettytab
+-r--r--r--  1 6058     system        216 Jun 30  1990 group
+-r--r--r--  1 6058     system        327 Mar 13  1989 hosts
+-r--r--r--  1 6058     system         37 Apr 17  1989 hosts.equiv
+-r--r--r--  1 6058     system         15 Apr 17  1989 hosts.lpd
+-r--r--r--  1 6058     system       1508 Jun 30  1990 inetd.conf
+-r--r--r--  1 6058     system        872 Jun 30  1990 man.conf
+-r--r--r--  1 6058     system        728 Mar  2 16:23 master.passwd
+-r--r--r--  1 6058     system        595 Jun 17  1991 monthly
+-r--r--r--  1 6058     system         79 Jun 30  1990 motd
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 mtree
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 namedb
+-r--r--r--  1 6058     system        734 Mar 30  1991 netstart
+-r--r--r--  1 6058     system        298 Jun 30  1990 networks
+-r--r--r--  1 6058     system        154 Jun 30  1990 phones
+-r--r--r--  1 6058     system        116 Jun 30  1990 printcap
+-r--r--r--  1 6058     system        492 Apr 17  1989 protocols
+-r--r--r--  1 6058     system       3475 Jun  5  1991 rc
+-r--r--r--  1 6058     system        389 Dec 14  1990 rc.local
+-r--r--r--  1 6058     system       1207 Jun 30  1990 remote
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 root
+-r--r--r--  1 6058     system        791 May 28  1991 security
+-r--r--r--  1 6058     system       2024 May  9  1991 services
+-r--r--r--  1 6058     system        141 May 24  1990 shells
+-r--r--r--  1 6058     system        291 Sep  5  1989 syslog.conf
+-r--r--r--  1 6058     system       1311 Apr 17  1989 ttys
+-r--r--r--  1 6058     system       1478 Jun 23  1991 weekly
+
+etc/etc.i386:
+total 12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x  6 6058     system       1024 Mar 16 16:27 ..
+-r--r--r--  1 6058     system       5752 Apr  8  1991 MAKEDEV
+-r--r--r--  1 6058     system       2534 Feb 20 22:01 disktab
+-r--r--r--  1 6058     system         78 Mar 22  1991 fstab.wd
+
+etc/mtree:
+total 19
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x  6 6058     system       1024 Mar 16 16:27 ..
+-r--r--r--  1 6058     system       1265 May 21  1991 BSD.root.dist
+-r--r--r--  1 6058     system      12468 May  9  1991 BSD.usr.dist
+-r--r--r--  1 6058     system       1645 May  9  1991 BSD.var.dist
+
+etc/namedb:
+total 5
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x  6 6058     system       1024 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        257 Jun 30  1990 localhost.rev
+-r--r--r--  1 6058     system        602 Jun 30  1990 named.boot
+-r--r--r--  1 6058     system        601 Jun 30  1990 root.cache
+
+etc/root:
+total 6
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x  6 6058     system       1024 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        986 Jun 25  1990 dot.cshrc
+-r--r--r--  1 6058     system         62 Jul  1  1990 dot.klogin
+-r--r--r--  1 6058     system         77 Jun 25  1990 dot.login
+-r--r--r--  1 6058     system        173 Jun 25  1990 dot.profile
+
+libexec:
+total 17
+dr-xrwxr-x 15 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x  8 6058     system        512 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        168 Feb 19 22:10 Makefile
+-r--r--r--  1 6058     system         65 May 11  1990 Makefile.inc
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:25 comsat
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:25 fingerd
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:25 ftpd
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 getNAME
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:25 getty
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 mail.local
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 makekey
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:25 rexecd
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 rlogind
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 rshd
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 talkd
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 telnetd
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:25 tftpd
+
+libexec/comsat:
+total 16
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:25 .
+dr-xrwxr-x 15 6058     system        512 Mar 16 16:26 ..
+-r--r--r--  1 6058     system         91 May 11  1990 Makefile
+-r--r--r--  1 6058     system       3390 Apr 12  1991 comsat.8
+-r--r--r--  1 6058     system       7172 Apr 12  1991 comsat.c
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:25 obj -> /usr/obj/libexec/comsat
+
+libexec/fingerd:
+total 14
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:25 .
+dr-xrwxr-x 15 6058     system        512 Mar 16 16:26 ..
+-r--r--r--  1 6058     system         93 May 11  1990 Makefile
+-r--r--r--  1 6058     system       3631 Apr 12  1991 fingerd.8
+-r--r--r--  1 6058     system       3319 Apr 12  1991 fingerd.c
+lrwxrwxr-x  1 6058     system         24 Mar 16 16:25 obj -> /usr/obj/libexec/fingerd
+-r--r--r--  1 6058     system       1908 Apr 12  1991 pathnames.h
+
+libexec/ftpd:
+total 82
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:25 .
+dr-xrwxr-x 15 6058     system        512 Mar 16 16:26 ..
+-r--r--r--  1 6058     system       1329 Feb 28 10:34 CHANGES
+-r--r--r--  1 6058     system        260 Feb 28 10:34 Makefile
+-r--r--r--  1 6058     system      24280 Feb 28 10:34 ftpcmd.y
+-r--r--r--  1 6058     system       8047 Feb 28 10:34 ftpd.8
+-r--r--r--  1 6058     system      32474 Feb 28 10:34 ftpd.c
+-r--r--r--  1 6058     system       2793 Feb 28 10:34 logwtmp.c
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:25 obj -> /usr/obj/libexec/ftpd
+-r--r--r--  1 6058     system       1928 Feb 28 10:34 pathnames.h
+-r--r--r--  1 6058     system       4735 Feb 28 10:34 popen.c
+-r--r--r--  1 6058     system       1955 Feb 28 10:34 vers.c
+
+libexec/getNAME:
+total 9
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x 15 6058     system        512 Mar 16 16:26 ..
+-r--r--r--  1 6058     system         90 May 11  1990 Makefile
+-r--r--r--  1 6058     system       5068 Apr 12  1991 getNAME.c
+lrwxrwxr-x  1 6058     system         24 Mar 16 16:26 obj -> /usr/obj/libexec/getNAME
+
+libexec/getty:
+total 67
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:25 .
+dr-xrwxr-x 15 6058     system        512 Mar 16 16:26 ..
+-r--r--r--  1 6058     system        198 Jan 21  1991 Makefile
+-r--r--r--  1 6058     system       3845 Apr 25  1991 getty.8
+-r--r--r--  1 6058     system       9732 May 10  1991 gettytab.5
+-r--r--r--  1 6058     system       7503 May  6  1991 gettytab.c
+-r--r--r--  1 6058     system       4793 May  6  1991 gettytab.h
+-r--r--r--  1 6058     system       4606 May  6  1991 init.c
+-r--r--r--  1 6058     system      10727 May  6  1991 main.c
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:25 obj -> /usr/obj/libexec/getty
+-r--r--r--  1 6058     system       1965 May  6  1991 pathnames.h
+-r--r--r--  1 6058     system       9455 May  6  1991 subr.c
+-r--r--r--  1 6058     system       2188 May  6  1991 ttydefaults.c
+-r--r--r--  1 6058     system       4702 May  6  1991 ttys.5
+
+libexec/mail.local:
+total 18
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x 15 6058     system        512 Mar 16 16:26 ..
+-r--r--r--  1 6058     system        125 Jan 17  1991 Makefile
+-r--r--r--  1 6058     system       3516 Apr 27  1991 mail.local.8
+-r--r--r--  1 6058     system       7703 Jun 19  1991 mail.local.c
+lrwxrwxr-x  1 6058     system         27 Mar 16 16:26 obj -> /usr/obj/libexec/mail.local
+-r--r--r--  1 6058     system       1931 Apr 12  1991 pathnames.h
+
+libexec/makekey:
+total 10
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x 15 6058     system        512 Mar 16 16:26 ..
+-r--r--r--  1 6058     system         93 May 11  1990 Makefile
+-r--r--r--  1 6058     system       2474 Jul  1  1991 makekey.8
+-r--r--r--  1 6058     system       2704 Apr 12  1991 makekey.c
+lrwxrwxr-x  1 6058     system         24 Mar 16 16:26 obj -> /usr/obj/libexec/makekey
+
+libexec/rexecd:
+total 16
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:25 .
+dr-xrwxr-x 15 6058     system        512 Mar 16 16:26 ..
+-r--r--r--  1 6058     system         91 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:25 obj -> /usr/obj/libexec/rexecd
+-r--r--r--  1 6058     system       5043 Apr 12  1991 rexecd.8
+-r--r--r--  1 6058     system       6406 Apr 12  1991 rexecd.c
+
+libexec/rlogind:
+total 29
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x 15 6058     system        512 Mar 16 16:26 ..
+-r--r--r--  1 6058     system        180 Feb 25 09:36 Makefile
+lrwxrwxr-x  1 6058     system         24 Mar 16 16:26 obj -> /usr/obj/libexec/rlogind
+-r--r--r--  1 6058     system       1926 Apr 12  1991 pathnames.h
+-r--r--r--  1 6058     system       5557 Apr 12  1991 rlogind.8
+-r--r--r--  1 6058     system      17394 Apr 20  1991 rlogind.c
+
+libexec/rshd:
+total 28
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x 15 6058     system        512 Mar 16 16:26 ..
+-r--r--r--  1 6058     system        171 Feb 25 09:37 Makefile
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:26 obj -> /usr/obj/libexec/rshd
+-r--r--r--  1 6058     system       6502 Apr 20  1991 rshd.8
+-r--r--r--  1 6058     system      16813 Apr 20  1991 rshd.c
+
+libexec/talkd:
+total 34
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x 15 6058     system        512 Mar 16 16:26 ..
+-r--r--r--  1 6058     system        142 May 11  1990 Makefile
+-r--r--r--  1 6058     system       6008 Apr 12  1991 announce.c
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:26 obj -> /usr/obj/libexec/talkd
+-r--r--r--  1 6058     system       3170 Apr 12  1991 print.c
+-r--r--r--  1 6058     system       5950 Apr 12  1991 process.c
+-r--r--r--  1 6058     system       6267 Apr 12  1991 table.c
+-r--r--r--  1 6058     system       3069 Apr 12  1991 talkd.8
+-r--r--r--  1 6058     system       3831 Apr 12  1991 talkd.c
+
+libexec/telnetd:
+total 188
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x 15 6058     system        512 Mar 16 16:26 ..
+-r--r--r--  1 6058     system        337 Feb 28 10:34 Makefile
+-r--r--r--  1 6058     system       8245 Feb 28 10:34 defs.h
+-r--r--r--  1 6058     system       6634 Feb 28 10:34 ext.h
+-r--r--r--  1 6058     system       2194 Feb 28 10:34 global.c
+lrwxrwxr-x  1 6058     system         24 Mar 16 16:26 obj -> /usr/obj/libexec/telnetd
+-r--r--r--  1 6058     system       2102 Feb 28 10:34 pathnames.h
+-r--r--r--  1 6058     system      12284 Feb 28 10:34 slc.c
+-r--r--r--  1 6058     system      31835 Feb 28 10:34 state.c
+-r--r--r--  1 6058     system      34912 Feb 28 10:34 sys_term.c
+-r--r--r--  1 6058     system       5169 Feb 28 10:34 telnetd.8
+-r--r--r--  1 6058     system      30418 Feb 28 10:34 telnetd.c
+-r--r--r--  1 6058     system       2070 Feb 28 10:34 telnetd.h
+-r--r--r--  1 6058     system      16928 Feb 28 10:34 termstat.c
+-r--r--r--  1 6058     system      27405 Feb 28 10:34 utility.c
+
+libexec/tftpd:
+total 20
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:25 .
+dr-xrwxr-x 15 6058     system        512 Mar 16 16:26 ..
+-r--r--r--  1 6058     system        152 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:25 obj -> /usr/obj/libexec/tftpd
+-r--r--r--  1 6058     system       3256 May 13  1991 tftpd.8
+-r--r--r--  1 6058     system      12251 Apr 12  1991 tftpd.c
+
+sbin:
+total 31
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 .
+dr-xrwxr-x  8 6058     system        512 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        271 Mar  1 12:28 Makefile
+-r--r--r--  1 6058     system         58 May 11  1990 Makefile.inc
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 badsect
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 clri
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 disklabel
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 dump
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 dumpfs
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 fastboot
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 fsck
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 halt
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 ifconfig
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 init
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 mknod
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 mount
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 mountd
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 newfs
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 nfsd
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 nfsiod
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 ping
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 reboot
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 restore
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 route
+dr-xrwxr-x  4 6058     system        512 Mar 16 16:28 routed
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 savecore
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 shutdown
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 slattach
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 swapon
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 tunefs
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 umount
+
+sbin/badsect:
+total 15
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system         93 Jan 17  1991 Makefile
+-r--r--r--  1 6058     system       4724 Apr 16  1991 badsect.8
+-r--r--r--  1 6058     system       5307 Apr 16  1991 badsect.c
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:27 obj -> /usr/obj/sbin/badsect
+
+sbin/clri:
+total 9
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system         90 May  7  1991 Makefile
+-r--r--r--  1 6058     system       4358 Jun 29  1991 clri.c
+lrwxrwxr-x  1 6058     system         18 Mar 16 16:27 obj -> /usr/obj/sbin/clri
+
+sbin/disklabel:
+total 56
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        320 Apr  1  1991 Makefile
+-r--r--r--  1 6058     system      12228 May 10  1991 disklabel.5.5
+-r--r--r--  1 6058     system       7459 Apr 20  1991 disklabel.8
+-r--r--r--  1 6058     system      26714 Feb 24 15:22 disklabel.c
+-r--r--r--  1 6058     system       2227 Apr 20  1991 dkcksum.c
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:27 obj -> /usr/obj/sbin/disklabel
+-r--r--r--  1 6058     system       1978 Apr 20  1991 pathnames.h
+
+sbin/dump:
+total 97
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system       1017 Mar  7  1991 Makefile
+-r--r--r--  1 6058     system       8557 Jun 17  1991 dump.8
+-r--r--r--  1 6058     system       5929 May 29  1991 dump.h
+-r--r--r--  1 6058     system       6205 Apr 24  1991 dumpitime.c
+-r--r--r--  1 6058     system      13076 Apr 24  1991 dumpmain.c
+-r--r--r--  1 6058     system      12573 Apr 24  1991 dumpoptr.c
+-r--r--r--  1 6058     system       5902 Apr 24  1991 dumprmt.c
+-r--r--r--  1 6058     system      14961 Apr 24  1991 dumptape.c
+-r--r--r--  1 6058     system      13598 Apr 24  1991 dumptraverse.c
+lrwxrwxr-x  1 6058     system         18 Mar 16 16:27 obj -> /usr/obj/sbin/dump
+-r--r--r--  1 6058     system       2061 Apr 24  1991 pathnames.h
+-r--r--r--  1 6058     system       2633 Apr 24  1991 rdump.8
+-r--r--r--  1 6058     system       3863 Apr 24  1991 unctime.c
+
+sbin/dumpfs:
+total 15
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system         91 Jan 17  1991 Makefile
+-r--r--r--  1 6058     system       2524 Apr 16  1991 dumpfs.8
+-r--r--r--  1 6058     system       8153 Apr 16  1991 dumpfs.c
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:27 obj -> /usr/obj/sbin/dumpfs
+
+sbin/fastboot:
+total 11
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        348 Jun 25  1990 Makefile
+-r--r--r--  1 6058     system       2565 Apr 16  1991 fastboot.8
+-r--r--r--  1 6058     system       1886 Apr 16  1991 fastboot.sh
+-r--r--r--  1 6058     system       1884 Apr 16  1991 fasthalt.sh
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:27 obj -> /usr/obj/sbin/fastboot
+
+sbin/fsck:
+total 131
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        258 Feb  7 15:51 Makefile
+-r--r--r--  1 6058     system      15492 Aug  5  1991 dir.c
+-r--r--r--  1 6058     system       8685 Apr 20  1991 fsck.8
+-r--r--r--  1 6058     system       7743 Apr 20  1991 fsck.h
+-r--r--r--  1 6058     system      12433 Apr 20  1991 inode.c
+-r--r--r--  1 6058     system       7131 Apr 20  1991 main.c
+lrwxrwxr-x  1 6058     system         18 Mar 16 16:28 obj -> /usr/obj/sbin/fsck
+-r--r--r--  1 6058     system       7350 Apr 20  1991 pass1.c
+-r--r--r--  1 6058     system       3218 Apr 20  1991 pass1b.c
+-r--r--r--  1 6058     system      11148 Apr 20  1991 pass2.c
+-r--r--r--  1 6058     system       2698 Apr 20  1991 pass3.c
+-r--r--r--  1 6058     system       3737 Apr 20  1991 pass4.c
+-r--r--r--  1 6058     system       7592 Apr 20  1991 pass5.c
+-r--r--r--  1 6058     system       8879 Apr 20  1991 preen.c
+-r--r--r--  1 6058     system      14838 Apr 20  1991 setup.c
+-r--r--r--  1 6058     system      12108 Aug  5  1991 utilities.c
+
+sbin/halt:
+total 11
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        119 May 11  1990 Makefile
+-r--r--r--  1 6058     system       2893 Apr 16  1991 halt.8
+-r--r--r--  1 6058     system       4041 Apr 16  1991 halt.c
+lrwxrwxr-x  1 6058     system         18 Mar 16 16:28 obj -> /usr/obj/sbin/halt
+
+sbin/ifconfig:
+total 30
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system         95 May 11  1990 Makefile
+-r--r--r--  1 6058     system       9162 Apr 16  1991 ifconfig.8
+-r--r--r--  1 6058     system      16714 Feb  7 16:27 ifconfig.c
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:28 obj -> /usr/obj/sbin/ifconfig
+
+sbin/init:
+total 9
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        104 Feb 28 20:07 Makefile
+-r--r--r--  1 6058     system       4184 Mar 12 19:07 init.c
+lrwxrwxr-x  1 6058     system         18 Mar 16 16:28 obj -> /usr/obj/sbin/init
+
+sbin/mknod:
+total 11
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system         89 May 11  1990 Makefile
+-r--r--r--  1 6058     system       3493 Apr 16  1991 mknod.8
+-r--r--r--  1 6058     system       2803 May  4  1991 mknod.c
+lrwxrwxr-x  1 6058     system         19 Mar 16 16:28 obj -> /usr/obj/sbin/mknod
+
+sbin/mount:
+total 32
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        158 Feb 24  1991 Makefile
+-r--r--r--  1 6058     system       7727 Aug  5  1991 mount.8
+-r--r--r--  1 6058     system      18390 Feb 24 21:30 mount.c
+lrwxrwxr-x  1 6058     system         19 Mar 16 16:28 obj -> /usr/obj/sbin/mount
+-r--r--r--  1 6058     system       1982 May  6  1991 pathnames.h
+
+sbin/mountd:
+total 34
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        158 Jan 17  1991 Makefile
+-r--r--r--  1 6058     system       4184 May 10  1991 exports.5
+-r--r--r--  1 6058     system       2932 Apr 16  1991 mountd.8
+-r--r--r--  1 6058     system      19867 Apr 16  1991 mountd.c
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:28 obj -> /usr/obj/sbin/mountd
+-r--r--r--  1 6058     system       2019 Apr 16  1991 pathnames.h
+
+sbin/newfs:
+total 63
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        231 Feb 26  1991 Makefile
+-r--r--r--  1 6058     system      32708 Jul  3  1991 mkfs.c
+-r--r--r--  1 6058     system       8502 Apr 16  1991 newfs.8
+-r--r--r--  1 6058     system      17466 Jul  3  1991 newfs.c
+lrwxrwxr-x  1 6058     system         19 Mar 16 16:28 obj -> /usr/obj/sbin/newfs
+
+sbin/nfsd:
+total 20
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        138 Jan 17  1991 Makefile
+-r--r--r--  1 6058     system       5377 Aug  5  1991 nfsd.8
+-r--r--r--  1 6058     system       9621 Apr 24  1991 nfsd.c
+lrwxrwxr-x  1 6058     system         18 Mar 16 16:28 obj -> /usr/obj/sbin/nfsd
+
+sbin/nfsiod:
+total 10
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        119 Jun 29  1990 Makefile
+-r--r--r--  1 6058     system       2644 Apr 16  1991 nfsiod.8
+-r--r--r--  1 6058     system       2977 Apr 16  1991 nfsiod.c
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:28 obj -> /usr/obj/sbin/nfsiod
+
+sbin/ping:
+total 39
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        113 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         18 Mar 16 16:27 obj -> /usr/obj/sbin/ping
+-r--r--r--  1 6058     system      10042 Apr 16  1991 ping.8
+-r--r--r--  1 6058     system      24604 May 12  1991 ping.c
+
+sbin/reboot:
+total 15
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        194 Jun 29  1990 Makefile
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:28 obj -> /usr/obj/sbin/reboot
+-r--r--r--  1 6058     system       3879 Apr 20  1991 reboot.c
+-r--r--r--  1 6058     system       6151 Apr 25  1991 reboot_i386.8
+
+sbin/restore:
+total 141
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        598 Jan 17  1991 Makefile
+-r--r--r--  1 6058     system      15588 May  7  1991 dirs.c
+-r--r--r--  1 6058     system      18330 Apr 16  1991 interactive.c
+-r--r--r--  1 6058     system       7125 Apr 16  1991 main.c
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:28 obj -> /usr/obj/sbin/restore
+-r--r--r--  1 6058     system       1923 Apr 16  1991 pathnames.h
+-r--r--r--  1 6058     system      12163 Aug  5  1991 restore.8
+-r--r--r--  1 6058     system      21023 Apr 16  1991 restore.c
+-r--r--r--  1 6058     system       6174 Apr 16  1991 restore.h
+-r--r--r--  1 6058     system       2655 Apr 16  1991 rrestore.8
+-r--r--r--  1 6058     system        247 May  4  1990 spcl.adb
+-r--r--r--  1 6058     system      15041 Apr 16  1991 symtab.c
+-r--r--r--  1 6058     system      25941 Apr 16  1991 tape.c
+-r--r--r--  1 6058     system       8280 Apr 16  1991 utilities.c
+
+sbin/route:
+total 48
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        546 Mar  1 13:49 Makefile
+-r--r--r--  1 6058     system       4673 Jun 27  1991 ccitt_addr.c
+-r--r--r--  1 6058     system        280 Jun 27  1991 keywords
+-r--r--r--  1 6058     system       1572 Mar  1 13:49 keywords.h
+lrwxrwxr-x  1 6058     system         19 Mar 16 16:28 obj -> /usr/obj/sbin/route
+-r--r--r--  1 6058     system       7861 Apr 24  1991 route.8
+-r--r--r--  1 6058     system      28034 Feb  7 17:37 route.c
+
+sbin/routed:
+total 121
+dr-xrwxr-x  4 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        559 Feb  7 18:04 Makefile
+-r--r--r--  1 6058     system       4491 Apr 16  1991 af.c
+-r--r--r--  1 6058     system       2804 Apr 16  1991 af.h
+-r--r--r--  1 6058     system       3436 Apr 16  1991 defs.h
+-r--r--r--  1 6058     system       4309 Apr 16  1991 if.c
+-r--r--r--  1 6058     system       6024 Apr 16  1991 inet.c
+-r--r--r--  1 6058     system      11731 Apr 16  1991 input.c
+-r--r--r--  1 6058     system       3931 Apr 16  1991 interface.h
+-r--r--r--  1 6058     system       8942 Jul  1  1991 main.c
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:28 obj -> /usr/obj/sbin/routed
+-r--r--r--  1 6058     system       5426 Apr 16  1991 output.c
+-r--r--r--  1 6058     system       1928 Apr 16  1991 pathnames.h
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 query
+-r--r--r--  1 6058     system      10873 Apr 16  1991 routed.8
+-r--r--r--  1 6058     system      14863 Apr 16  1991 startup.c
+-r--r--r--  1 6058     system       4032 Apr 16  1991 table.h
+-r--r--r--  1 6058     system      10200 Feb  7 19:19 tables.c
+-r--r--r--  1 6058     system       4061 Apr 16  1991 timer.c
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 trace
+-r--r--r--  1 6058     system      10788 Apr 16  1991 trace.c
+-r--r--r--  1 6058     system       3606 Apr 16  1991 trace.h
+
+sbin/routed/query:
+total 12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x  4 6058     system        512 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        118 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         26 Mar 16 16:28 obj -> /usr/obj/sbin/routed/query
+-r--r--r--  1 6058     system       7663 Apr 16  1991 query.c
+
+sbin/routed/trace:
+total 8
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x  4 6058     system        512 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        118 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         26 Mar 16 16:28 obj -> /usr/obj/sbin/routed/trace
+-r--r--r--  1 6058     system       3957 Apr 16  1991 trace.c
+
+sbin/savecore:
+total 22
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system         95 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:28 obj -> /usr/obj/sbin/savecore
+-r--r--r--  1 6058     system       3699 Apr 16  1991 savecore.8
+-r--r--r--  1 6058     system      13528 Apr 16  1991 savecore.c
+
+sbin/shutdown:
+total 22
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        138 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:28 obj -> /usr/obj/sbin/shutdown
+-r--r--r--  1 6058     system       2027 Apr 16  1991 pathnames.h
+-r--r--r--  1 6058     system       4958 Apr 16  1991 shutdown.8
+-r--r--r--  1 6058     system      10546 Apr 16  1991 shutdown.c
+
+sbin/slattach:
+total 13
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        121 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:28 obj -> /usr/obj/sbin/slattach
+-r--r--r--  1 6058     system       3156 Apr 16  1991 slattach.8
+-r--r--r--  1 6058     system       4182 Apr 16  1991 slattach.c
+
+sbin/swapon:
+total 12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system         91 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:28 obj -> /usr/obj/sbin/swapon
+-r--r--r--  1 6058     system       3278 Apr 16  1991 swapon.8
+-r--r--r--  1 6058     system       3330 Apr 16  1991 swapon.c
+
+sbin/tunefs:
+total 18
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system         91 Jan 17  1991 Makefile
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:28 obj -> /usr/obj/sbin/tunefs
+-r--r--r--  1 6058     system       5398 Apr 16  1991 tunefs.8
+-r--r--r--  1 6058     system       7665 Apr 16  1991 tunefs.c
+
+sbin/umount:
+total 14
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x 29 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        133 Jan 17  1991 Makefile
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:28 obj -> /usr/obj/sbin/umount
+-r--r--r--  1 6058     system       9529 Jun  3  1991 umount.c
+
+sys.386bsd:
+total 5
+dr-xrwxr-x  4 6058     system        512 Mar 16 16:25 .
+dr-xrwxr-x  8 6058     system        512 Mar 16 16:28 ..
+dr-xrwxr-x  3 6058     system        512 Mar 16 16:25 i386
+dr-xrwxr-x  2 6058     system       1536 Mar 16 16:25 sys
+
+sys.386bsd/i386:
+total 3
+dr-xrwxr-x  3 6058     system        512 Mar 16 16:25 .
+dr-xrwxr-x  4 6058     system        512 Mar 16 16:25 ..
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:25 include
+
+sys.386bsd/i386/include:
+total 92
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:25 .
+dr-xrwxr-x  3 6058     system        512 Mar 16 16:25 ..
+-r--r--r--  1 6058     system       2442 Dec 24 14:23 ansi.h
+-r--r--r--  1 6058     system       3843 Dec 24 14:23 cpu.h
+-r--r--r--  1 6058     system       2315 Dec 24 14:23 dkio.h
+-r--r--r--  1 6058     system       2889 Dec 24 14:23 endian.h
+-r--r--r--  1 6058     system       2962 Dec 24 14:23 float.h
+-r--r--r--  1 6058     system       3286 Dec 24 14:23 frame.h
+-r--r--r--  1 6058     system       2816 Dec 24 14:23 limits.h
+-r--r--r--  1 6058     system       3232 Dec 24 14:23 npx.h
+-r--r--r--  1 6058     system       5440 Dec 24 14:23 param.h
+-r--r--r--  1 6058     system       3180 Dec 24 14:23 pcb.h
+-r--r--r--  1 6058     system       7758 Dec 24 14:23 pmap.h
+-r--r--r--  1 6058     system       2126 Dec 24 14:23 proc.h
+-r--r--r--  1 6058     system       2811 Feb 24 12:21 psl.h
+-r--r--r--  1 6058     system       4519 Dec 24 14:23 pte.h
+-r--r--r--  1 6058     system       3032 Dec 24 14:23 reg.h
+-r--r--r--  1 6058     system       3584 Feb 20 05:00 segments.h
+-r--r--r--  1 6058     system       2296 Dec 24 14:23 specialreg.h
+-r--r--r--  1 6058     system       2285 Dec 24 14:23 stdarg.h
+-r--r--r--  1 6058     system       4341 Dec 24 14:23 trap.h
+-r--r--r--  1 6058     system       3506 Dec 24 14:23 tss.h
+-r--r--r--  1 6058     system       2093 Dec 24 14:23 types.h
+-r--r--r--  1 6058     system       8500 Dec 24 14:23 vmparam.h
+
+sys.386bsd/sys:
+total 412
+dr-xrwxr-x  2 6058     system       1536 Mar 16 16:25 .
+dr-xrwxr-x  4 6058     system        512 Mar 16 16:25 ..
+-r--r--r--  1 6058     system       2895 Dec 24 14:24 acct.h
+-r--r--r--  1 6058     system       8444 Dec 24 14:24 buf.h
+-r--r--r--  1 6058     system       2149 Dec 24 14:24 callout.h
+-r--r--r--  1 6058     system       3074 Dec 24 14:24 cdefs.h
+-r--r--r--  1 6058     system       2107 Dec 24 14:24 clist.h
+-r--r--r--  1 6058     system       3604 Dec 24 14:24 conf.h
+-r--r--r--  1 6058     system       2565 Dec 24 14:24 dir.h
+-r--r--r--  1 6058     system      10471 Dec 24 14:24 disklabel.h
+-r--r--r--  1 6058     system       3171 Dec 24 14:24 dkbad.h
+-r--r--r--  1 6058     system       2241 Dec 24 14:24 dkstat.h
+-r--r--r--  1 6058     system       2547 Dec 24 14:24 dmap.h
+-r--r--r--  1 6058     system       2287 Dec 24 14:24 domain.h
+-r--r--r--  1 6058     system       6653 Dec 24 14:24 errno.h
+-r--r--r--  1 6058     system       3107 Dec 24 14:24 exec.h
+-r--r--r--  1 6058     system       6513 Dec 24 14:24 fcntl.h
+-r--r--r--  1 6058     system       5422 Dec 24 14:24 fifo.h
+-r--r--r--  1 6058     system       3151 Dec 24 14:24 file.h
+-r--r--r--  1 6058     system       4118 Dec 24 14:24 filedesc.h
+-r--r--r--  1 6058     system       3861 Dec 24 14:24 gprof.h
+-r--r--r--  1 6058     system      10313 Dec 24 14:24 ioctl.h
+-r--r--r--  1 6058     system       6761 Dec 24 14:24 ioctl_compat.h
+-r--r--r--  1 6058     system       3019 Dec 24 14:24 ipc.h
+-r--r--r--  1 6058     system       2456 Dec 24 14:24 kernel.h
+-r--r--r--  1 6058     system       3025 Dec 24 14:24 kinfo.h
+-r--r--r--  1 6058     system       3202 Dec 24 14:24 kinfo_proc.h
+-r--r--r--  1 6058     system       3993 Dec 24 14:24 ktrace.h
+-r--r--r--  1 6058     system       9368 Dec 24 14:24 malloc.h
+-r--r--r--  1 6058     system       4930 Dec 24 14:24 mapmem.h
+-r--r--r--  1 6058     system      12584 Dec 24 14:24 mbuf.h
+-r--r--r--  1 6058     system       3456 Dec 24 14:24 mman.h
+-r--r--r--  1 6058     system       9876 Dec 24 14:24 mount.h
+-r--r--r--  1 6058     system       2137 Dec 24 14:24 msgbuf.h
+-r--r--r--  1 6058     system       4737 Dec 24 14:24 mtio.h
+-r--r--r--  1 6058     system       6705 Dec 24 14:24 namei.h
+-r--r--r--  1 6058     system       7951 Dec 24 14:24 param.h
+-r--r--r--  1 6058     system       9654 Dec 24 14:24 proc.h
+-r--r--r--  1 6058     system       8946 Dec 24 14:24 protosw.h
+-r--r--r--  1 6058     system       2645 Dec 24 14:24 ptrace.h
+-r--r--r--  1 6058     system       3941 Dec 24 14:24 reboot.h
+-r--r--r--  1 6058     system       3942 Dec 24 14:24 resource.h
+-r--r--r--  1 6058     system       3303 Dec 24 14:24 resourcevar.h
+-r--r--r--  1 6058     system       3328 Mar 11 16:39 rlist.h
+-r--r--r--  1 6058     system       3682 Dec 24 14:24 shm.h
+-r--r--r--  1 6058     system       7605 Dec 24 14:24 signal.h
+-r--r--r--  1 6058     system       5778 Mar 11 10:17 signalvar.h
+-r--r--r--  1 6058     system       9145 Dec 24 14:24 socket.h
+-r--r--r--  1 6058     system       7954 Dec 24 14:24 socketvar.h
+-r--r--r--  1 6058     system       6246 Dec 24 14:24 specdev.h
+-r--r--r--  1 6058     system       5000 Dec 24 14:24 stat.h
+-r--r--r--  1 6058     system       4081 Dec 24 14:24 syscall.h
+-r--r--r--  1 6058     system       3019 Dec 24 14:24 syslimits.h
+-r--r--r--  1 6058     system       6401 Dec 24 14:24 syslog.h
+-r--r--r--  1 6058     system       4698 Dec 24 14:24 systm.h
+-r--r--r--  1 6058     system       3890 Dec 24 14:24 tablet.h
+-r--r--r--  1 6058     system       8626 Dec 24 14:24 termios.h
+-r--r--r--  1 6058     system       3664 Dec 24 14:24 time.h
+-r--r--r--  1 6058     system       2132 Dec 24 14:24 timeb.h
+-r--r--r--  1 6058     system       2304 Dec 24 14:24 times.h
+-r--r--r--  1 6058     system       2024 Dec 24 14:24 tprintf.h
+-r--r--r--  1 6058     system       4342 Dec 24 14:24 trace.h
+-r--r--r--  1 6058     system       6994 Jan 21 21:52 tty.h
+-r--r--r--  1 6058     system       2716 Dec 24 14:24 ttychars.h
+-r--r--r--  1 6058     system       3373 Dec 24 14:24 ttydefaults.h
+-r--r--r--  1 6058     system       2268 Dec 24 14:24 ttydev.h
+-r--r--r--  1 6058     system       4655 Dec 24 14:24 types.h
+-r--r--r--  1 6058     system       2330 Dec 24 14:24 ucred.h
+-r--r--r--  1 6058     system       2665 Dec 24 14:24 uio.h
+-r--r--r--  1 6058     system       2250 Dec 24 14:24 un.h
+-r--r--r--  1 6058     system       3563 Dec 24 14:24 unistd.h
+-r--r--r--  1 6058     system       3500 Dec 24 14:24 unpcb.h
+-r--r--r--  1 6058     system       3363 Dec 24 14:24 user.h
+-r--r--r--  1 6058     system       2297 Dec 24 14:24 vadvise.h
+-r--r--r--  1 6058     system       2033 Dec 24 14:24 vcmd.h
+-r--r--r--  1 6058     system       2339 Dec 24 14:24 vlimit.h
+-r--r--r--  1 6058     system       5068 Dec 24 14:24 vmmeter.h
+-r--r--r--  1 6058     system      14234 Dec 24 14:24 vnode.h
+-r--r--r--  1 6058     system       5709 Dec 24 14:24 vsio.h
+-r--r--r--  1 6058     system       2605 Dec 24 14:24 vtimes.h
+-r--r--r--  1 6058     system       5508 Dec 24 14:24 wait.h
+
+usr.bin:
+total 109
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 .
+dr-xrwxr-x  8 6058     system        512 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        814 Mar  2 13:12 Makefile
+-r--r--r--  1 6058     system         61 May 11  1990 Makefile.inc
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 ar
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 basename
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 biff
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 cal
+dr-xrwxr-x  3 6058     system        512 Mar 16 16:28 calendar
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 checknr
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 chpass
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 cksum
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 cmp
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 col
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 colcrt
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 colrm
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 column
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 comm
+dr-xrwxr-x  3 6058     system        512 Mar 16 16:31 compress
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 cpio
+dr-xrwxr-x  3 6058     system        512 Mar 16 16:30 ctags
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 cut
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 dirname
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 du
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 env
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 expand
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 false
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 find
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 finger
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 fmt
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 fold
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 from
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 ftp
+dr-xrwxr-x  3 6058     system        512 Mar 16 16:31 g++
+dr-xrwxr-x  3 6058     system       1024 Mar 16 16:29 gas
+dr-xrwxr-x  6 6058     system       1536 Mar 16 16:31 gdb
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 groff
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 groups
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 head
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 hexdump
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 id
+dr-xrwxr-x  4 6058     system        512 Mar 16 16:30 ktrace
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 last
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 leave
+dr-xrwxr-x  5 6058     system        512 Mar 16 16:30 locate
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 lock
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 logger
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 login
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 logname
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 machine
+dr-xrwxr-x  3 6058     system       1024 Mar 16 16:28 mail
+dr-xrwxr-x  3 6058     system       1024 Mar 16 16:31 make
+dr-xrwxr-x  5 6058     system        512 Mar 16 16:30 man
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 mesg
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 mkfifo
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 more
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 msgs
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 nfsstat
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 nice
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 nohup
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 pagesize
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 passwd
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 paste
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 printenv
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 printf
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 rdist
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 renice
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 rlogin
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 rsh
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 script
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 shar
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 showmount
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 soelim
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 split
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 su
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 talk
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 tee
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 telnet
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 tftp
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 time
+dr-xrwxr-x  3 6058     system        512 Mar 16 16:29 tip
+dr-xrwxr-x  9 6058     system        512 Mar 16 16:29 tn3270
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 touch
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 tput
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 tr
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 true
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 tty
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 ul
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 unexpand
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 uniq
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 unvis
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 users
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 uudecode
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 uuencode
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 vacation
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 vis
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 wall
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 wc
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 what
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 whereis
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 which
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 who
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 whoami
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 whois
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 write
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 xargs
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 yes
+
+usr.bin/ar:
+total 80
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        339 Mar 12  1991 Makefile
+-r--r--r--  1 6058     system       3090 Apr 12  1991 append.c
+-r--r--r--  1 6058     system       9084 May  6  1991 ar.1
+-r--r--r--  1 6058     system       5648 May 10  1991 ar.5.5
+-r--r--r--  1 6058     system       6587 Apr 12  1991 ar.c
+-r--r--r--  1 6058     system       8739 Apr 12  1991 archive.c
+-r--r--r--  1 6058     system       3597 Apr 12  1991 archive.h
+-r--r--r--  1 6058     system       3195 Apr 12  1991 contents.c
+-r--r--r--  1 6058     system       3215 Apr 12  1991 delete.c
+-r--r--r--  1 6058     system       2113 Apr 12  1991 extern.h
+-r--r--r--  1 6058     system       3984 Apr 12  1991 extract.c
+-r--r--r--  1 6058     system       3822 May 27  1991 misc.c
+-r--r--r--  1 6058     system       4637 Apr 12  1991 move.c
+lrwxrwxr-x  1 6058     system         19 Mar 16 16:30 obj -> /usr/obj/usr.bin/ar
+-r--r--r--  1 6058     system       2051 Apr 12  1991 pathnames.h
+-r--r--r--  1 6058     system       2998 Apr 12  1991 print.c
+-r--r--r--  1 6058     system       5782 Apr 12  1991 replace.c
+
+usr.bin/basename:
+total 13
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        107 Mar  9  1991 Makefile
+-r--r--r--  1 6058     system       3093 Jun 27  1991 basename.1
+-r--r--r--  1 6058     system       3852 Apr 17  1991 basename.c
+lrwxrwxr-x  1 6058     system         25 Mar 16 16:30 obj -> /usr/obj/usr.bin/basename
+
+usr.bin/biff:
+total 11
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         74 May 11  1990 Makefile
+-r--r--r--  1 6058     system       2811 Apr 17  1991 biff.1
+-r--r--r--  1 6058     system       2763 Apr 17  1991 biff.c
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:29 obj -> /usr/obj/usr.bin/biff
+
+usr.bin/cal:
+total 23
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         73 Apr 19  1991 Makefile
+-r--r--r--  1 6058     system       2264 Apr 19  1991 README
+-r--r--r--  1 6058     system       3114 Jun 17  1991 cal.1
+-r--r--r--  1 6058     system      11198 Apr 19  1991 cal.c
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:28 obj -> /usr/obj/usr.bin/cal
+
+usr.bin/calendar:
+total 23
+dr-xrwxr-x  3 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        208 May 11  1990 Makefile
+-r--r--r--  1 6058     system       5210 Jun 17  1991 calendar.1
+-r--r--r--  1 6058     system       9186 Apr 17  1991 calendar.c
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 calendars
+lrwxrwxr-x  1 6058     system         25 Mar 16 16:28 obj -> /usr/obj/usr.bin/calendar
+-r--r--r--  1 6058     system       2025 Apr 17  1991 pathnames.h
+
+usr.bin/calendar/calendars:
+total 78
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x  3 6058     system        512 Mar 16 16:28 ..
+-r--r--r--  1 6058     system      11204 Oct 27  1989 calendar.birthday
+-r--r--r--  1 6058     system        596 Oct 27  1989 calendar.christian
+-r--r--r--  1 6058     system       2905 Nov 27  1989 calendar.computer
+-r--r--r--  1 6058     system      25101 Oct 10  1990 calendar.history
+-r--r--r--  1 6058     system      21583 Oct 27  1989 calendar.holiday
+-r--r--r--  1 6058     system       1464 Dec 14  1989 calendar.judaic
+-r--r--r--  1 6058     system       9737 Oct 27  1989 calendar.music
+-r--r--r--  1 6058     system       1124 Oct 30  1989 calendar.usholiday
+
+usr.bin/checknr:
+total 25
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         77 May 11  1990 Makefile
+-r--r--r--  1 6058     system       4354 Apr 17  1991 checknr.1
+-r--r--r--  1 6058     system      14462 Apr 17  1991 checknr.c
+lrwxrwxr-x  1 6058     system         24 Mar 16 16:29 obj -> /usr/obj/usr.bin/checknr
+
+usr.bin/chpass:
+total 46
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        361 Mar  3  1991 Makefile
+-r--r--r--  1 6058     system       6254 Apr 17  1991 chpass.1
+-r--r--r--  1 6058     system       5407 Apr 17  1991 chpass.c
+-r--r--r--  1 6058     system       2128 Apr 17  1991 chpass.h
+-r--r--r--  1 6058     system       6105 Apr 17  1991 edit.c
+-r--r--r--  1 6058     system       5833 Apr 17  1991 field.c
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:29 obj -> /usr/obj/usr.bin/chpass
+-r--r--r--  1 6058     system       1946 Apr 17  1991 pathnames.h
+-r--r--r--  1 6058     system       3551 May  2  1991 pw_copy.c
+-r--r--r--  1 6058     system       2723 Apr 17  1991 table.c
+-r--r--r--  1 6058     system       3982 Apr 17  1991 util.c
+
+usr.bin/cksum:
+total 33
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        116 Apr  4  1991 Makefile
+-r--r--r--  1 6058     system       4939 Jun 27  1991 cksum.1
+-r--r--r--  1 6058     system       3578 Apr 17  1991 cksum.c
+-r--r--r--  1 6058     system       6293 Apr 17  1991 crc.c
+-r--r--r--  1 6058     system       2250 Apr 17  1991 extern.h
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:31 obj -> /usr/obj/usr.bin/cksum
+-r--r--r--  1 6058     system       2325 Apr 17  1991 print.c
+-r--r--r--  1 6058     system       2482 Apr 17  1991 sum1.c
+-r--r--r--  1 6058     system       2519 Apr 17  1991 sum2.c
+
+usr.bin/cmp:
+total 16
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         73 May 11  1990 Makefile
+-r--r--r--  1 6058     system       3325 Jun 27  1991 cmp.1
+-r--r--r--  1 6058     system       6612 Apr 17  1991 cmp.c
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:29 obj -> /usr/obj/usr.bin/cmp
+
+usr.bin/col:
+total 25
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         73 May 11  1990 Makefile
+-r--r--r--  1 6058     system       2206 May 22  1990 README
+-r--r--r--  1 6058     system       4086 Jun 17  1991 col.1
+-r--r--r--  1 6058     system      12311 Apr 17  1991 col.c
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:29 obj -> /usr/obj/usr.bin/col
+
+usr.bin/colcrt:
+total 15
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         76 May 11  1990 Makefile
+-r--r--r--  1 6058     system       3664 Apr 17  1991 colcrt.1
+-r--r--r--  1 6058     system       5610 Apr 17  1991 colcrt.c
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:29 obj -> /usr/obj/usr.bin/colcrt
+
+usr.bin/colrm:
+total 12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         75 May 11  1990 Makefile
+-r--r--r--  1 6058     system       2554 Apr 17  1991 colrm.1
+-r--r--r--  1 6058     system       3240 Apr 17  1991 colrm.c
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:29 obj -> /usr/obj/usr.bin/colrm
+
+usr.bin/column:
+total 17
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         76 Feb 24  1991 Makefile
+-r--r--r--  1 6058     system       3233 Apr 17  1991 column.1
+-r--r--r--  1 6058     system       7305 Apr 17  1991 column.c
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:28 obj -> /usr/obj/usr.bin/column
+
+usr.bin/comm:
+total 14
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         74 May 11  1990 Makefile
+-r--r--r--  1 6058     system       3268 Jun 27  1991 comm.1
+-r--r--r--  1 6058     system       4389 Apr 17  1991 comm.c
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:28 obj -> /usr/obj/usr.bin/comm
+
+usr.bin/compress:
+total 48
+dr-xrwxr-x  3 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        408 Feb  7 23:09 Makefile
+-r--r--r--  1 6058     system       7222 Aug  5  1991 compress.1
+-r--r--r--  1 6058     system      33924 Feb  7 23:08 compress.c
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 doc
+lrwxrwxr-x  1 6058     system         25 Mar 16 16:31 obj -> /usr/obj/usr.bin/compress
+
+usr.bin/compress/doc:
+total 26
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x  3 6058     system        512 Mar 16 16:31 ..
+-r--r--r--  1 6058     system       6823 Jun 25  1990 NOTES
+-r--r--r--  1 6058     system      11259 Mar  6  1990 README
+-r--r--r--  1 6058     system       5138 Mar 14  1991 revision.log
+
+usr.bin/cpio:
+total 46
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        134 Feb  7 23:17 Makefile
+-r--r--r--  1 6058     system       5912 Apr 17  1991 cpio.1
+-r--r--r--  1 6058     system      31082 Apr 17  1991 cpio.c
+-r--r--r--  1 6058     system       3500 May 10  1991 cpioformat.5
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:29 obj -> /usr/obj/usr.bin/cpio
+
+usr.bin/ctags:
+total 52
+dr-xrwxr-x  3 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system       9469 Apr 12  1991 C.c
+-r--r--r--  1 6058     system        153 May 11  1990 Makefile
+-r--r--r--  1 6058     system       6418 Apr 24  1991 ctags.1
+-r--r--r--  1 6058     system       6975 Apr 12  1991 ctags.c
+-r--r--r--  1 6058     system       3057 Apr 12  1991 ctags.h
+-r--r--r--  1 6058     system       3966 Apr 12  1991 fortran.c
+-r--r--r--  1 6058     system       3030 Apr 12  1991 lisp.c
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:30 obj -> /usr/obj/usr.bin/ctags
+-r--r--r--  1 6058     system       3613 Apr 12  1991 print.c
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 test
+-r--r--r--  1 6058     system       4029 Apr 12  1991 tree.c
+-r--r--r--  1 6058     system       3742 Apr 12  1991 yacc.c
+
+usr.bin/ctags/test:
+total 4
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x  3 6058     system        512 Mar 16 16:30 ..
+-r--r--r--  1 6058     system       1212 Mar 16  1987 ctags.test
+
+usr.bin/cut:
+total 16
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         73 May 11  1990 Makefile
+-r--r--r--  1 6058     system       3874 Jun 27  1991 cut.1
+-r--r--r--  1 6058     system       6545 Apr 17  1991 cut.c
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:28 obj -> /usr/obj/usr.bin/cut
+
+usr.bin/dirname:
+total 9
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         90 May 11  1990 Makefile
+-r--r--r--  1 6058     system       3934 Apr 17  1991 dirname.c
+lrwxrwxr-x  1 6058     system         24 Mar 16 16:30 obj -> /usr/obj/usr.bin/dirname
+
+usr.bin/du:
+total 15
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         72 Nov 21  1990 Makefile
+-r--r--r--  1 6058     system       3141 Jun 20  1991 du.1
+-r--r--r--  1 6058     system       5181 Jun 20  1991 du.c
+lrwxrwxr-x  1 6058     system         19 Mar 16 16:30 obj -> /usr/obj/usr.bin/du
+
+usr.bin/env:
+total 8
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         86 May 11  1990 Makefile
+-r--r--r--  1 6058     system       2808 Apr 17  1991 env.c
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:30 obj -> /usr/obj/usr.bin/env
+
+usr.bin/expand:
+total 13
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        104 May 11  1990 Makefile
+-r--r--r--  1 6058     system       3174 Aug  5  1991 expand.1
+-r--r--r--  1 6058     system       3764 Apr 17  1991 expand.c
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:30 obj -> /usr/obj/usr.bin/expand
+
+usr.bin/false:
+total 11
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         75 May 11  1990 Makefile
+-r--r--r--  1 6058     system       2507 Aug  5  1991 false.1
+-r--r--r--  1 6058     system       2096 Apr 17  1991 false.c
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:31 obj -> /usr/obj/usr.bin/false
+
+usr.bin/find:
+total 77
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        169 May 24  1991 Makefile
+-r--r--r--  1 6058     system       3129 May 24  1991 extern.h
+-r--r--r--  1 6058     system      13332 Aug  5  1991 find.1
+-r--r--r--  1 6058     system       5696 May 25  1991 find.c
+-r--r--r--  1 6058     system       3469 May 24  1991 find.h
+-r--r--r--  1 6058     system      19171 May 24  1991 function.c
+-r--r--r--  1 6058     system       3664 Apr 17  1991 ls.c
+-r--r--r--  1 6058     system       3511 May 24  1991 main.c
+-r--r--r--  1 6058     system       3896 May 24  1991 misc.c
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:31 obj -> /usr/obj/usr.bin/find
+-r--r--r--  1 6058     system       7782 May 24  1991 operator.c
+-r--r--r--  1 6058     system       4849 Jun 16  1991 option.c
+
+usr.bin/finger:
+total 47
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        122 May 11  1990 Makefile
+-r--r--r--  1 6058     system       4960 Aug  5  1991 finger.1
+-r--r--r--  1 6058     system       6822 Apr 17  1991 finger.c
+-r--r--r--  1 6058     system       3578 Apr 17  1991 finger.h
+-r--r--r--  1 6058     system       7738 Apr 17  1991 lprint.c
+-r--r--r--  1 6058     system       4468 Apr 17  1991 net.c
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:30 obj -> /usr/obj/usr.bin/finger
+-r--r--r--  1 6058     system       4832 Apr 17  1991 sprint.c
+-r--r--r--  1 6058     system       7969 Apr 17  1991 util.c
+
+usr.bin/fmt:
+total 20
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        118 May 11  1990 Makefile
+-r--r--r--  1 6058     system       3080 Aug  5  1991 fmt.1
+-r--r--r--  1 6058     system      10804 Apr 17  1991 fmt.c
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:28 obj -> /usr/obj/usr.bin/fmt
+
+usr.bin/fold:
+total 12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         74 May 11  1990 Makefile
+-r--r--r--  1 6058     system       2586 May  6  1991 fold.1
+-r--r--r--  1 6058     system       3865 Apr 17  1991 fold.c
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:30 obj -> /usr/obj/usr.bin/fold
+
+usr.bin/from:
+total 12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         74 May 11  1990 Makefile
+-r--r--r--  1 6058     system       2728 Aug  5  1991 from.1
+-r--r--r--  1 6058     system       3822 Apr 17  1991 from.c
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:30 obj -> /usr/obj/usr.bin/from
+
+usr.bin/ftp:
+total 157
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        138 Mar  5  1991 Makefile
+-r--r--r--  1 6058     system      40279 Apr 17  1991 cmds.c
+-r--r--r--  1 6058     system       9290 Apr 17  1991 cmdtab.c
+-r--r--r--  1 6058     system       4096 Apr 17  1991 domacro.c
+-r--r--r--  1 6058     system      29118 Aug  5  1991 ftp.1
+-r--r--r--  1 6058     system      31445 Apr 22  1991 ftp.c
+-r--r--r--  1 6058     system       5455 Apr 17  1991 ftp_var.h
+-r--r--r--  1 6058     system      11429 Apr 17  1991 glob.c
+-r--r--r--  1 6058     system       9874 Apr 17  1991 main.c
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:28 obj -> /usr/obj/usr.bin/ftp
+-r--r--r--  1 6058     system       1941 Apr 17  1991 pathnames.h
+-r--r--r--  1 6058     system       7265 Apr 17  1991 ruserpass.c
+
+usr.bin/g++:
+total 4
+dr-xrwxr-x  3 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 cc1plus
+
+usr.bin/g++/cc1plus:
+total 340
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x  3 6058     system        512 Mar 16 16:31 ..
+-r--r--r--  1 6058     system      72478 Jan 13  1991 ChangeLog
+-r--r--r--  1 6058     system     143023 Jan  7  1990 ChangeLog89
+-r--r--r--  1 6058     system       2235 Feb  8 10:45 Makefile
+-r--r--r--  1 6058     system     103272 May  8  1991 cplus-lex.c
+
+usr.bin/gas:
+total 415
+dr-xrwxr-x  3 6058     system       1024 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system      12488 Feb 23  1989 COPYING
+-r--r--r--  1 6058     system      28400 Jan  4  1991 ChangeLog
+-r--r--r--  1 6058     system        489 May  6  1991 Makefile
+-r--r--r--  1 6058     system      11790 Oct 18  1990 Makefile.gnu
+-r--r--r--  1 6058     system       1406 Mar 13  1991 NOTES
+-r--r--r--  1 6058     system       5870 Jul 20  1990 README.gnu
+-r--r--r--  1 6058     system       7812 Oct 11  1990 app.c
+-r--r--r--  1 6058     system       1136 Mar  1  1989 append.c
+-r--r--r--  1 6058     system          0 Mar  3  1991 as.1
+-r--r--r--  1 6058     system       8707 May  8  1991 as.c
+-r--r--r--  1 6058     system       8592 Oct 11  1990 as.h
+-r--r--r--  1 6058     system      16520 Oct 11  1990 atof-generic.c
+-r--r--r--  1 6058     system       2329 Mar  1  1989 bignum-copy.c
+-r--r--r--  1 6058     system       1811 Aug 22  1989 bignum.h
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 config
+-r--r--r--  1 6058     system      30499 Jan 28  1991 expr.c
+-r--r--r--  1 6058     system       2461 Mar  1  1989 expr.h
+-r--r--r--  1 6058     system       7316 Oct 22  1990 flonum-const.c
+-r--r--r--  1 6058     system       2330 Mar  1  1989 flonum-copy.c
+-r--r--r--  1 6058     system       5137 Dec  1  1989 flonum-mult.c
+-r--r--r--  1 6058     system       3908 Oct 11  1990 flonum.h
+-r--r--r--  1 6058     system       8115 Aug 17  1989 frags.c
+-r--r--r--  1 6058     system       1303 Mar  1  1989 frags.h
+-r--r--r--  1 6058     system      30217 Oct 18  1990 hash.c
+-r--r--r--  1 6058     system       2061 Mar  1  1989 hash.h
+-r--r--r--  1 6058     system       2256 Oct 11  1990 hex-value.c
+-r--r--r--  1 6058     system       7925 May  8  1991 input-file.c
+-r--r--r--  1 6058     system       1980 Mar  1  1989 input-file.h
+-r--r--r--  1 6058     system      10864 May  8  1991 input-scrub.c
+-r--r--r--  1 6058     system       2026 Oct 11  1990 md.h
+-r--r--r--  1 6058     system       5463 Jan  4  1991 messages.c
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:29 obj -> /usr/obj/usr.bin/gas
+-r--r--r--  1 6058     system       6832 Aug 14  1990 objrecdef.h
+-r--r--r--  1 6058     system       9598 Nov  3  1990 obstack.c
+-r--r--r--  1 6058     system      16285 Dec 16  1990 obstack.h
+-r--r--r--  1 6058     system       1981 Jan  4  1991 output-file.c
+-r--r--r--  1 6058     system      57573 May  8  1991 read.c
+-r--r--r--  1 6058     system       1629 Oct 11  1990 read.h
+-r--r--r--  1 6058     system       2668 Jul  6  1990 struc-symbol.h
+-r--r--r--  1 6058     system       8780 Oct 11  1990 subsegs.c
+-r--r--r--  1 6058     system       2608 Mar  1  1989 subsegs.h
+-r--r--r--  1 6058     system      12134 Oct 18  1990 symbols.c
+-r--r--r--  1 6058     system       1368 Mar  1  1989 symbols.h
+-r--r--r--  1 6058     system        520 Jan 17  1991 version.c
+-r--r--r--  1 6058     system      38823 Oct 11  1990 write.c
+-r--r--r--  1 6058     system       2891 Oct 11  1990 write.h
+-r--r--r--  1 6058     system       1485 Mar  1  1989 xmalloc.c
+-r--r--r--  1 6058     system       1544 Mar  1  1989 xrealloc.c
+
+usr.bin/gas/config:
+total 126
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x  3 6058     system       1024 Mar 16 16:29 ..
+-r--r--r--  1 6058     system         98 Mar  3  1991 Makefile.i386
+-r--r--r--  1 6058     system       7289 Jul 16  1990 a.out.gnu.h
+-r--r--r--  1 6058     system      13858 Jul 16  1990 atof-ieee.c
+-r--r--r--  1 6058     system      30591 May  8  1991 i386-opcode.h
+-r--r--r--  1 6058     system      61047 May  8  1991 i386.c
+-r--r--r--  1 6058     system      10923 Mar  1  1989 i386.h
+
+usr.bin/gdb:
+total 1349
+dr-xrwxr-x  6 6058     system       1536 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system      12488 Jul  5  1989 COPYING
+-r--r--r--  1 6058     system     185762 Feb  7  1990 ChangeLog
+-r--r--r--  1 6058     system        152 Jul  7  1989 Gdbinit
+-r--r--r--  1 6058     system       1237 Mar  1 13:49 Makefile
+-r--r--r--  1 6058     system      13000 Jan 30  1990 Makefile.dist
+-r--r--r--  1 6058     system       4867 Sep 18  1989 Projects
+-r--r--r--  1 6058     system       6602 Oct 17  1989 README.gnu
+-r--r--r--  1 6058     system      61242 Feb  7  1990 TAGS
+-r--r--r--  1 6058     system        309 Mar 11  1991 XGdbinit.samp
+-r--r--r--  1 6058     system        247 Mar 11  1991 Xgdb.ad
+-r--r--r--  1 6058     system      16709 May 12  1991 blockframe.c
+-r--r--r--  1 6058     system      36817 May  8  1991 breakpoint.c
+-r--r--r--  1 6058     system      23095 Sep 11  1989 command.c
+-r--r--r--  1 6058     system       2917 Aug  7  1989 command.h
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 config
+-r--r--r--  1 6058     system      15125 Jul  5  1989 copying.c
+-r--r--r--  1 6058     system      14391 May  8  1991 core.c
+-r--r--r--  1 6058     system      19651 Mar  8  1991 cplus-dem.c
+-r--r--r--  1 6058     system     156019 May  8  1991 dbxread.c
+-r--r--r--  1 6058     system       3453 May  8  1991 defs.h
+-r--r--r--  1 6058     system       4229 May  8  1991 environ.c
+-r--r--r--  1 6058     system       1395 Jul  5  1989 environ.h
+-r--r--r--  1 6058     system      30687 May  8  1991 eval.c
+-r--r--r--  1 6058     system       9892 Jan 10  1990 expprint.c
+-r--r--r--  1 6058     system      41655 May  8  1991 expread.y
+-r--r--r--  1 6058     system       6985 Jul  5  1989 expression.h
+-r--r--r--  1 6058     system      15996 Jan  6  1990 findvar.c
+-r--r--r--  1 6058     system       4187 Oct 19  1989 frame.h
+-r--r--r--  1 6058     system         81 Feb  8  1991 gdb.1
+-r--r--r--  1 6058     system        416 Jul  5  1989 getpagesize.h
+-r--r--r--  1 6058     system      31165 May  8  1991 infcmd.c
+-r--r--r--  1 6058     system       4181 May  8  1991 inferior.h
+-r--r--r--  1 6058     system      13716 May  8  1991 inflow.c
+-r--r--r--  1 6058     system      44332 May  8  1991 infrun.c
+-r--r--r--  1 6058     system        508 Feb 25 10:31 init.c
+-r--r--r--  1 6058     system       2454 May  8  1991 kgdb_proto.h
+-r--r--r--  1 6058     system      55308 May 13  1991 main.c
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 ngdb.i386
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:31 obj -> /usr/obj/usr.bin/gdb
+-r--r--r--  1 6058     system       8568 Jul  5  1989 obstack.c
+-r--r--r--  1 6058     system      14128 Jul  5  1989 obstack.h
+-r--r--r--  1 6058     system      47633 May  8  1991 printcmd.c
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 readline
+-r--r--r--  1 6058     system      44795 Jul  5  1989 regex.c
+-r--r--r--  1 6058     system       8085 Jul  5  1989 regex.h
+-r--r--r--  1 6058     system        163 May  9  1991 remote-sl.c
+-r--r--r--  1 6058     system      14275 May  8  1991 remote.c
+-r--r--r--  1 6058     system      30231 May  8  1991 source.c
+-r--r--r--  1 6058     system       4738 Mar  3  1989 stab.def
+-r--r--r--  1 6058     system      25608 May  8  1991 stack.c
+-r--r--r--  1 6058     system      15967 Feb  1  1990 symmisc.c
+-r--r--r--  1 6058     system      19191 May  8  1991 symseg.h
+-r--r--r--  1 6058     system      68560 May  8  1991 symtab.c
+-r--r--r--  1 6058     system      15308 May  8  1991 symtab.h
+-r--r--r--  1 6058     system      23752 May  8  1991 utils.c
+-r--r--r--  1 6058     system      17709 May  8  1991 valarith.c
+-r--r--r--  1 6058     system      38465 May  8  1991 valops.c
+-r--r--r--  1 6058     system      38112 May  8  1991 valprint.c
+-r--r--r--  1 6058     system       6733 Jul  7  1989 value.h
+-r--r--r--  1 6058     system      28236 May  8  1991 values.c
+-r--r--r--  1 6058     system        790 Feb  7  1990 version.c
+-r--r--r--  1 6058     system       3120 May  8  1991 wait.h
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 xgdb
+
+usr.bin/gdb/config:
+total 162
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x  6 6058     system       1536 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        138 Mar 21  1991 Makefile.i386
+-r--r--r--  1 6058     system      15121 May  8  1991 default-dep.c
+-r--r--r--  1 6058     system      31851 Feb 25 10:32 i386-dep.c
+-r--r--r--  1 6058     system      34954 Jul  5  1989 i386-pinsn.c
+-r--r--r--  1 6058     system      45622 Mar 11 10:31 i386bsd-dep.c
+-r--r--r--  1 6058     system       1082 Aug 16  1989 m-i386-sv32.h
+-r--r--r--  1 6058     system      12350 Jan 26  1990 m-i386.h
+-r--r--r--  1 6058     system      11564 May  8  1991 m-i386bsd.h
+-r--r--r--  1 6058     system       1085 Aug 16  1989 m-i386g-sv32.h
+-r--r--r--  1 6058     system       1037 Jul  5  1989 m-i386gas.h
+
+usr.bin/gdb/ngdb.i386:
+total 8
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x  6 6058     system       1536 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        817 May 12  1991 Makefile
+lrwxrwxr-x  1 6058     system         31 Mar 16 16:31 machine -> /usr/src/sys.newvm/i386/include
+lrwxrwxr-x  1 6058     system         30 Mar 16 16:31 obj -> /usr/obj/usr.bin/gdb/ngdb.i386
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:31 sys -> /usr/src/sys.newvm/sys
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:31 vm -> /usr/src/sys.newvm/vm
+
+usr.bin/gdb/readline:
+total 259
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x  6 6058     system       1536 Mar 16 16:31 ..
+-r--r--r--  1 6058     system       3382 Feb  7  1990 ChangeLog
+-r--r--r--  1 6058     system       3473 Feb  7  1990 Makefile.gnu
+-r--r--r--  1 6058     system       1434 Aug 11  1989 chardefs.h
+-r--r--r--  1 6058     system      18521 Sep 20  1989 emacs_keymap.c
+-r--r--r--  1 6058     system       6584 Oct  6  1989 funmap.c
+-r--r--r--  1 6058     system      34549 Sep 18  1989 history.c
+-r--r--r--  1 6058     system       4095 Sep 18  1989 history.h
+-r--r--r--  1 6058     system       3993 Sep 20  1989 keymaps.c
+-r--r--r--  1 6058     system       1548 Sep 14  1989 keymaps.h
+-r--r--r--  1 6058     system     130225 May  8  1991 readline.c
+-r--r--r--  1 6058     system       6441 Sep 20  1989 readline.h
+-r--r--r--  1 6058     system      17967 May  8  1991 vi_keymap.c
+-r--r--r--  1 6058     system      15124 May  8  1991 vi_mode.c
+
+usr.bin/gdb/xgdb:
+total 22
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x  6 6058     system       1536 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        975 Mar 12  1991 Makefile
+lrwxrwxr-x  1 6058     system         25 Mar 16 16:31 obj -> /usr/obj/usr.bin/gdb/xgdb
+-r--r--r--  1 6058     system      16937 May  8  1991 xgdb.c
+
+usr.bin/groff:
+total 166
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system       2131 Apr 30  1991 BUG-REPORT
+-r--r--r--  1 6058     system      10746 Apr 30  1991 CHANGES
+-r--r--r--  1 6058     system      78840 Apr 30  1991 ChangeLog
+-r--r--r--  1 6058     system      13563 Apr 30  1991 INSTALL.gnu
+-r--r--r--  1 6058     system      12488 Apr 30  1991 LICENSE
+-r--r--r--  1 6058     system        157 May  6  1991 Makefile
+-r--r--r--  1 6058     system         78 Mar  3  1991 Makefile.fontdir
+-r--r--r--  1 6058     system        398 Feb  8 21:40 Makefile.g++
+-r--r--r--  1 6058     system       8708 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system      10893 Apr 30  1991 PROBLEMS
+-r--r--r--  1 6058     system        435 Apr 30  1991 PROJECTS
+-r--r--r--  1 6058     system       1555 Apr 30  1991 README.gnu
+-r--r--r--  1 6058     system          5 Apr 30  1991 VERSION
+dr-xrwxr-x 10 6058     system        512 Mar 16 16:30 devices
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 doc
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 dvi
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 eqn
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 etc
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 groff
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 grops
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 grotty
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 libXdvi
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 libdriver
+dr-xrwxr-x  2 6058     system       1024 Mar 16 16:30 libgroff
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 macros
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 man
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 pic
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 psbb
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 tbl
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 troff
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 xtotroff
+
+usr.bin/groff/devices:
+total 17
+dr-xrwxr-x 10 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        356 Mar  3  1991 Makefile
+-r--r--r--  1 6058     system        837 Feb 10 13:03 Makefile.dev
+-r--r--r--  1 6058     system       1758 Feb  9 18:48 Makefile.tty
+-r--r--r--  1 6058     system        259 Mar  3  1991 Makefile.xdit
+-r--r--r--  1 6058     system        263 Mar  3  1991 Makefile.xdit.10
+-r--r--r--  1 6058     system        404 Mar  3  1991 Makefile.xdit.12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 devX100
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 devX100-12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 devX75
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 devX75-12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 devascii
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 devdvi
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 devlatin1
+dr-xrwxr-x  2 6058     system       1024 Mar 16 16:30 devps
+
+usr.bin/groff/devices/devX100:
+total 9
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x 10 6058     system        512 Mar 16 16:30 ..
+-r--r--r--  1 6058     system         94 Apr 30  1991 DESC
+-r--r--r--  1 6058     system       1058 Apr 30  1991 FontMap
+-r--r--r--  1 6058     system         84 Mar  3  1991 Makefile
+-r--r--r--  1 6058     system        555 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system        324 Apr 30  1991 eqnchar
+lrwxrwxr-x  1 6058     system         38 Mar 16 16:30 obj -> /usr/obj/usr.bin/groff/devices/devX100
+
+usr.bin/groff/devices/devX100-12:
+total 4
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x 10 6058     system        512 Mar 16 16:30 ..
+-r--r--r--  1 6058     system         82 Mar  3  1991 Makefile
+lrwxrwxr-x  1 6058     system         41 Mar 16 16:30 obj -> /usr/obj/usr.bin/groff/devices/devX100-12
+
+usr.bin/groff/devices/devX75:
+total 8
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x 10 6058     system        512 Mar 16 16:30 ..
+-r--r--r--  1 6058     system         84 Apr 30  1991 DESC
+-r--r--r--  1 6058     system       1024 Apr 30  1991 FontMap
+-r--r--r--  1 6058     system         83 Mar  3  1991 Makefile
+-r--r--r--  1 6058     system        550 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system        324 Apr 30  1991 eqnchar
+lrwxrwxr-x  1 6058     system         37 Mar 16 16:30 obj -> /usr/obj/usr.bin/groff/devices/devX75
+
+usr.bin/groff/devices/devX75-12:
+total 4
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x 10 6058     system        512 Mar 16 16:30 ..
+-r--r--r--  1 6058     system         82 Mar  3  1991 Makefile
+lrwxrwxr-x  1 6058     system         40 Mar 16 16:30 obj -> /usr/obj/usr.bin/groff/devices/devX75-12
+
+usr.bin/groff/devices/devascii:
+total 9
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x 10 6058     system        512 Mar 16 16:30 ..
+-r--r--r--  1 6058     system         73 Apr 30  1991 DESC.proto
+-r--r--r--  1 6058     system         81 Apr 30  1991 Makefile
+-r--r--r--  1 6058     system       1838 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system       1342 Apr 30  1991 R.proto
+lrwxrwxr-x  1 6058     system         39 Mar 16 16:30 obj -> /usr/obj/usr.bin/groff/devices/devascii
+
+usr.bin/groff/devices/devdvi:
+total 83
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x 10 6058     system        512 Mar 16 16:30 ..
+-r--r--r--  1 6058     system       5926 Apr 30  1991 B
+-r--r--r--  1 6058     system       7222 Apr 30  1991 BI
+-r--r--r--  1 6058     system       3435 Apr 30  1991 CW
+-r--r--r--  1 6058     system        416 Apr 30  1991 CompileFonts
+-r--r--r--  1 6058     system        194 Apr 30  1991 DESC
+-r--r--r--  1 6058     system       4849 Apr 30  1991 EX
+-r--r--r--  1 6058     system       2034 Apr 30  1991 FontMakefile
+-r--r--r--  1 6058     system       5365 Apr 30  1991 H
+-r--r--r--  1 6058     system       5373 Apr 30  1991 HB
+-r--r--r--  1 6058     system       6320 Apr 30  1991 HI
+-r--r--r--  1 6058     system       7209 Apr 30  1991 I
+-r--r--r--  1 6058     system       4076 Apr 30  1991 MI
+-r--r--r--  1 6058     system        160 Apr 30  1991 Makefile
+-r--r--r--  1 6058     system       1136 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system       6758 Apr 30  1991 R
+-r--r--r--  1 6058     system       4055 Apr 30  1991 S
+-r--r--r--  1 6058     system        781 Apr 30  1991 eqnchar
+-r--r--r--  1 6058     system        811 Apr 30  1991 texb.map
+-r--r--r--  1 6058     system       1525 Apr 30  1991 texex.map
+-r--r--r--  1 6058     system        817 Apr 30  1991 texi.map
+-r--r--r--  1 6058     system        182 Apr 30  1991 texmi.map
+-r--r--r--  1 6058     system        856 Apr 30  1991 texr.map
+-r--r--r--  1 6058     system        679 Apr 30  1991 texsy.map
+-r--r--r--  1 6058     system        786 Apr 30  1991 textt.map
+
+usr.bin/groff/devices/devlatin1:
+total 11
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x 10 6058     system        512 Mar 16 16:30 ..
+-r--r--r--  1 6058     system         73 Apr 30  1991 DESC.proto
+-r--r--r--  1 6058     system         82 Mar  3  1991 Makefile
+-r--r--r--  1 6058     system       1956 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system       3512 Apr 30  1991 R.proto
+lrwxrwxr-x  1 6058     system         40 Mar 16 16:30 obj -> /usr/obj/usr.bin/groff/devices/devlatin1
+
+usr.bin/groff/devices/devps:
+total 368
+dr-xrwxr-x  2 6058     system       1024 Mar 16 16:30 .
+dr-xrwxr-x 10 6058     system        512 Mar 16 16:30 ..
+-r--r--r--  1 6058     system       7159 Apr 30  1991 AB
+-r--r--r--  1 6058     system       9502 Apr 30  1991 ABI
+-r--r--r--  1 6058     system       9471 Apr 30  1991 AI
+-r--r--r--  1 6058     system       7115 Apr 30  1991 AR
+-r--r--r--  1 6058     system       7138 Apr 30  1991 BMB
+-r--r--r--  1 6058     system       9406 Apr 30  1991 BMBI
+-r--r--r--  1 6058     system       9393 Apr 30  1991 BMI
+-r--r--r--  1 6058     system       7070 Apr 30  1991 BMR
+-r--r--r--  1 6058     system       6164 Apr 30  1991 CB
+-r--r--r--  1 6058     system       8110 Apr 30  1991 CBI
+-r--r--r--  1 6058     system       8045 Apr 30  1991 CI
+-r--r--r--  1 6058     system       6131 Apr 30  1991 CR
+-r--r--r--  1 6058     system        148 May  1  1991 DESC
+-r--r--r--  1 6058     system        148 Apr 30  1991 DESC-A4
+-r--r--r--  1 6058     system        148 Apr 30  1991 DESC-letter
+-r--r--r--  1 6058     system       4035 Apr 30  1991 FontMakefile
+-r--r--r--  1 6058     system       7225 Apr 30  1991 HB
+-r--r--r--  1 6058     system       9549 Apr 30  1991 HBI
+-r--r--r--  1 6058     system       9555 Apr 30  1991 HI
+-r--r--r--  1 6058     system       7220 Apr 30  1991 HNB
+-r--r--r--  1 6058     system       9464 Apr 30  1991 HNBI
+-r--r--r--  1 6058     system       9497 Apr 30  1991 HNI
+-r--r--r--  1 6058     system       7231 Apr 30  1991 HNR
+-r--r--r--  1 6058     system       7240 Apr 30  1991 HR
+-r--r--r--  1 6058     system        362 Apr 30  1991 Makefile
+-r--r--r--  1 6058     system       1582 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system       7264 Apr 30  1991 NB
+-r--r--r--  1 6058     system       9316 Apr 30  1991 NBI
+-r--r--r--  1 6058     system       9119 Apr 30  1991 NI
+-r--r--r--  1 6058     system       7308 Apr 30  1991 NR
+-r--r--r--  1 6058     system       7408 Apr 30  1991 PB
+-r--r--r--  1 6058     system       9269 Apr 30  1991 PBI
+-r--r--r--  1 6058     system       9281 Apr 30  1991 PI
+-r--r--r--  1 6058     system       7462 Apr 30  1991 PR
+-r--r--r--  1 6058     system       5896 Apr 30  1991 S
+-r--r--r--  1 6058     system       7699 Apr 30  1991 SS
+-r--r--r--  1 6058     system       7384 Apr 30  1991 TB
+-r--r--r--  1 6058     system       9273 Apr 30  1991 TBI
+-r--r--r--  1 6058     system       9334 Apr 30  1991 TI
+-r--r--r--  1 6058     system       7321 Apr 30  1991 TR
+-r--r--r--  1 6058     system       9657 Apr 30  1991 ZCMI
+-r--r--r--  1 6058     system       4777 Apr 30  1991 ZD
+-r--r--r--  1 6058     system       4787 Apr 30  1991 ZDR
+-r--r--r--  1 6058     system       7897 Apr 30  1991 afmtodit
+-r--r--r--  1 6058     system         14 Apr 30  1991 dingbatsmap
+-r--r--r--  1 6058     system        116 Apr 30  1991 download
+-r--r--r--  1 6058     system        339 Apr 30  1991 eqnchar
+-r--r--r--  1 6058     system        206 Apr 30  1991 lgreekmap
+-r--r--r--  1 6058     system       3118 Apr 30  1991 prologue
+-r--r--r--  1 6058     system       3096 Apr 30  1991 symbol.diff
+-r--r--r--  1 6058     system         26 Apr 30  1991 symbolchars
+-r--r--r--  1 6058     system       9407 Apr 30  1991 symbolsl.afm
+-r--r--r--  1 6058     system        856 Apr 30  1991 symbolsl.ps
+-r--r--r--  1 6058     system       2424 Apr 30  1991 text.enc
+-r--r--r--  1 6058     system       5987 Apr 30  1991 textmap
+-r--r--r--  1 6058     system       4895 Apr 30  1991 zapfdr.ps
+
+usr.bin/groff/doc:
+total 91
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 ..
+-r--r--r--  1 6058     system       1355 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system       9784 Apr 30  1991 chars.tr
+-r--r--r--  1 6058     system      41291 Apr 30  1991 meintro.me
+-r--r--r--  1 6058     system      36640 Apr 30  1991 meref.me
+
+usr.bin/groff/dvi:
+total 43
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 ..
+-r--r--r--  1 6058     system       2056 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system      18489 Apr 30  1991 dvi.c
+-r--r--r--  1 6058     system      18642 Apr 30  1991 tfmtodit.c
+
+usr.bin/groff/eqn:
+total 163
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        493 Mar  3  1991 Makefile
+-r--r--r--  1 6058     system       2217 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system        633 Apr 30  1991 NOTES
+-r--r--r--  1 6058     system        911 Apr 30  1991 TODO
+-r--r--r--  1 6058     system      11001 Apr 30  1991 box.cc
+-r--r--r--  1 6058     system       6106 Apr 30  1991 box.h
+-r--r--r--  1 6058     system      10083 Apr 30  1991 delim.cc
+-r--r--r--  1 6058     system      14271 Apr 30  1991 eqn.1
+-r--r--r--  1 6058     system       1709 May  8  1991 eqn.h
+-r--r--r--  1 6058     system       6620 Apr 30  1991 eqn.y
+-r--r--r--  1 6058     system      23716 Apr 30  1991 lex.cc
+-r--r--r--  1 6058     system       5325 Apr 30  1991 limit.cc
+-r--r--r--  1 6058     system       6431 Apr 30  1991 list.cc
+-r--r--r--  1 6058     system       6698 Apr 30  1991 main.cc
+-r--r--r--  1 6058     system       2855 Apr 30  1991 mark.cc
+lrwxrwxr-x  1 6058     system         26 Mar 16 16:29 obj -> /usr/obj/usr.bin/groff/eqn
+-r--r--r--  1 6058     system      14341 Apr 30  1991 other.cc
+-r--r--r--  1 6058     system       5283 Apr 30  1991 over.cc
+-r--r--r--  1 6058     system       3860 Apr 30  1991 pbox.h
+-r--r--r--  1 6058     system       7773 Apr 30  1991 pile.cc
+-r--r--r--  1 6058     system       6231 Apr 30  1991 script.cc
+-r--r--r--  1 6058     system       5743 Apr 30  1991 sqrt.cc
+-r--r--r--  1 6058     system      10489 Apr 30  1991 text.cc
+
+usr.bin/groff/etc:
+total 32
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 ..
+-r--r--r--  1 6058     system       1825 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system       5171 Apr 30  1991 addftinfo.c
+-r--r--r--  1 6058     system       1201 Apr 30  1991 grog.sh
+-r--r--r--  1 6058     system      11297 Apr 30  1991 guess.c
+-r--r--r--  1 6058     system       1176 Apr 30  1991 guess.h
+-r--r--r--  1 6058     system       5400 Apr 30  1991 soelim.c
+
+usr.bin/groff/groff:
+total 27
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        555 Feb  9 19:12 Makefile
+-r--r--r--  1 6058     system       3701 Apr 30  1991 groff.1
+-r--r--r--  1 6058     system      16867 Feb  9 19:13 groff.cc
+-r--r--r--  1 6058     system         51 Apr 30  1991 nroff.sh
+lrwxrwxr-x  1 6058     system         28 Mar 16 16:30 obj -> /usr/obj/usr.bin/groff/groff
+-r--r--r--  1 6058     system         45 Apr 30  1991 psroff.sh
+
+usr.bin/groff/grops:
+total 67
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        449 Mar  3  1991 Makefile
+-r--r--r--  1 6058     system       2373 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system        457 Apr 30  1991 TODO
+-r--r--r--  1 6058     system      11688 Apr 30  1991 grops.1
+lrwxrwxr-x  1 6058     system         28 Mar 16 16:30 obj -> /usr/obj/usr.bin/groff/grops
+-r--r--r--  1 6058     system      47722 Apr 30  1991 ps.cc
+
+usr.bin/groff/grotty:
+total 21
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        454 Mar  3  1991 Makefile
+-r--r--r--  1 6058     system       2123 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system        181 Apr 30  1991 TODO
+-r--r--r--  1 6058     system       3192 Apr 30  1991 grotty.1
+-r--r--r--  1 6058     system       8617 Aug  5  1991 grotty.cc
+lrwxrwxr-x  1 6058     system         29 Mar 16 16:30 obj -> /usr/obj/usr.bin/groff/grotty
+
+usr.bin/groff/libXdvi:
+total 79
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 ..
+-r--r--r--  1 6058     system      11541 Apr 30  1991 Dvi.c
+-r--r--r--  1 6058     system       1128 Apr 30  1991 Dvi.h
+-r--r--r--  1 6058     system      13488 Apr 30  1991 DviChar.c
+-r--r--r--  1 6058     system       1055 Apr 30  1991 DviChar.h
+-r--r--r--  1 6058     system       3742 Apr 30  1991 DviP.h
+-r--r--r--  1 6058     system        482 Apr 30  1991 Imakefile.mit
+-r--r--r--  1 6058     system        181 Mar  3  1991 Makefile
+-r--r--r--  1 6058     system        516 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system       1282 Apr 30  1991 Menu.h
+-r--r--r--  1 6058     system       6401 Apr 30  1991 XFontName.c
+-r--r--r--  1 6058     system       1205 Apr 30  1991 XFontName.h
+-r--r--r--  1 6058     system       7389 Apr 30  1991 draw.c
+-r--r--r--  1 6058     system       6365 Apr 30  1991 font.c
+-r--r--r--  1 6058     system       1701 Apr 30  1991 lex.c
+lrwxrwxr-x  1 6058     system         30 Mar 16 16:30 obj -> /usr/obj/usr.bin/groff/libXdvi
+-r--r--r--  1 6058     system       1371 Apr 30  1991 page.c
+-r--r--r--  1 6058     system       9161 Apr 30  1991 parse.c
+
+usr.bin/groff/libdriver:
+total 25
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        292 Mar  1 13:49 Makefile
+-r--r--r--  1 6058     system       1337 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system       1074 Apr 30  1991 driver.h
+-r--r--r--  1 6058     system         18 Mar  1 13:49 driver.order
+-r--r--r--  1 6058     system       9627 Apr 30  1991 input.cc
+lrwxrwxr-x  1 6058     system         32 Mar 16 16:30 obj -> /usr/obj/usr.bin/groff/libdriver
+-r--r--r--  1 6058     system       4019 Apr 30  1991 printer.cc
+-r--r--r--  1 6058     system       1883 Apr 30  1991 printer.h
+
+usr.bin/groff/libgroff:
+total 99
+dr-xrwxr-x  2 6058     system       1024 Mar 16 16:30 .
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        527 Mar  1 13:49 Makefile
+-r--r--r--  1 6058     system       2576 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system       1148 Apr 30  1991 assert.cc
+-r--r--r--  1 6058     system       1177 Apr 30  1991 assert.h
+-r--r--r--  1 6058     system       1108 Apr 30  1991 change_lf.cc
+-r--r--r--  1 6058     system       1455 Apr 30  1991 cmap.cc
+-r--r--r--  1 6058     system       1366 Apr 30  1991 cmap.h
+-r--r--r--  1 6058     system       2408 Apr 30  1991 cset.cc
+-r--r--r--  1 6058     system       1646 Apr 30  1991 cset.h
+-r--r--r--  1 6058     system       2373 May  8  1991 errarg.cc
+-r--r--r--  1 6058     system       1293 Apr 30  1991 errarg.h
+-r--r--r--  1 6058     system       3442 Apr 30  1991 error.cc
+-r--r--r--  1 6058     system       2059 Apr 30  1991 error.h
+-r--r--r--  1 6058     system        893 Apr 30  1991 fatal.cc
+-r--r--r--  1 6058     system         34 Apr 30  1991 filename.cc
+-r--r--r--  1 6058     system      18284 Apr 30  1991 font.cc
+-r--r--r--  1 6058     system       3161 Apr 30  1991 font.h
+-r--r--r--  1 6058     system       3247 Apr 30  1991 fontfile.cc
+-r--r--r--  1 6058     system        416 Apr 30  1991 getpagesize.h
+-r--r--r--  1 6058     system        187 Mar  1 13:49 groff.order
+-r--r--r--  1 6058     system       2013 May  8  1991 iftoa.cc
+-r--r--r--  1 6058     system       1460 May  8  1991 itoa.cc
+-r--r--r--  1 6058     system       1590 Apr 30  1991 lf.cc
+-r--r--r--  1 6058     system       2583 May  8  1991 lib.h
+-r--r--r--  1 6058     system         24 Apr 30  1991 lineno.cc
+-r--r--r--  1 6058     system       2135 Apr 30  1991 nametoindex.cc
+-r--r--r--  1 6058     system       1171 Apr 30  1991 new.cc
+lrwxrwxr-x  1 6058     system         31 Mar 16 16:30 obj -> /usr/obj/usr.bin/groff/libgroff
+-r--r--r--  1 6058     system         30 Apr 30  1991 progname.cc
+-r--r--r--  1 6058     system       1356 Apr 30  1991 ptable.cc
+-r--r--r--  1 6058     system       5108 Apr 30  1991 ptable.h
+-r--r--r--  1 6058     system       5933 Apr 30  1991 string.cc
+-r--r--r--  1 6058     system       3927 Apr 30  1991 stringclass.h
+-r--r--r--  1 6058     system        943 Apr 30  1991 strsave.cc
+-r--r--r--  1 6058     system        103 Apr 30  1991 version.cc
+
+usr.bin/groff/macros:
+total 50
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        337 Mar 16  1991 Makefile
+-r--r--r--  1 6058     system       1224 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system        923 Apr 30  1991 TODO
+-r--r--r--  1 6058     system        298 Apr 30  1991 fixmacros.sed
+-r--r--r--  1 6058     system       1018 Apr 30  1991 tmac.X
+-r--r--r--  1 6058     system       1230 Apr 30  1991 tmac.dvi
+-r--r--r--  1 6058     system        101 Apr 30  1991 tmac.pic
+-r--r--r--  1 6058     system       3017 Apr 30  1991 tmac.ps
+-r--r--r--  1 6058     system       1180 Apr 30  1991 tmac.psfig
+-r--r--r--  1 6058     system      33476 Apr 30  1991 tmac.s
+-r--r--r--  1 6058     system        687 Aug  5  1991 tmac.tty
+
+usr.bin/groff/man:
+total 48
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 ..
+-r--r--r--  1 6058     system       3039 Apr 30  1991 Makefile
+-r--r--r--  1 6058     system       2019 Apr 30  1991 addftinfo.man
+-r--r--r--  1 6058     system       4397 Apr 30  1991 afmtodit.man
+-r--r--r--  1 6058     system       3411 Apr 30  1991 grodvi.man
+-r--r--r--  1 6058     system       7863 Apr 30  1991 groff_font.man
+-r--r--r--  1 6058     system       5852 Apr 30  1991 groff_me.man
+-r--r--r--  1 6058     system       4806 Apr 30  1991 groff_ms.man
+-r--r--r--  1 6058     system       5910 Apr 30  1991 groff_out.man
+-r--r--r--  1 6058     system       1044 Apr 30  1991 grog.man
+-r--r--r--  1 6058     system        649 Apr 30  1991 gsoelim.man
+-r--r--r--  1 6058     system       3262 Apr 30  1991 tfmtodit.man
+
+usr.bin/groff/pic:
+total 209
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        459 Mar  3  1991 Makefile
+-r--r--r--  1 6058     system       2309 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system        704 Apr 30  1991 TODO
+-r--r--r--  1 6058     system      15582 Apr 30  1991 common.cc
+-r--r--r--  1 6058     system       3216 Apr 30  1991 common.h
+-r--r--r--  1 6058     system       6514 Apr 30  1991 key.cc
+-r--r--r--  1 6058     system        907 Apr 30  1991 key.h
+-r--r--r--  1 6058     system      36565 Apr 30  1991 lex.cc
+-r--r--r--  1 6058     system      11332 Apr 30  1991 main.cc
+lrwxrwxr-x  1 6058     system         26 Mar 16 16:29 obj -> /usr/obj/usr.bin/groff/pic
+-r--r--r--  1 6058     system      37817 Apr 30  1991 object.cc
+-r--r--r--  1 6058     system       4867 Apr 30  1991 object.h
+-r--r--r--  1 6058     system         34 Apr 30  1991 output.cc
+-r--r--r--  1 6058     system       2586 Apr 30  1991 output.h
+-r--r--r--  1 6058     system      13865 Apr 30  1991 pic.1
+-r--r--r--  1 6058     system       1895 Apr 30  1991 pic.gperf
+-r--r--r--  1 6058     system       2391 Apr 30  1991 pic.h
+-r--r--r--  1 6058     system      32693 Apr 30  1991 pic.y
+-r--r--r--  1 6058     system       1551 Apr 30  1991 position.h
+-r--r--r--  1 6058     system      10403 Apr 30  1991 tex.cc
+-r--r--r--  1 6058     system        344 Apr 30  1991 text.h
+-r--r--r--  1 6058     system      13323 Apr 30  1991 troff.cc
+
+usr.bin/groff/psbb:
+total 8
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        587 Apr 30  1991 psbb.1
+-r--r--r--  1 6058     system       4344 Apr 30  1991 psbb.c
+
+usr.bin/groff/tbl:
+total 112
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        362 Mar  3  1991 Makefile
+-r--r--r--  1 6058     system       1572 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system        687 Apr 30  1991 TODO
+-r--r--r--  1 6058     system      30263 Apr 30  1991 main.cc
+lrwxrwxr-x  1 6058     system         26 Mar 16 16:29 obj -> /usr/obj/usr.bin/groff/tbl
+-r--r--r--  1 6058     system      69366 Apr 30  1991 table.cc
+-r--r--r--  1 6058     system       3593 Apr 30  1991 table.h
+-r--r--r--  1 6058     system       2056 Apr 30  1991 tbl.1
+
+usr.bin/groff/troff:
+total 486
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        651 Mar  3  1991 Makefile
+-r--r--r--  1 6058     system       3181 Apr 30  1991 Makefile.gnu
+-r--r--r--  1 6058     system       4445 Apr 30  1991 TODO
+-r--r--r--  1 6058     system       3293 Apr 30  1991 charinfo.h
+-r--r--r--  1 6058     system      14386 Apr 30  1991 column.cc
+-r--r--r--  1 6058     system       4451 Apr 30  1991 dictionary.cc
+-r--r--r--  1 6058     system       2254 Apr 30  1991 dictionary.h
+-r--r--r--  1 6058     system      26271 Apr 30  1991 div.cc
+-r--r--r--  1 6058     system       4331 Apr 30  1991 div.h
+-r--r--r--  1 6058     system      65810 Apr 30  1991 env.cc
+-r--r--r--  1 6058     system       8423 Apr 30  1991 env.h
+-r--r--r--  1 6058     system       2180 Apr 30  1991 groff.h
+-r--r--r--  1 6058     system       6643 Apr 30  1991 hvunits.h
+-r--r--r--  1 6058     system      27302 Apr 30  1991 hyphen
+-r--r--r--  1 6058     system     116564 Mar 23  1991 input.cc
+-r--r--r--  1 6058     system      91002 Apr 30  1991 node.cc
+-r--r--r--  1 6058     system      12053 Apr 30  1991 node.h
+-r--r--r--  1 6058     system      12886 Apr 30  1991 number.cc
+lrwxrwxr-x  1 6058     system         28 Mar 16 16:29 obj -> /usr/obj/usr.bin/groff/troff
+-r--r--r--  1 6058     system       8511 Apr 30  1991 reg.cc
+-r--r--r--  1 6058     system       1896 Apr 30  1991 reg.h
+-r--r--r--  1 6058     system       2138 Apr 30  1991 request.h
+-r--r--r--  1 6058     system       3752 Apr 30  1991 symbol.cc
+-r--r--r--  1 6058     system       1683 Apr 30  1991 symbol.h
+-r--r--r--  1 6058     system       4960 Apr 30  1991 token.h
+-r--r--r--  1 6058     system      37867 Apr 30  1991 troff.1
+
+usr.bin/groff/xtotroff:
+total 9
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x 20 6058     system       1024 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        204 Mar  3  1991 Makefile
+lrwxrwxr-x  1 6058     system         31 Mar 16 16:30 obj -> /usr/obj/usr.bin/groff/xtotroff
+-r--r--r--  1 6058     system       4590 Apr 30  1991 xtotroff.c
+
+usr.bin/groups:
+total 12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         76 May 11  1990 Makefile
+-r--r--r--  1 6058     system       2709 Aug  5  1991 groups.1
+-r--r--r--  1 6058     system       3100 Apr 17  1991 groups.c
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:31 obj -> /usr/obj/usr.bin/groups
+
+usr.bin/head:
+total 12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         74 May 11  1990 Makefile
+-r--r--r--  1 6058     system       2269 Aug  5  1991 head.1
+-r--r--r--  1 6058     system       3128 Apr 17  1991 head.c
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:31 obj -> /usr/obj/usr.bin/head
+
+usr.bin/hexdump:
+total 61
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        199 Mar  7  1991 Makefile
+-r--r--r--  1 6058     system       3570 Apr 17  1991 conv.c
+-r--r--r--  1 6058     system       8380 Apr 17  1991 display.c
+-r--r--r--  1 6058     system      10496 Aug  5  1991 hexdump.1
+-r--r--r--  1 6058     system       2861 Apr 17  1991 hexdump.c
+-r--r--r--  1 6058     system       3203 Apr 17  1991 hexdump.h
+-r--r--r--  1 6058     system       3620 Apr 17  1991 hexsyntax.c
+lrwxrwxr-x  1 6058     system         24 Mar 16 16:29 obj -> /usr/obj/usr.bin/hexdump
+-r--r--r--  1 6058     system       2509 Aug  5  1991 od.1
+-r--r--r--  1 6058     system       6248 Apr 17  1991 odsyntax.c
+-r--r--r--  1 6058     system      11259 Apr 17  1991 parse.c
+
+usr.bin/id:
+total 17
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         72 Jun 29  1991 Makefile
+-r--r--r--  1 6058     system       3479 Jun 29  1991 id.1
+-r--r--r--  1 6058     system       7724 Jun 29  1991 id.c
+lrwxrwxr-x  1 6058     system         19 Mar 16 16:28 obj -> /usr/obj/usr.bin/id
+
+usr.bin/ktrace:
+total 6
+dr-xrwxr-x  4 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         86 May 11  1990 Makefile
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 kdump
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 ktrace
+
+usr.bin/ktrace/kdump:
+total 24
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x  4 6058     system        512 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        281 Feb 25 09:59 Makefile
+-r--r--r--  1 6058     system       4582 Feb 25 09:58 ioctl.c
+-r--r--r--  1 6058     system       3230 Aug  5  1991 kdump.1
+-r--r--r--  1 6058     system       9938 Apr 17  1991 kdump.c
+-r--r--r--  1 6058     system        667 Jun 30  1990 mkioctls
+lrwxrwxr-x  1 6058     system         29 Mar 16 16:30 obj -> /usr/obj/usr.bin/ktrace/kdump
+
+usr.bin/ktrace/ktrace:
+total 19
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x  4 6058     system        512 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        128 Apr 27  1991 Makefile
+-r--r--r--  1 6058     system       4926 Aug  5  1991 ktrace.1
+-r--r--r--  1 6058     system       4522 Apr 27  1991 ktrace.c
+-r--r--r--  1 6058     system       2006 Apr 17  1991 ktrace.h
+lrwxrwxr-x  1 6058     system         30 Mar 16 16:30 obj -> /usr/obj/usr.bin/ktrace/ktrace
+-r--r--r--  1 6058     system       2863 May  3  1991 subr.c
+
+usr.bin/last:
+total 20
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         74 May 11  1990 Makefile
+-r--r--r--  1 6058     system       3762 May  5  1991 last.1
+-r--r--r--  1 6058     system      10501 Apr 17  1991 last.c
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:28 obj -> /usr/obj/usr.bin/last
+
+usr.bin/leave:
+total 14
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         75 May 11  1990 Makefile
+-r--r--r--  1 6058     system       3195 Aug  5  1991 leave.1
+-r--r--r--  1 6058     system       4506 Apr 17  1991 leave.c
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:28 obj -> /usr/obj/usr.bin/leave
+
+usr.bin/locate:
+total 7
+dr-xrwxr-x  5 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         92 May 11  1990 Makefile
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 bigram
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 code
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 locate
+
+usr.bin/locate/bigram:
+total 7
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x  5 6058     system        512 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        117 May 11  1990 Makefile
+-r--r--r--  1 6058     system       2976 Apr 17  1991 locate.bigram.c
+lrwxrwxr-x  1 6058     system         30 Mar 16 16:30 obj -> /usr/obj/usr.bin/locate/bigram
+
+usr.bin/locate/code:
+total 10
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x  5 6058     system        512 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        146 May 11  1990 Makefile
+-r--r--r--  1 6058     system       5499 Apr 17  1991 locate.code.c
+lrwxrwxr-x  1 6058     system         28 Mar 16 16:30 obj -> /usr/obj/usr.bin/locate/code
+
+usr.bin/locate/locate:
+total 22
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x  5 6058     system        512 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        244 May 11  1990 Makefile
+-r--r--r--  1 6058     system       2970 Aug  5  1991 locate.1
+-r--r--r--  1 6058     system       5852 Apr 17  1991 locate.c
+-r--r--r--  1 6058     system       2107 Apr 17  1991 locate.h
+lrwxrwxr-x  1 6058     system         30 Mar 16 16:30 obj -> /usr/obj/usr.bin/locate/locate
+-r--r--r--  1 6058     system       1916 Apr 17  1991 pathnames.h
+-r--r--r--  1 6058     system       3263 Apr 17  1991 updatedb.csh
+
+usr.bin/lock:
+total 14
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        100 Apr 16  1991 Makefile
+-r--r--r--  1 6058     system       2646 Aug  5  1991 lock.1
+-r--r--r--  1 6058     system       5938 Apr 17  1991 lock.c
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:28 obj -> /usr/obj/usr.bin/lock
+
+usr.bin/logger:
+total 14
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         76 Sep 29  1990 Makefile
+-r--r--r--  1 6058     system       3232 Aug  5  1991 logger.1
+-r--r--r--  1 6058     system       4731 Apr 17  1991 logger.c
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:28 obj -> /usr/obj/usr.bin/logger
+
+usr.bin/login:
+total 26
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        147 Feb 25 09:25 Makefile
+-r--r--r--  1 6058     system       4381 Jun 29  1991 login.1
+-r--r--r--  1 6058     system      14285 Feb 25 09:32 login.c
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:28 obj -> /usr/obj/usr.bin/login
+-r--r--r--  1 6058     system       1963 Apr 26  1991 pathnames.h
+
+usr.bin/logname:
+total 11
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         77 Jun 28  1991 Makefile
+-r--r--r--  1 6058     system       2643 Aug  5  1991 logname.1
+-r--r--r--  1 6058     system       2589 Jun 28  1991 logname.c
+lrwxrwxr-x  1 6058     system         24 Mar 16 16:28 obj -> /usr/obj/usr.bin/logname
+
+usr.bin/machine:
+total 11
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         77 May 11  1990 Makefile
+-r--r--r--  1 6058     system       2143 Aug  5  1991 machine.1
+-r--r--r--  1 6058     system       2130 Apr 18  1991 machine.c
+lrwxrwxr-x  1 6058     system         24 Mar 16 16:30 obj -> /usr/obj/usr.bin/machine
+
+usr.bin/mail:
+total 250
+dr-xrwxr-x  3 6058     system       1024 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        618 Jun 19  1991 Makefile
+-r--r--r--  1 6058     system      12833 Apr 18  1991 aux.c
+-r--r--r--  1 6058     system       8987 Apr 18  1991 cmd1.c
+-r--r--r--  1 6058     system      10077 Apr 18  1991 cmd2.c
+-r--r--r--  1 6058     system      13803 Apr 18  1991 cmd3.c
+-r--r--r--  1 6058     system       5334 Apr 18  1991 cmdtab.c
+-r--r--r--  1 6058     system      13652 Apr 18  1991 collect.c
+-r--r--r--  1 6058     system       9939 Apr 18  1991 def.h
+-r--r--r--  1 6058     system       5321 Apr 18  1991 edit.c
+-r--r--r--  1 6058     system       9776 Apr 18  1991 fio.c
+-r--r--r--  1 6058     system       2531 Apr 18  1991 getname.c
+-r--r--r--  1 6058     system       4501 Apr 18  1991 glob.h
+-r--r--r--  1 6058     system       5857 Apr 18  1991 head.c
+-r--r--r--  1 6058     system      13384 Apr 18  1991 lex.c
+-r--r--r--  1 6058     system      15725 Apr 18  1991 list.c
+-r--r--r--  1 6058     system      24879 Aug  5  1991 mail.1
+-r--r--r--  1 6058     system       7320 Apr 18  1991 main.c
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 misc
+-r--r--r--  1 6058     system      14151 Apr 18  1991 names.c
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:28 obj -> /usr/obj/usr.bin/mail
+-r--r--r--  1 6058     system       2134 Jun 19  1991 pathnames.h
+-r--r--r--  1 6058     system       6922 Apr 18  1991 popen.c
+-r--r--r--  1 6058     system      11142 Apr 18  1991 quit.c
+-r--r--r--  1 6058     system       2017 Apr 18  1991 rcv.h
+-r--r--r--  1 6058     system      12836 Apr 18  1991 send.c
+-r--r--r--  1 6058     system       3837 Apr 18  1991 strings.c
+-r--r--r--  1 6058     system       3057 Apr 18  1991 temp.c
+-r--r--r--  1 6058     system       6305 Apr 18  1991 tty.c
+-r--r--r--  1 6058     system       2512 Apr 18  1991 v7.local.c
+-r--r--r--  1 6058     system       4398 Apr 18  1991 vars.c
+-r--r--r--  1 6058     system       2071 Apr 18  1991 version.c
+
+usr.bin/mail/misc:
+total 5
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x  3 6058     system       1024 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        947 Jun 25  1990 mail.help
+-r--r--r--  1 6058     system         98 Jun 25  1990 mail.rc
+-r--r--r--  1 6058     system        823 Jun 25  1990 mail.tildehelp
+
+usr.bin/make:
+total 554
+dr-xrwxr-x  3 6058     system       1024 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        555 Mar 15  1991 Makefile
+-r--r--r--  1 6058     system        155 May 12  1991 Makefile.dist
+-r--r--r--  1 6058     system      29637 Apr 18  1991 arch.c
+-r--r--r--  1 6058     system       3660 Apr 18  1991 bit.h
+-r--r--r--  1 6058     system      11048 Apr 18  1991 buf.c
+-r--r--r--  1 6058     system       3363 Apr 18  1991 buf.h
+-r--r--r--  1 6058     system      17484 Apr 18  1991 compat.c
+-r--r--r--  1 6058     system      28973 Apr 18  1991 cond.c
+-r--r--r--  1 6058     system       3711 Apr 18  1991 config.h
+-r--r--r--  1 6058     system      38251 Apr 18  1991 dir.c
+-r--r--r--  1 6058     system      10691 Apr 18  1991 hash.c
+-r--r--r--  1 6058     system       4165 Apr 18  1991 hash.h
+-r--r--r--  1 6058     system      76027 Apr 18  1991 job.c
+-r--r--r--  1 6058     system      10442 Apr 18  1991 job.h
+-r--r--r--  1 6058     system      10250 Apr 18  1991 list.h
+-r--r--r--  1 6058     system       5477 Apr 18  1991 lst.h
+dr-xrwxr-x  2 6058     system       1024 Mar 16 16:30 lst.lib
+-r--r--r--  1 6058     system      19935 Apr 18  1991 main.c
+-r--r--r--  1 6058     system      22751 Aug  5  1991 make.1
+-r--r--r--  1 6058     system      27266 Apr 18  1991 make.c
+-r--r--r--  1 6058     system      14324 Apr 18  1991 make.h
+-r--r--r--  1 6058     system       4014 Apr 18  1991 nonints.h
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:30 obj -> /usr/obj/usr.bin/make
+-r--r--r--  1 6058     system      60430 Apr 18  1991 parse.c
+-r--r--r--  1 6058     system       2018 Apr 18  1991 pathnames.h
+-r--r--r--  1 6058     system       3531 Apr 18  1991 sprite.h
+-r--r--r--  1 6058     system       8656 Apr 18  1991 str.c
+-r--r--r--  1 6058     system      60513 Apr 18  1991 suff.c
+-r--r--r--  1 6058     system      16132 Apr 18  1991 targ.c
+-r--r--r--  1 6058     system      52786 Apr 18  1991 var.c
+
+usr.bin/make/lst.lib:
+total 99
+dr-xrwxr-x  2 6058     system       1024 Mar 16 16:30 .
+dr-xrwxr-x  3 6058     system       1024 Mar 16 16:31 ..
+-r--r--r--  1 6058     system       3751 Apr 18  1991 lstAppend.c
+-r--r--r--  1 6058     system       2651 Apr 18  1991 lstAtEnd.c
+-r--r--r--  1 6058     system       2690 Apr 18  1991 lstAtFront.c
+-r--r--r--  1 6058     system       2916 Apr 18  1991 lstClose.c
+-r--r--r--  1 6058     system       6676 Apr 18  1991 lstConcat.c
+-r--r--r--  1 6058     system       2586 Apr 18  1991 lstDatum.c
+-r--r--r--  1 6058     system       2871 Apr 18  1991 lstDeQueue.c
+-r--r--r--  1 6058     system       3258 Apr 18  1991 lstDestroy.c
+-r--r--r--  1 6058     system       3333 Apr 18  1991 lstDupl.c
+-r--r--r--  1 6058     system       2738 Apr 18  1991 lstEnQueue.c
+-r--r--r--  1 6058     system       2592 Apr 18  1991 lstFind.c
+-r--r--r--  1 6058     system       3159 Apr 18  1991 lstFindFrom.c
+-r--r--r--  1 6058     system       2578 Apr 18  1991 lstFirst.c
+-r--r--r--  1 6058     system       2729 Apr 18  1991 lstForEach.c
+-r--r--r--  1 6058     system       3601 Apr 18  1991 lstForEachFrom.c
+-r--r--r--  1 6058     system       2728 Apr 18  1991 lstInit.c
+-r--r--r--  1 6058     system       3663 Apr 18  1991 lstInsert.c
+-r--r--r--  1 6058     system       3853 Apr 18  1991 lstInt.h
+-r--r--r--  1 6058     system       3228 Apr 18  1991 lstIsAtEnd.c
+-r--r--r--  1 6058     system       2620 Apr 18  1991 lstIsEmpty.c
+-r--r--r--  1 6058     system       2577 Apr 18  1991 lstLast.c
+-r--r--r--  1 6058     system       2515 Apr 18  1991 lstMember.c
+-r--r--r--  1 6058     system       3857 Apr 18  1991 lstNext.c
+-r--r--r--  1 6058     system       3172 Apr 18  1991 lstOpen.c
+-r--r--r--  1 6058     system       4311 Apr 18  1991 lstRemove.c
+-r--r--r--  1 6058     system       2652 Apr 18  1991 lstReplace.c
+-r--r--r--  1 6058     system       2679 Apr 18  1991 lstSucc.c
+
+usr.bin/man:
+total 7
+dr-xrwxr-x  5 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         92 May 27  1990 Makefile
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 apropos
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 man
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 whatis
+
+usr.bin/man/apropos:
+total 13
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x  5 6058     system        512 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        157 May 27  1990 Makefile
+-r--r--r--  1 6058     system       3650 Apr 18  1991 apropos.1
+-r--r--r--  1 6058     system       5035 Apr 18  1991 apropos.c
+lrwxrwxr-x  1 6058     system         28 Mar 16 16:30 obj -> /usr/obj/usr.bin/man/apropos
+
+usr.bin/man/man:
+total 33
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x  5 6058     system        512 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        154 Sep 30  1990 Makefile
+-r--r--r--  1 6058     system       5568 Apr 18  1991 config.c
+-r--r--r--  1 6058     system       5190 Apr 29  1991 man.1
+-r--r--r--  1 6058     system       8618 Apr 18  1991 man.c
+-r--r--r--  1 6058     system       5301 May 10  1991 man.conf.5
+lrwxrwxr-x  1 6058     system         24 Mar 16 16:30 obj -> /usr/obj/usr.bin/man/man
+-r--r--r--  1 6058     system       1979 Apr 18  1991 pathnames.h
+
+usr.bin/man/whatis:
+total 13
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x  5 6058     system        512 Mar 16 16:30 ..
+-r--r--r--  1 6058     system        155 May 27  1990 Makefile
+lrwxrwxr-x  1 6058     system         27 Mar 16 16:30 obj -> /usr/obj/usr.bin/man/whatis
+-r--r--r--  1 6058     system       3310 Apr 23  1991 whatis.1
+-r--r--r--  1 6058     system       4980 Apr 18  1991 whatis.c
+
+usr.bin/mesg:
+total 11
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         74 May 11  1990 Makefile
+-r--r--r--  1 6058     system       2994 Aug  5  1991 mesg.1
+-r--r--r--  1 6058     system       2994 Apr 18  1991 mesg.c
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:30 obj -> /usr/obj/usr.bin/mesg
+
+usr.bin/mkfifo:
+total 12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         76 May 11  1990 Makefile
+-r--r--r--  1 6058     system       2771 Jul  1  1991 mkfifo.1
+-r--r--r--  1 6058     system       3122 Apr 18  1991 mkfifo.c
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:30 obj -> /usr/obj/usr.bin/mkfifo
+
+usr.bin/more:
+total 57
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        295 Feb 10 11:36 Makefile
+-r--r--r--  1 6058     system      10243 Apr 18  1991 more.1
+-r--r--r--  1 6058     system      37010 Feb 10 11:36 more.c
+-r--r--r--  1 6058     system       1130 May  5  1988 more.help
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:28 obj -> /usr/obj/usr.bin/more
+-r--r--r--  1 6058     system       1937 Apr 18  1991 pathnames.h
+
+usr.bin/msgs:
+total 30
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        131 May 29  1990 Makefile
+-r--r--r--  1 6058     system       5965 Aug  5  1991 msgs.1
+-r--r--r--  1 6058     system      17323 Apr 18  1991 msgs.c
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:30 obj -> /usr/obj/usr.bin/msgs
+-r--r--r--  1 6058     system       2033 Apr 18  1991 pathnames.h
+
+usr.bin/nfsstat:
+total 19
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        117 Jan 17  1991 Makefile
+-r--r--r--  1 6058     system       2832 Aug  5  1991 nfsstat.1
+-r--r--r--  1 6058     system      10392 Jul  1  1991 nfsstat.c
+lrwxrwxr-x  1 6058     system         24 Mar 16 16:29 obj -> /usr/obj/usr.bin/nfsstat
+
+usr.bin/nice:
+total 12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         74 May 11  1990 Makefile
+-r--r--r--  1 6058     system       3137 Aug  5  1991 nice.1
+-r--r--r--  1 6058     system       3055 Apr 18  1991 nice.c
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:30 obj -> /usr/obj/usr.bin/nice
+
+usr.bin/nohup:
+total 12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         75 May 11  1990 Makefile
+-r--r--r--  1 6058     system       3036 Aug  5  1991 nohup.1
+-r--r--r--  1 6058     system       3455 Apr 18  1991 nohup.c
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:28 obj -> /usr/obj/usr.bin/nohup
+
+usr.bin/pagesize:
+total 11
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         78 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         25 Mar 16 16:30 obj -> /usr/obj/usr.bin/pagesize
+-r--r--r--  1 6058     system       2288 Apr 18  1991 pagesize.1
+-r--r--r--  1 6058     system       2123 Apr 18  1991 pagesize.c
+
+usr.bin/passwd:
+total 18
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        269 Feb 25 09:52 Makefile
+-r--r--r--  1 6058     system       4452 Feb 25 09:51 local_passwd.c
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:31 obj -> /usr/obj/usr.bin/passwd
+-r--r--r--  1 6058     system       3588 Aug  5  1991 passwd.1
+-r--r--r--  1 6058     system       3228 Jul  6  1991 passwd.c
+
+usr.bin/paste:
+total 15
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         75 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:29 obj -> /usr/obj/usr.bin/paste
+-r--r--r--  1 6058     system       4073 Aug  5  1991 paste.1
+-r--r--r--  1 6058     system       5841 Apr 18  1991 paste.c
+
+usr.bin/printenv:
+total 12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        103 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         25 Mar 16 16:31 obj -> /usr/obj/usr.bin/printenv
+-r--r--r--  1 6058     system       3231 Aug  5  1991 printenv.1
+-r--r--r--  1 6058     system       2519 Apr 18  1991 printenv.c
+
+usr.bin/printf:
+total 21
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         76 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:31 obj -> /usr/obj/usr.bin/printf
+-r--r--r--  1 6058     system       8239 Aug  5  1991 printf.1
+-r--r--r--  1 6058     system       6998 Apr 18  1991 printf.c
+
+usr.bin/rdist:
+total 104
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        204 Feb 10 11:36 Makefile
+-r--r--r--  1 6058     system         85 Jun 25  1990 cron.entry
+-r--r--r--  1 6058     system       4716 Apr 18  1991 defs.h
+-r--r--r--  1 6058     system      12815 Feb 10 11:36 docmd.c
+-r--r--r--  1 6058     system      12005 Apr 18  1991 expand.c
+-r--r--r--  1 6058     system       9993 Feb 10 11:36 gram.y
+-r--r--r--  1 6058     system       4205 Apr 18  1991 lookup.c
+-r--r--r--  1 6058     system       6823 Apr 18  1991 main.c
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:28 obj -> /usr/obj/usr.bin/rdist
+-r--r--r--  1 6058     system       1918 Apr 18  1991 pathnames.h
+-r--r--r--  1 6058     system      12855 Aug  5  1991 rdist.1
+-r--r--r--  1 6058     system      31591 Apr 18  1991 server.c
+
+usr.bin/renice:
+total 13
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         76 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:28 obj -> /usr/obj/usr.bin/renice
+-r--r--r--  1 6058     system       4038 Apr 18  1991 renice.8
+-r--r--r--  1 6058     system       3760 Apr 18  1991 renice.c
+
+usr.bin/rlogin:
+total 30
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        117 Feb 25 09:22 Makefile
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:28 obj -> /usr/obj/usr.bin/rlogin
+-r--r--r--  1 6058     system       5439 Aug  5  1991 rlogin.1
+-r--r--r--  1 6058     system      18494 Apr 18  1991 rlogin.c
+
+usr.bin/rsh:
+total 23
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        139 Feb 25 09:22 Makefile
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:30 obj -> /usr/obj/usr.bin/rsh
+-r--r--r--  1 6058     system       1908 Apr 18  1991 pathnames.h
+-r--r--r--  1 6058     system       4921 Aug  5  1991 rsh.1
+-r--r--r--  1 6058     system      10295 Jul  1  1991 rsh.c
+
+usr.bin/script:
+total 15
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         76 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:30 obj -> /usr/obj/usr.bin/script
+-r--r--r--  1 6058     system       3564 Aug  5  1991 script.1
+-r--r--r--  1 6058     system       5923 Apr 18  1991 script.c
+
+usr.bin/shar:
+total 12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        264 May 23  1990 Makefile
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:29 obj -> /usr/obj/usr.bin/shar
+-r--r--r--  1 6058     system       3209 Apr 21  1991 shar.1
+-r--r--r--  1 6058     system       2450 Apr 18  1991 shar.sh
+
+usr.bin/showmount:
+total 16
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        109 Jan 17  1991 Makefile
+lrwxrwxr-x  1 6058     system         26 Mar 16 16:29 obj -> /usr/obj/usr.bin/showmount
+-r--r--r--  1 6058     system       3026 Apr 18  1991 showmount.8
+-r--r--r--  1 6058     system       8163 Apr 18  1991 showmount.c
+
+usr.bin/soelim:
+total 13
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         76 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:30 obj -> /usr/obj/usr.bin/soelim
+-r--r--r--  1 6058     system       3075 Apr 22  1991 soelim.1
+-r--r--r--  1 6058     system       3967 Apr 18  1991 soelim.c
+
+usr.bin/split:
+total 16
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         75 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:31 obj -> /usr/obj/usr.bin/split
+-r--r--r--  1 6058     system       3135 Aug  5  1991 split.1
+-r--r--r--  1 6058     system       6381 Apr 18  1991 split.c
+
+usr.bin/su:
+total 21
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         98 Feb 25 09:55 Makefile
+lrwxrwxr-x  1 6058     system         19 Mar 16 16:31 obj -> /usr/obj/usr.bin/su
+-r--r--r--  1 6058     system       4869 Aug  5  1991 su.1
+-r--r--r--  1 6058     system      10653 Feb 25 09:55 su.c
+
+usr.bin/talk:
+total 63
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        248 Feb 10 12:05 Makefile
+-r--r--r--  1 6058     system       3803 Apr 18  1991 ctl.c
+-r--r--r--  1 6058     system       3911 Apr 18  1991 ctl_transact.c
+-r--r--r--  1 6058     system       5120 Apr 18  1991 display.c
+-r--r--r--  1 6058     system       3123 Apr 18  1991 get_addrs.c
+-r--r--r--  1 6058     system       3809 Apr 18  1991 get_names.c
+-r--r--r--  1 6058     system       4266 Apr 18  1991 init_disp.c
+-r--r--r--  1 6058     system       6003 Apr 18  1991 invite.c
+-r--r--r--  1 6058     system       4162 Apr 18  1991 io.c
+-r--r--r--  1 6058     system       3841 Apr 18  1991 look_up.c
+-r--r--r--  1 6058     system       2691 Apr 18  1991 msgs.c
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:31 obj -> /usr/obj/usr.bin/talk
+-r--r--r--  1 6058     system       4168 Apr 22  1991 talk.1
+-r--r--r--  1 6058     system       2776 Apr 18  1991 talk.c
+-r--r--r--  1 6058     system       2229 Apr 18  1991 talk.h
+-r--r--r--  1 6058     system       2123 Apr 18  1991 talk_ctl.h
+
+usr.bin/tee:
+total 12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         73 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:31 obj -> /usr/obj/usr.bin/tee
+-r--r--r--  1 6058     system       2831 Aug  5  1991 tee.1
+-r--r--r--  1 6058     system       3869 May  6  1991 tee.c
+
+usr.bin/telnet:
+total 286
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system       2103 Mar  1 13:49 Makefile
+-r--r--r--  1 6058     system      20050 Mar  1  1991 README
+-r--r--r--  1 6058     system       3110 Apr 18  1991 authenc.c
+-r--r--r--  1 6058     system      65607 Mar  1 13:49 commands.c
+-r--r--r--  1 6058     system       2644 Apr 18  1991 defines.h
+-r--r--r--  1 6058     system      13604 Mar  1 13:49 externs.h
+-r--r--r--  1 6058     system       2201 Apr 18  1991 fdset.h
+-r--r--r--  1 6058     system       2093 Apr 18  1991 general.h
+-r--r--r--  1 6058     system       6461 Apr 18  1991 main.c
+-r--r--r--  1 6058     system       4609 Apr 18  1991 network.c
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:29 obj -> /usr/obj/usr.bin/telnet
+-r--r--r--  1 6058     system       8303 Apr 18  1991 ring.c
+-r--r--r--  1 6058     system       3583 Apr 18  1991 ring.h
+-r--r--r--  1 6058     system      24962 Apr 18  1991 sys_bsd.c
+-r--r--r--  1 6058     system      23676 Aug  5  1991 telnet.1
+-r--r--r--  1 6058     system      52946 May  8  1991 telnet.c
+-r--r--r--  1 6058     system       5436 Apr 18  1991 terminal.c
+-r--r--r--  1 6058     system       9447 Apr 18  1991 tn3270.c
+-r--r--r--  1 6058     system       2294 Apr 18  1991 types.h
+-r--r--r--  1 6058     system      21757 Apr 18  1991 utilities.c
+
+usr.bin/tftp:
+total 44
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        105 May 11  1990 Makefile
+-r--r--r--  1 6058     system      13652 Apr 18  1991 main.c
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:29 obj -> /usr/obj/usr.bin/tftp
+-r--r--r--  1 6058     system       5004 Apr 22  1991 tftp.1
+-r--r--r--  1 6058     system      10363 Apr 18  1991 tftp.c
+-r--r--r--  1 6058     system       8424 Apr 18  1991 tftpsubs.c
+
+usr.bin/time:
+total 13
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         74 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:31 obj -> /usr/obj/usr.bin/time
+-r--r--r--  1 6058     system       2970 Apr 26  1991 time.1
+-r--r--r--  1 6058     system       4791 Apr 26  1991 time.c
+
+usr.bin/tip:
+total 127
+dr-xrwxr-x  3 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system       1580 May 11  1990 Makefile
+-r--r--r--  1 6058     system       1743 Jun 18  1983 README
+-r--r--r--  1 6058     system       5414 Apr 18  1991 acu.c
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 aculib
+-r--r--r--  1 6058     system       3468 Apr 18  1991 acutab.c
+-r--r--r--  1 6058     system      17598 Apr 18  1991 cmds.c
+-r--r--r--  1 6058     system       3002 Apr 18  1991 cmdtab.c
+-r--r--r--  1 6058     system       3624 Apr 18  1991 cu.c
+-r--r--r--  1 6058     system       2934 Apr 18  1991 hunt.c
+-r--r--r--  1 6058     system       2766 Apr 18  1991 log.c
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:29 obj -> /usr/obj/usr.bin/tip
+-r--r--r--  1 6058     system       2658 Apr 18  1991 partab.c
+-r--r--r--  1 6058     system       2130 Apr 18  1991 pathnames.h
+-r--r--r--  1 6058     system       9805 Apr 18  1991 remcap.c
+-r--r--r--  1 6058     system       5080 Apr 18  1991 remote.c
+-r--r--r--  1 6058     system      12520 Aug  5  1991 tip.1
+-r--r--r--  1 6058     system      12757 Apr 18  1991 tip.c
+-r--r--r--  1 6058     system       8426 Apr 18  1991 tip.h
+-r--r--r--  1 6058     system       4241 Apr 18  1991 tipout.c
+-r--r--r--  1 6058     system       3386 Apr 18  1991 uucplock.c
+-r--r--r--  1 6058     system       6974 Apr 18  1991 value.c
+-r--r--r--  1 6058     system       4584 Apr 18  1991 vars.c
+
+usr.bin/tip/aculib:
+total 56
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x  3 6058     system        512 Mar 16 16:29 ..
+-r--r--r--  1 6058     system       4289 Apr 18  1991 biz22.c
+-r--r--r--  1 6058     system       5442 Apr 18  1991 biz31.c
+-r--r--r--  1 6058     system       8523 Apr 18  1991 courier.c
+-r--r--r--  1 6058     system       3456 Apr 18  1991 df.c
+-r--r--r--  1 6058     system       3599 Apr 18  1991 dn11.c
+-r--r--r--  1 6058     system       7214 Apr 18  1991 hayes.c
+-r--r--r--  1 6058     system       5051 Apr 18  1991 v3451.c
+-r--r--r--  1 6058     system       6924 Apr 18  1991 v831.c
+-r--r--r--  1 6058     system       5977 Apr 18  1991 ventel.c
+
+usr.bin/tn3270:
+total 77
+dr-xrwxr-x  9 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 api
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 ascii
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 ctlr
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 general
+-r--r--r--  1 6058     system       6781 Mar  1 13:49 makefile
+-r--r--r--  1 6058     system      14999 Mar  1 13:49 map3270.0
+-r--r--r--  1 6058     system      13685 Aug  5  1991 map3270.5
+-r--r--r--  1 6058     system       4138 Mar  1 13:49 mset.0
+-r--r--r--  1 6058     system       5217 Aug  5  1991 mset.1
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 sys_curses
+-r--r--r--  1 6058     system       2363 Apr 26  1991 telextrn.h
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 telnet
+-r--r--r--  1 6058     system       7909 Mar  1 13:49 tn3270.0
+-r--r--r--  1 6058     system       8729 Aug  5  1991 tn3270.1
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 tools
+
+usr.bin/tn3270/api:
+total 79
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x  9 6058     system        512 Mar 16 16:29 ..
+-r--r--r--  1 6058     system         80 Mar  1 13:49 api.order
+-r--r--r--  1 6058     system       7812 Apr 26  1991 api_bsd.c
+-r--r--r--  1 6058     system       9551 Apr 26  1991 api_exch.c
+-r--r--r--  1 6058     system       5285 Apr 26  1991 api_exch.h
+-r--r--r--  1 6058     system       9353 Apr 26  1991 apilib.c
+-r--r--r--  1 6058     system       2127 Apr 26  1991 apilib.h
+-r--r--r--  1 6058     system       5209 Apr 26  1991 asc_ebc.c
+-r--r--r--  1 6058     system       2183 Apr 26  1991 asc_ebc.h
+-r--r--r--  1 6058     system       3002 Apr 26  1991 astosc.c
+-r--r--r--  1 6058     system       2479 Apr 26  1991 astosc.h
+-r--r--r--  1 6058     system       4186 Apr 26  1991 dctype.c
+-r--r--r--  1 6058     system       2439 Apr 26  1991 dctype.h
+-r--r--r--  1 6058     system       2063 Apr 26  1991 disp_asc.c
+-r--r--r--  1 6058     system       2098 Apr 26  1991 disp_asc.h
+-r--r--r--  1 6058     system       5208 Apr 26  1991 ebc_disp.c
+-r--r--r--  1 6058     system       1927 Apr 26  1991 ebc_disp.h
+-r--r--r--  1 6058     system       1830 Mar  2 12:00 makefile
+
+usr.bin/tn3270/ascii:
+total 53
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x  9 6058     system        512 Mar 16 16:29 ..
+-r--r--r--  1 6058     system         19 Mar  1 13:49 ascii.order
+-r--r--r--  1 6058     system       4189 Apr 26  1991 default.map
+-r--r--r--  1 6058     system       2430 Mar  2 12:02 makefile
+-r--r--r--  1 6058     system      20184 Apr 26  1991 map3270.c
+-r--r--r--  1 6058     system       1940 Apr 26  1991 map3270.h
+-r--r--r--  1 6058     system       9718 Apr 26  1991 mset.c
+-r--r--r--  1 6058     system       2297 Apr 26  1991 state.h
+-r--r--r--  1 6058     system       7081 Apr 26  1991 termin.c
+
+usr.bin/tn3270/ctlr:
+total 139
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x  9 6058     system        512 Mar 16 16:29 ..
+-r--r--r--  1 6058     system       3855 Apr 26  1991 3180.kbd
+-r--r--r--  1 6058     system       3878 Apr 26  1991 3270pc.kbd
+-r--r--r--  1 6058     system      19767 Apr 26  1991 api.c
+-r--r--r--  1 6058     system       8732 Apr 26  1991 api.h
+-r--r--r--  1 6058     system         43 Mar  1 13:49 ctlr.order
+-r--r--r--  1 6058     system       2127 Apr 26  1991 declare.h
+-r--r--r--  1 6058     system       2443 Apr 26  1991 externs.h
+-r--r--r--  1 6058     system       2213 Apr 26  1991 function.c
+-r--r--r--  1 6058     system       4948 Apr 26  1991 function.h
+-r--r--r--  1 6058     system       7918 Apr 26  1991 hostctlr.h
+-r--r--r--  1 6058     system      27236 Apr 26  1991 inbound.c
+-r--r--r--  1 6058     system       3217 Mar  2 12:03 makefile
+-r--r--r--  1 6058     system       2126 Apr 26  1991 oia.c
+-r--r--r--  1 6058     system       6434 Apr 26  1991 oia.h
+-r--r--r--  1 6058     system       4379 Apr 26  1991 options.c
+-r--r--r--  1 6058     system       1990 Apr 26  1991 options.h
+-r--r--r--  1 6058     system      15270 Apr 26  1991 outbound.c
+-r--r--r--  1 6058     system       5585 Apr 26  1991 screen.h
+-r--r--r--  1 6058     system       2181 Apr 26  1991 scrnctlr.h
+-r--r--r--  1 6058     system       4212 Apr 26  1991 unix.kbd
+
+usr.bin/tn3270/general:
+total 24
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x  9 6058     system        512 Mar 16 16:29 ..
+-r--r--r--  1 6058     system       3335 Apr 26  1991 genbsubs.c
+-r--r--r--  1 6058     system       2708 Apr 26  1991 general.h
+-r--r--r--  1 6058     system         21 Mar  1 13:49 general.order
+-r--r--r--  1 6058     system       2607 Apr 26  1991 globals.c
+-r--r--r--  1 6058     system       4080 Apr 26  1991 globals.h
+-r--r--r--  1 6058     system       2698 Apr 26  1991 makefile
+-r--r--r--  1 6058     system       3102 Apr 26  1991 vaxbsubs.s
+
+usr.bin/tn3270/sys_curses:
+total 53
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x  9 6058     system        512 Mar 16 16:29 ..
+-r--r--r--  1 6058     system       2381 Apr 26  1991 makefile
+-r--r--r--  1 6058     system      18005 Apr 26  1991 system.c
+lrwxrwxr-x  1 6058     system         13 Mar 16 16:29 telextrn.h -> ../telextrn.h
+-r--r--r--  1 6058     system       3688 Apr 26  1991 terminal.h
+-r--r--r--  1 6058     system      24657 Apr 26  1991 termout.c
+
+usr.bin/tn3270/telnet:
+total 5
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x  9 6058     system        512 Mar 16 16:29 ..
+-r--r--r--  1 6058     system       2049 Apr 26  1991 Makefile
+
+usr.bin/tn3270/tools:
+total 80
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x  9 6058     system        512 Mar 16 16:29 ..
+-r--r--r--  1 6058     system       7873 Apr 26  1991 dohits.c
+-r--r--r--  1 6058     system       2310 Apr 26  1991 dohits.h
+lrwxrwxr-x  1 6058     system         17 Mar 16 16:29 ebc_disp.h -> ../api/ebc_disp.h
+-r--r--r--  1 6058     system       5741 Apr 26  1991 ectype.c
+-r--r--r--  1 6058     system       2444 Apr 26  1991 ectype.h
+-r--r--r--  1 6058     system       4005 Apr 26  1991 makefile
+-r--r--r--  1 6058     system       2710 Apr 26  1991 mkastods.c
+-r--r--r--  1 6058     system       4980 Apr 26  1991 mkastosc.c
+-r--r--r--  1 6058     system       3015 Apr 26  1991 mkdctype.c
+-r--r--r--  1 6058     system       2722 Apr 26  1991 mkdstoas.c
+-r--r--r--  1 6058     system       4440 Apr 26  1991 mkhits.c
+-r--r--r--  1 6058     system      20649 Apr 26  1991 mkmake.y
+-r--r--r--  1 6058     system      12480 Apr 26  1991 prt3270.c
+
+usr.bin/touch:
+total 13
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         75 Jan 16  1991 Makefile
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:31 obj -> /usr/obj/usr.bin/touch
+-r--r--r--  1 6058     system       2640 Jun 27  1991 touch.1
+-r--r--r--  1 6058     system       4564 Apr 26  1991 touch.c
+
+usr.bin/tput:
+total 15
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        255 May 11  1990 Makefile
+-r--r--r--  1 6058     system       1860 Apr 18  1991 clear.sh
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:31 obj -> /usr/obj/usr.bin/tput
+-r--r--r--  1 6058     system       3606 Apr 23  1991 tput.1
+-r--r--r--  1 6058     system       3825 Apr 18  1991 tput.c
+
+usr.bin/tr:
+total 18
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         72 Jan 26  1991 Makefile
+lrwxrwxr-x  1 6058     system         19 Mar 16 16:31 obj -> /usr/obj/usr.bin/tr
+-r--r--r--  1 6058     system       6312 Aug  5  1991 tr.1
+-r--r--r--  1 6058     system       5786 Apr 26  1991 tr.c
+
+usr.bin/true:
+total 11
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         74 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:31 obj -> /usr/obj/usr.bin/true
+-r--r--r--  1 6058     system       2515 Jun 27  1991 true.1
+-r--r--r--  1 6058     system       2095 Apr 26  1991 true.c
+
+usr.bin/tty:
+total 11
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         73 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:31 obj -> /usr/obj/usr.bin/tty
+-r--r--r--  1 6058     system       2873 Aug  5  1991 tty.1
+-r--r--r--  1 6058     system       2442 Apr 18  1991 tty.c
+
+usr.bin/ul:
+total 20
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        110 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         19 Mar 16 16:30 obj -> /usr/obj/usr.bin/ul
+-r--r--r--  1 6058     system       3694 Apr 26  1991 ul.1
+-r--r--r--  1 6058     system      10427 Apr 26  1991 ul.c
+
+usr.bin/unexpand:
+total 9
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         91 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         25 Mar 16 16:30 obj -> /usr/obj/usr.bin/unexpand
+-r--r--r--  1 6058     system       3385 Apr 18  1991 unexpand.c
+
+usr.bin/uniq:
+total 16
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         74 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:31 obj -> /usr/obj/usr.bin/uniq
+-r--r--r--  1 6058     system       4921 Jun 27  1991 uniq.1
+-r--r--r--  1 6058     system       5277 Apr 26  1991 uniq.c
+
+usr.bin/unvis:
+total 12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         74 Jun  1  1990 Makefile
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:29 obj -> /usr/obj/usr.bin/unvis
+-r--r--r--  1 6058     system       2301 Apr 23  1991 unvis.1
+-r--r--r--  1 6058     system       3801 Apr 18  1991 unvis.c
+
+usr.bin/users:
+total 12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         75 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:31 obj -> /usr/obj/usr.bin/users
+-r--r--r--  1 6058     system       2321 Apr 23  1991 users.1
+-r--r--r--  1 6058     system       3249 Apr 18  1991 users.c
+
+usr.bin/uudecode:
+total 10
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         91 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         25 Mar 16 16:30 obj -> /usr/obj/usr.bin/uudecode
+-r--r--r--  1 6058     system       4859 Apr 18  1991 uudecode.c
+
+usr.bin/uuencode:
+total 17
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        149 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         25 Mar 16 16:28 obj -> /usr/obj/usr.bin/uuencode
+-r--r--r--  1 6058     system       3470 Apr 23  1991 uuencode.1
+-r--r--r--  1 6058     system       3943 Apr 18  1991 uuencode.c
+-r--r--r--  1 6058     system       3726 May 10  1991 uuencode.format.5
+
+usr.bin/vacation:
+total 19
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         94 Apr  1  1991 Makefile
+lrwxrwxr-x  1 6058     system         25 Mar 16 16:29 obj -> /usr/obj/usr.bin/vacation
+-r--r--r--  1 6058     system       4925 Aug  5  1991 vacation.1
+-r--r--r--  1 6058     system       8925 Apr 18  1991 vacation.c
+
+usr.bin/vis:
+total 18
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:28 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         94 Jun 29  1990 Makefile
+-r--r--r--  1 6058     system       2419 Apr 18  1991 foldit.c
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:28 obj -> /usr/obj/usr.bin/vis
+-r--r--r--  1 6058     system       4257 Apr 23  1991 vis.1
+-r--r--r--  1 6058     system       4357 Apr 18  1991 vis.c
+
+usr.bin/wall:
+total 19
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        121 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:31 obj -> /usr/obj/usr.bin/wall
+-r--r--r--  1 6058     system       4661 Jul  1  1991 ttymsg.c
+-r--r--r--  1 6058     system       2438 Apr 23  1991 wall.1
+-r--r--r--  1 6058     system       5598 Apr 18  1991 wall.c
+
+usr.bin/wc:
+total 15
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         72 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         19 Mar 16 16:31 obj -> /usr/obj/usr.bin/wc
+-r--r--r--  1 6058     system       3864 Jun 27  1991 wc.1
+-r--r--r--  1 6058     system       6078 Apr 26  1991 wc.c
+
+usr.bin/what:
+total 11
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         74 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:31 obj -> /usr/obj/usr.bin/what
+-r--r--r--  1 6058     system       2579 Apr 26  1991 what.1
+-r--r--r--  1 6058     system       2715 Apr 26  1991 what.c
+
+usr.bin/whereis:
+total 16
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         77 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         24 Mar 16 16:29 obj -> /usr/obj/usr.bin/whereis
+-r--r--r--  1 6058     system       3935 Apr 23  1991 whereis.1
+-r--r--r--  1 6058     system       7119 Apr 18  1991 whereis.c
+
+usr.bin/which:
+total 11
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        198 Jul  1  1990 Makefile
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:29 obj -> /usr/obj/usr.bin/which
+-r--r--r--  1 6058     system       2767 Apr 23  1991 which.1
+-r--r--r--  1 6058     system       2499 Apr 18  1991 which.csh
+
+usr.bin/who:
+total 14
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         73 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:31 obj -> /usr/obj/usr.bin/who
+-r--r--r--  1 6058     system       3273 Apr 26  1991 who.1
+-r--r--r--  1 6058     system       4181 Apr 26  1991 who.c
+
+usr.bin/whoami:
+total 11
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         76 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:31 obj -> /usr/obj/usr.bin/whoami
+-r--r--r--  1 6058     system       2341 Apr 26  1991 whoami.1
+-r--r--r--  1 6058     system       2313 Apr 26  1991 whoami.c
+
+usr.bin/whois:
+total 12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         75 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:29 obj -> /usr/obj/usr.bin/whois
+-r--r--r--  1 6058     system       2887 Apr 23  1991 whois.1
+-r--r--r--  1 6058     system       3797 Apr 18  1991 whois.c
+
+usr.bin/write:
+total 18
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:31 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system        100 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:31 obj -> /usr/obj/usr.bin/write
+-r--r--r--  1 6058     system       3774 Apr 24  1991 write.1
+-r--r--r--  1 6058     system       8454 Apr 18  1991 write.c
+
+usr.bin/xargs:
+total 21
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:30 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         75 Apr 27  1991 Makefile
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:30 obj -> /usr/obj/usr.bin/xargs
+-r--r--r--  1 6058     system       1902 Apr 27  1991 pathnames.h
+-r--r--r--  1 6058     system       5001 Jun 27  1991 xargs.1
+-r--r--r--  1 6058     system       8318 Jun 19  1991 xargs.c
+
+usr.bin/yes:
+total 11
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:29 .
+dr-xrwxr-x105 6058     system       2048 Mar 16 16:31 ..
+-r--r--r--  1 6058     system         73 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         20 Mar 16 16:29 obj -> /usr/obj/usr.bin/yes
+-r--r--r--  1 6058     system       2155 Apr 24  1991 yes.1
+-r--r--r--  1 6058     system       2182 Apr 18  1991 yes.c
+
+usr.sbin:
+total 25
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x  8 6058     system        512 Mar 16 16:28 ..
+-r--r--r--  1 6058     system        333 Mar  1 13:49 Makefile
+-r--r--r--  1 6058     system         62 May 12  1990 Makefile.inc
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 bad144
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 chown
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 chroot
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 config
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 dev_mkdb
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 diskpart
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 inetd
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 kvm_mkdb
+dr-xrwxr-x 11 6058     system        512 Mar 16 16:27 lpr
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 mtree
+dr-xrwxr-x  8 6058     system       1024 Mar 16 16:26 named
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 portmap
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 pwd_mkdb
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 rmt
+dr-xrwxr-x  7 6058     system        512 Mar 16 16:27 sendmail
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 sliplogin
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 syslogd
+dr-xrwxr-x  4 6058     system        512 Mar 16 16:27 timed
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 traceroute
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 update
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 vipw
+
+usr.sbin/bad144:
+total 28
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        106 May 11  1990 Makefile
+-r--r--r--  1 6058     system       6419 Apr 18  1991 bad144.8
+-r--r--r--  1 6058     system      16650 Feb 19 19:29 bad144.c
+lrwxrwxr-x  1 6058     system         24 Mar 16 16:27 obj -> /usr/obj/usr.sbin/bad144
+
+usr.sbin/chown:
+total 18
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        164 Oct 26  1990 Makefile
+-r--r--r--  1 6058     system       3462 Jun 27  1991 chgrp.1
+-r--r--r--  1 6058     system       3614 Jun 17  1991 chown.8
+-r--r--r--  1 6058     system       5184 Apr 18  1991 chown.c
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:27 obj -> /usr/obj/usr.sbin/chown
+
+usr.sbin/chroot:
+total 10
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system         91 May 11  1990 Makefile
+-r--r--r--  1 6058     system       2649 Apr 18  1991 chroot.8
+-r--r--r--  1 6058     system       2703 Apr 18  1991 chroot.c
+lrwxrwxr-x  1 6058     system         24 Mar 16 16:26 obj -> /usr/obj/usr.sbin/chroot
+
+usr.sbin/config:
+total 109
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        279 Feb 12 23:10 Makefile
+-r--r--r--  1 6058     system       4711 Apr 19  1991 config.8
+-r--r--r--  1 6058     system       5392 Jul  1  1991 config.h
+-r--r--r--  1 6058     system      19804 Jul  1  1991 config.y
+-r--r--r--  1 6058     system       4890 Feb 24 14:38 lang.l
+-r--r--r--  1 6058     system       5829 Jul  1  1991 main.c
+-r--r--r--  1 6058     system      10159 Apr 19  1991 mkglue.c
+-r--r--r--  1 6058     system       5052 Jul  1  1991 mkheaders.c
+-r--r--r--  1 6058     system      22160 Jan 28 18:45 mkioconf.c
+-r--r--r--  1 6058     system      13616 Feb 24 14:09 mkmakefile.c
+-r--r--r--  1 6058     system       5830 Jul  1  1991 mkswapconf.c
+-r--r--r--  1 6058     system       5803 Apr 19  1991 mkubglue.c
+lrwxrwxr-x  1 6058     system         24 Mar 16 16:26 obj -> /usr/obj/usr.sbin/config
+
+usr.sbin/dev_mkdb:
+total 12
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system         95 Feb 12  1991 Makefile
+-r--r--r--  1 6058     system       2480 Aug  5  1991 dev_mkdb.8
+-r--r--r--  1 6058     system       4250 May 17  1991 dev_mkdb.c
+lrwxrwxr-x  1 6058     system         26 Mar 16 16:27 obj -> /usr/obj/usr.sbin/dev_mkdb
+
+usr.sbin/diskpart:
+total 23
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system         95 May 11  1990 Makefile
+-r--r--r--  1 6058     system       4624 Apr 19  1991 diskpart.8
+-r--r--r--  1 6058     system      14068 Apr 19  1991 diskpart.c
+lrwxrwxr-x  1 6058     system         26 Mar 16 16:26 obj -> /usr/obj/usr.sbin/diskpart
+
+usr.sbin/inetd:
+total 36
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        127 Jun 29  1990 Makefile
+-r--r--r--  1 6058     system       6171 Apr 19  1991 inetd.8
+-r--r--r--  1 6058     system      22876 Jun  3  1991 inetd.c
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:26 obj -> /usr/obj/usr.sbin/inetd
+-r--r--r--  1 6058     system       1931 Apr 19  1991 pathnames.h
+
+usr.sbin/kvm_mkdb:
+total 17
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        120 Feb 12  1991 Makefile
+-r--r--r--  1 6058     system       2534 Apr 19  1991 kvm_mkdb.8
+-r--r--r--  1 6058     system       3508 Apr 27  1991 kvm_mkdb.c
+-r--r--r--  1 6058     system       5470 Apr 27  1991 nlist.c
+lrwxrwxr-x  1 6058     system         26 Mar 16 16:27 obj -> /usr/obj/usr.sbin/kvm_mkdb
+
+usr.sbin/lpr:
+total 14
+dr-xrwxr-x 11 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        126 Feb 13 00:04 Makefile
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 common_source
+-r--r--r--  1 6058     system       1497 May  5  1988 etc.printcap
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 filters
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 lpc
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 lpd
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 lpq
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 lpr
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 lprm
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 lptest
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 pac
+
+usr.sbin/lpr/common_source:
+total 59
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x 11 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system       8667 Apr 19  1991 common.c
+-r--r--r--  1 6058     system       9924 Apr 19  1991 displayq.c
+-r--r--r--  1 6058     system       4900 Apr 19  1991 lp.h
+-r--r--r--  1 6058     system       3198 Apr 19  1991 lp.local.h
+-r--r--r--  1 6058     system       2076 Apr 19  1991 lpc.h
+-r--r--r--  1 6058     system       2449 Apr 19  1991 pathnames.h
+-r--r--r--  1 6058     system       9758 Apr 19  1991 printcap.c
+-r--r--r--  1 6058     system       8231 Apr 19  1991 rmjob.c
+-r--r--r--  1 6058     system       3087 Apr 19  1991 startdaemon.c
+
+usr.sbin/lpr/filters:
+total 10
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x 11 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        111 May 13  1990 Makefile
+-r--r--r--  1 6058     system       5321 Apr 19  1991 lpf.c
+lrwxrwxr-x  1 6058     system         29 Mar 16 16:26 obj -> /usr/obj/usr.sbin/lpr/filters
+
+usr.sbin/lpr/lpc:
+total 42
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 11 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        278 May 13  1990 Makefile
+-r--r--r--  1 6058     system      21968 Apr 19  1991 cmds.c
+-r--r--r--  1 6058     system       3501 Apr 19  1991 cmdtab.c
+-r--r--r--  1 6058     system       5850 Apr 19  1991 lpc.8
+-r--r--r--  1 6058     system       5779 Apr 19  1991 lpc.c
+lrwxrwxr-x  1 6058     system         25 Mar 16 16:27 obj -> /usr/obj/usr.sbin/lpr/lpc
+
+usr.sbin/lpr/lpd:
+total 77
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x 11 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        302 Jan 17  1991 Makefile
+-r--r--r--  1 6058     system       7365 Apr 19  1991 lpd.8
+-r--r--r--  1 6058     system      11324 Apr 19  1991 lpd.c
+-r--r--r--  1 6058     system      15924 Apr 19  1991 lpdchar.c
+lrwxrwxr-x  1 6058     system         25 Mar 16 16:26 obj -> /usr/obj/usr.sbin/lpr/lpd
+-r--r--r--  1 6058     system      30037 Apr 30  1991 printjob.c
+-r--r--r--  1 6058     system       7123 May  4  1991 recvjob.c
+
+usr.sbin/lpr/lpq:
+total 13
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 11 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        247 Jun 19  1990 Makefile
+-r--r--r--  1 6058     system       4593 May  9  1991 lpq.1
+-r--r--r--  1 6058     system       3424 Apr 19  1991 lpq.c
+lrwxrwxr-x  1 6058     system         25 Mar 16 16:27 obj -> /usr/obj/usr.sbin/lpr/lpq
+
+usr.sbin/lpr/lpr:
+total 60
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 11 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        241 Jun 19  1990 Makefile
+-r--r--r--  1 6058     system       7387 Aug  5  1991 lpr.1
+-r--r--r--  1 6058     system      16011 Apr 19  1991 lpr.c
+-r--r--r--  1 6058     system      31948 Aug 12  1989 lpr.termios
+lrwxrwxr-x  1 6058     system         25 Mar 16 16:27 obj -> /usr/obj/usr.sbin/lpr/lpr
+
+usr.sbin/lpr/lprm:
+total 13
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 11 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        260 Jun 19  1990 Makefile
+-r--r--r--  1 6058     system       4575 May  9  1991 lprm.1
+-r--r--r--  1 6058     system       3934 Apr 19  1991 lprm.c
+lrwxrwxr-x  1 6058     system         26 Mar 16 16:27 obj -> /usr/obj/usr.sbin/lpr/lprm
+
+usr.sbin/lpr/lptest:
+total 10
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 11 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        106 May 11  1990 Makefile
+-r--r--r--  1 6058     system       2801 May  9  1991 lptest.1
+-r--r--r--  1 6058     system       2625 Apr 19  1991 lptest.c
+lrwxrwxr-x  1 6058     system         28 Mar 16 16:27 obj -> /usr/obj/usr.sbin/lpr/lptest
+
+usr.sbin/lpr/pac:
+total 18
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 11 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        211 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         25 Mar 16 16:27 obj -> /usr/obj/usr.sbin/lpr/pac
+-r--r--r--  1 6058     system       3800 Apr 19  1991 pac.8
+-r--r--r--  1 6058     system       9521 Apr 19  1991 pac.c
+
+usr.sbin/mtree:
+total 45
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        142 May 25  1990 Makefile
+-r--r--r--  1 6058     system       5679 Apr 19  1991 compare.c
+-r--r--r--  1 6058     system       6080 Apr 19  1991 create.c
+-r--r--r--  1 6058     system       7283 Aug  5  1991 mtree.1
+-r--r--r--  1 6058     system       3274 Apr 19  1991 mtree.c
+-r--r--r--  1 6058     system       3374 Apr 19  1991 mtree.h
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:26 obj -> /usr/obj/usr.sbin/mtree
+-r--r--r--  1 6058     system       7419 Apr 19  1991 spec.c
+-r--r--r--  1 6058     system       5017 Apr 19  1991 verify.c
+
+usr.sbin/named:
+total 291
+dr-xrwxr-x  8 6058     system       1024 Mar 16 16:26 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        807 Jul 28  1990 Makefile
+-r--r--r--  1 6058     system       1692 Apr 24  1991 Makefile.dist
+-r--r--r--  1 6058     system       4370 Apr 24  1991 Version.c
+-r--r--r--  1 6058     system         58 Jul  9  1988 Version.self
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 adb.scripts
+-r--r--r--  1 6058     system       4512 Apr 24  1991 db.h
+-r--r--r--  1 6058     system      19619 Apr 24  1991 db_dump.c
+-r--r--r--  1 6058     system       5396 Apr 24  1991 db_glue.c
+-r--r--r--  1 6058     system      20922 Apr 24  1991 db_load.c
+-r--r--r--  1 6058     system       4750 Apr 24  1991 db_lookup.c
+-r--r--r--  1 6058     system       3383 Apr 24  1991 db_reload.c
+-r--r--r--  1 6058     system       5075 Apr 24  1991 db_save.c
+-r--r--r--  1 6058     system      10270 Apr 24  1991 db_update.c
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 doc
+-r--r--r--  1 6058     system      13646 Apr 24  1991 named.8
+-r--r--r--  1 6058     system         93 Jun 27  1989 named.reload
+-r--r--r--  1 6058     system        136 Jun 27  1989 named.restart
+lrwxrwxr-x  1 6058     system         27 Mar 16 16:26 nameser.h -> /usr/include/arpa/nameser.h
+-r--r--r--  1 6058     system       9983 Apr 24  1991 ns.h
+-r--r--r--  1 6058     system      14096 Apr 24  1991 ns_forw.c
+-r--r--r--  1 6058     system      17814 Apr 24  1991 ns_init.c
+-r--r--r--  1 6058     system      31213 Jul  1  1991 ns_main.c
+-r--r--r--  1 6058     system      13505 Apr 24  1991 ns_maint.c
+-r--r--r--  1 6058     system      32779 Jul  1  1991 ns_req.c
+-r--r--r--  1 6058     system      40951 Apr 24  1991 ns_resp.c
+-r--r--r--  1 6058     system       4376 Apr 24  1991 ns_sort.c
+-r--r--r--  1 6058     system       5253 Apr 24  1991 ns_stats.c
+lrwxrwxr-x  1 6058     system         23 Mar 16 16:26 obj -> /usr/obj/usr.sbin/named
+-r--r--r--  1 6058     system       2648 Apr 24  1991 pathnames.h
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:26 resolv.h -> /usr/include/resolv.h
+-r--r--r--  1 6058     system       3173 Jul 21  1987 storage.c
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 test
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 testdomain
+dr-xrwxr-x  5 6058     system        512 Mar 16 16:26 tools
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 xfer
+
+usr.sbin/named/adb.scripts:
+total 5
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x  8 6058     system       1024 Mar 16 16:26 ..
+-r--r--r--  1 6058     system         87 Feb 27  1988 databuf
+-r--r--r--  1 6058     system        104 Feb 27  1988 databufs
+-r--r--r--  1 6058     system         81 Feb 27  1988 namebuf
+
+usr.sbin/named/doc:
+total 405
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x  8 6058     system       1024 Mar 16 16:26 ..
+-r--r--r--  1 6058     system      28673 Feb 28  1988 rfc1032.lpr
+-r--r--r--  1 6058     system      36037 Feb 28  1988 rfc1033.lpr
+-r--r--r--  1 6058     system     126103 Feb 28  1988 rfc1034.lpr
+-r--r--r--  1 6058     system     122549 Feb 28  1988 rfc1035.lpr
+-r--r--r--  1 6058     system      27891 Sep 15  1989 rfc1101.lpr
+-r--r--r--  1 6058     system      27823 Feb 28  1988 rfc920.lpr
+-r--r--r--  1 6058     system      18182 Apr 11  1986 rfc974.lpr
+
+usr.sbin/named/test:
+total 268
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x  8 6058     system       1024 Mar 16 16:26 ..
+-r--r--r--  1 6058     system        116 Dec  3  1984 :pwedit
+-r--r--r--  1 6058     system       1517 Dec  3  1984 atod.y
+-r--r--r--  1 6058     system     109082 Nov 30  1984 hosts.mff
+-r--r--r--  1 6058     system      83365 Dec  3  1984 ns.al2
+-r--r--r--  1 6058     system        239 Jan  7  1985 ns.boot
+-r--r--r--  1 6058     system         89 Jan  7  1985 ns.boot1
+-r--r--r--  1 6058     system        184 Jan  7  1985 ns.boot2
+-r--r--r--  1 6058     system        201 Jan  7  1985 ns.boot3
+-r--r--r--  1 6058     system        120 Jan  7  1985 ns.ca
+-r--r--r--  1 6058     system        112 Jan  7  1985 ns.ca2
+-r--r--r--  1 6058     system        208 Jan  4  1985 ns.ca3
+-r--r--r--  1 6058     system        528 Nov 13  1984 ns.db
+-r--r--r--  1 6058     system        354 Nov 30  1984 ns.db1
+-r--r--r--  1 6058     system        580 Jan  7  1985 ns.db3
+-r--r--r--  1 6058     system      51684 Dec  3  1984 ns.pw2
+
+usr.sbin/named/testdomain:
+total 5
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x  8 6058     system       1024 Mar 16 16:26 ..
+-r--r--r--  1 6058     system        195 Feb 26  1986 test.boot
+-r--r--r--  1 6058     system        369 Feb 26  1986 testcache
+-r--r--r--  1 6058     system        509 Feb 26  1986 testhosts
+
+usr.sbin/named/tools:
+total 6
+dr-xrwxr-x  5 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x  8 6058     system       1024 Mar 16 16:26 ..
+-r--r--r--  1 6058     system         98 May 29  1990 Makefile
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 nslookup
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 nsquery
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 nstest
+
+usr.sbin/named/tools/nslookup:
+total 149
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x  5 6058     system        512 Mar 16 16:26 ..
+-r--r--r--  1 6058     system        426 Feb 19 19:05 Makefile
+-r--r--r--  1 6058     system       5957 Apr 24  1991 commands.l
+-r--r--r--  1 6058     system      11237 Apr 24  1991 debug.c
+-r--r--r--  1 6058     system      21060 Apr 24  1991 getinfo.c
+-r--r--r--  1 6058     system      22137 Apr 24  1991 list.c
+-r--r--r--  1 6058     system      29701 Apr 24  1991 main.c
+-r--r--r--  1 6058     system      12965 Apr 24  1991 nslookup.8
+-r--r--r--  1 6058     system       1694 May 27  1990 nslookup.help
+lrwxrwxr-x  1 6058     system         38 Mar 16 16:26 obj -> /usr/obj/usr.sbin/named/tools/nslookup
+-r--r--r--  1 6058     system       1926 Apr 24  1991 pathnames.h
+-r--r--r--  1 6058     system       4536 Apr 24  1991 res.h
+-r--r--r--  1 6058     system      13623 Apr 24  1991 send.c
+-r--r--r--  1 6058     system       5174 Apr 24  1991 skip.c
+-r--r--r--  1 6058     system      12757 Apr 24  1991 subr.c
+
+usr.sbin/named/tools/nsquery:
+total 8
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x  5 6058     system        512 Mar 16 16:26 ..
+-r--r--r--  1 6058     system        123 May 28  1990 Makefile
+-r--r--r--  1 6058     system       3435 Apr 25  1991 nsquery.c
+lrwxrwxr-x  1 6058     system         37 Mar 16 16:26 obj -> /usr/obj/usr.sbin/named/tools/nsquery
+
+usr.sbin/named/tools/nstest:
+total 15
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x  5 6058     system        512 Mar 16 16:26 ..
+-r--r--r--  1 6058     system        122 May 28  1990 Makefile
+-r--r--r--  1 6058     system      10391 Apr 25  1991 nstest.c
+lrwxrwxr-x  1 6058     system         36 Mar 16 16:26 obj -> /usr/obj/usr.sbin/named/tools/nstest
+
+usr.sbin/named/xfer:
+total 32
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x  8 6058     system       1024 Mar 16 16:26 ..
+-r--r--r--  1 6058     system        218 May 29  1990 Makefile
+-r--r--r--  1 6058     system      28269 Apr 25  1991 named-xfer.c
+lrwxrwxr-x  1 6058     system         28 Mar 16 16:26 obj -> /usr/obj/usr.sbin/named/xfer
+
+usr.sbin/portmap:
+total 22
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        141 Sep 27  1990 Makefile
+lrwxrwxr-x  1 6058     system         25 Mar 16 16:27 obj -> /usr/obj/usr.sbin/portmap
+-r--r--r--  1 6058     system       3205 Apr 19  1991 portmap.8
+-r--r--r--  1 6058     system      13871 Apr 19  1991 portmap.c
+
+usr.sbin/pwd_mkdb:
+total 22
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        121 Mar  8  1991 Makefile
+lrwxrwxr-x  1 6058     system         26 Mar 16 16:27 obj -> /usr/obj/usr.sbin/pwd_mkdb
+-r--r--r--  1 6058     system       3798 Apr 20  1991 pw_scan.c
+-r--r--r--  1 6058     system       4083 Jun 29  1991 pwd_mkdb.8
+-r--r--r--  1 6058     system       9842 May  6  1991 pwd_mkdb.c
+
+usr.sbin/rmt:
+total 16
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system         85 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         21 Mar 16 16:27 obj -> /usr/obj/usr.sbin/rmt
+-r--r--r--  1 6058     system       5502 Apr 19  1991 rmt.8
+-r--r--r--  1 6058     system       5681 Apr 19  1991 rmt.c
+
+usr.sbin/sendmail:
+total 11
+dr-xrwxr-x  7 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        176 Feb 19 18:49 Makefile
+-r--r--r--  1 6058     system        248 Apr 20  1991 READ_ME
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 aux
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 doc
+lrwxrwxr-x  1 6058     system         24 Mar 16 16:27 mail.local -> ../../libexec/mail.local
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 mailstats
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 praliases
+lrwxrwxr-x  1 6058     system         15 Mar 16 16:27 rmail -> ../../bin/rmail
+dr-xrwxr-x  2 6058     system       1024 Mar 16 16:27 src
+
+usr.sbin/sendmail/aux:
+total 41
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x  7 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system       4313 Apr 19  1991 addr.c
+-r--r--r--  1 6058     system      14127 Apr 19  1991 arpa.c
+-r--r--r--  1 6058     system       9956 Apr 19  1991 mail-dm.c
+-r--r--r--  1 6058     system       3546 Apr 19  1991 matchhdr.c
+-r--r--r--  1 6058     system       5691 Apr 19  1991 newaliases.c
+
+usr.sbin/sendmail/doc:
+total 311
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x  7 6058     system        512 Mar 16 16:27 ..
+lrwxrwxr-x  1 6058     system         30 Mar 16 16:27 07.sendmailop -> ../../../doc/smm/07.sendmailop
+lrwxrwxr-x  1 6058     system         28 Mar 16 16:27 16.sendmail -> ../../../doc/smm/16.sendmail
+lrwxrwxr-x  1 6058     system         32 Mar 16 16:27 op.me -> /usr/doc/smm/07.sendmailop/op.me
+-r--r--r--  1 6058     system        584 Jan  6  1983 refs
+-r--r--r--  1 6058     system      35314 Aug 19  1985 rfc819.lpr
+-r--r--r--  1 6058     system     120432 Aug 19  1985 rfc821.lpr
+-r--r--r--  1 6058     system     106299 Aug 19  1985 rfc822.lpr
+-r--r--r--  1 6058     system       1541 Jan  6  1983 spell.good
+-r--r--r--  1 6058     system        949 Dec 24  1988 usenix.abs
+-r--r--r--  1 6058     system      26874 Aug 19  1985 usenix.me
+
+usr.sbin/sendmail/mailstats:
+total 10
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x  7 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        150 May 11  1990 Makefile
+-r--r--r--  1 6058     system       3242 Apr 19  1991 mailstats.c
+lrwxrwxr-x  1 6058     system         36 Mar 16 16:27 obj -> /usr/obj/usr.sbin/sendmail/mailstats
+-r--r--r--  1 6058     system       1918 Apr 19  1991 pathnames.h
+
+usr.sbin/sendmail/praliases:
+total 7
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x  7 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        180 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         36 Mar 16 16:27 obj -> /usr/obj/usr.sbin/sendmail/praliases
+-r--r--r--  1 6058     system       3044 Apr 19  1991 praliases.c
+
+usr.sbin/sendmail/src:
+total 426
+dr-xrwxr-x  2 6058     system       1024 Mar 16 16:27 .
+dr-xrwxr-x  7 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        939 Feb 19 18:27 Makefile
+-r--r--r--  1 6058     system        658 Apr 29  1990 Makefile.dist
+-r--r--r--  1 6058     system       4495 Apr 23  1991 READ_ME
+-r--r--r--  1 6058     system       1712 Feb 14  1989 TODO
+-r--r--r--  1 6058     system      12861 Feb 19 18:36 alias.c
+-r--r--r--  1 6058     system       3530 May 10  1991 aliases.5
+-r--r--r--  1 6058     system       4656 Apr 20  1991 arpadate.c
+-r--r--r--  1 6058     system       5834 Apr 20  1991 clock.c
+-r--r--r--  1 6058     system      10258 Apr 20  1991 collect.c
+-r--r--r--  1 6058     system      11951 Feb 19 18:40 conf.c
+-r--r--r--  1 6058     system       3805 Feb 19 18:31 conf.h
+-r--r--r--  1 6058     system       4420 Apr 20  1991 convtime.c
+-r--r--r--  1 6058     system      14430 Apr 20  1991 daemon.c
+-r--r--r--  1 6058     system      34074 Apr 20  1991 deliver.c
+-r--r--r--  1 6058     system       7918 Apr 20  1991 domain.c
+-r--r--r--  1 6058     system      14438 Apr 20  1991 envelope.c
+-r--r--r--  1 6058     system       8824 Apr 20  1991 err.c
+-r--r--r--  1 6058     system      18550 Apr 20  1991 headers.c
+-r--r--r--  1 6058     system       6335 Apr 20  1991 macro.c
+-r--r--r--  1 6058     system       2282 Apr 20  1991 mailstats.h
+-r--r--r--  1 6058     system      23534 Apr 20  1991 main.c
+-r--r--r--  1 6058     system       2373 Aug  5  1991 newaliases.1
+lrwxrwxr-x  1 6058     system         30 Mar 16 16:27 obj -> /usr/obj/usr.sbin/sendmail/src
+-r--r--r--  1 6058     system      25190 Apr 20  1991 parseaddr.c
+-r--r--r--  1 6058     system       1961 Apr 20  1991 pathnames.h
+-r--r--r--  1 6058     system      25934 Apr 20  1991 queue.c
+-r--r--r--  1 6058     system      19640 Apr 20  1991 readcf.c
+-r--r--r--  1 6058     system      14214 Apr 20  1991 recipient.c
+-r--r--r--  1 6058     system      13201 Apr 20  1991 savemail.c
+-r--r--r--  1 6058     system      12577 Aug  5  1991 sendmail.8
+-r--r--r--  1 6058     system      16746 Apr 23  1991 sendmail.cf
+-r--r--r--  1 6058     system      21802 Apr 20  1991 sendmail.h
+-r--r--r--  1 6058     system       1669 Apr 23  1991 sendmail.hf
+-r--r--r--  1 6058     system      14938 May 10  1991 srvrsmtp.c
+-r--r--r--  1 6058     system       3619 Apr 20  1991 stab.c
+-r--r--r--  1 6058     system       3583 Apr 20  1991 stats.c
+-r--r--r--  1 6058     system       3210 Apr 20  1991 sysexits.c
+-r--r--r--  1 6058     system       3344 Apr 20  1991 trace.c
+-r--r--r--  1 6058     system       2863 Apr 20  1991 useful.h
+-r--r--r--  1 6058     system      12572 Apr 20  1991 usersmtp.c
+-r--r--r--  1 6058     system      15165 Apr 20  1991 util.c
+-r--r--r--  1 6058     system       1983 May 10  1991 version.c
+
+usr.sbin/sliplogin:
+total 26
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        123 May 11  1990 Makefile
+lrwxrwxr-x  1 6058     system         27 Mar 16 16:27 obj -> /usr/obj/usr.sbin/sliplogin
+-r--r--r--  1 6058     system       2007 Apr 19  1991 pathnames.h
+-r--r--r--  1 6058     system        308 Jul  1  1990 slip.hosts
+-r--r--r--  1 6058     system        326 Jul  1  1990 slip.login
+-r--r--r--  1 6058     system       6344 Aug  5  1991 sliplogin.8
+-r--r--r--  1 6058     system      11054 Apr 19  1991 sliplogin.c
+
+usr.sbin/syslogd:
+total 43
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        189 Sep 30  1990 Makefile
+lrwxrwxr-x  1 6058     system         25 Mar 16 16:27 obj -> /usr/obj/usr.sbin/syslogd
+-r--r--r--  1 6058     system       2005 Apr 20  1991 pathnames.h
+-r--r--r--  1 6058     system       6298 May 10  1991 syslog.conf.5
+-r--r--r--  1 6058     system       3834 Apr 20  1991 syslogd.8
+-r--r--r--  1 6058     system      25935 Apr 20  1991 syslogd.c
+
+usr.sbin/timed:
+total 5
+dr-xrwxr-x  4 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system         86 May 11  1990 Makefile
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 timed
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 timedc
+
+usr.sbin/timed/timed:
+total 108
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x  4 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        330 Jun 29  1990 Makefile
+-r--r--r--  1 6058     system       3518 Apr 20  1991 acksend.c
+-r--r--r--  1 6058     system       2872 Apr 20  1991 byteorder.c
+-r--r--r--  1 6058     system       4464 Apr 20  1991 candidate.c
+lrwxrwxr-x  1 6058     system         13 Mar 16 16:27 cksum.i386.c -> cksum.tahoe.c
+-r--r--r--  1 6058     system       2691 Apr 20  1991 cksum.m68000.c
+-r--r--r--  1 6058     system       2991 Apr 20  1991 cksum.tahoe.c
+-r--r--r--  1 6058     system       4392 Apr 20  1991 correct.c
+-r--r--r--  1 6058     system       3787 Apr 20  1991 globals.h
+-r--r--r--  1 6058     system      13342 Mar  1 13:49 master.c
+-r--r--r--  1 6058     system       6331 Apr 20  1991 measure.c
+-r--r--r--  1 6058     system       3137 Apr 20  1991 networkdelta.c
+lrwxrwxr-x  1 6058     system         29 Mar 16 16:27 obj -> /usr/obj/usr.sbin/timed/timed
+-r--r--r--  1 6058     system       1984 Apr 20  1991 pathnames.h
+-r--r--r--  1 6058     system      11695 Apr 20  1991 readmsg.c
+-r--r--r--  1 6058     system      15724 Apr 20  1991 slave.c
+-r--r--r--  1 6058     system       4923 Apr 27  1991 timed.8
+-r--r--r--  1 6058     system      15519 Apr 20  1991 timed.c
+
+usr.sbin/timed/timedc:
+total 32
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x  4 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        246 May 11  1990 Makefile
+-r--r--r--  1 6058     system      10333 Apr 20  1991 cmds.c
+-r--r--r--  1 6058     system       2648 Apr 20  1991 cmdtab.c
+lrwxrwxr-x  1 6058     system         30 Mar 16 16:27 obj -> /usr/obj/usr.sbin/timed/timedc
+-r--r--r--  1 6058     system       4101 Apr 20  1991 timedc.8
+-r--r--r--  1 6058     system       5951 Apr 20  1991 timedc.c
+-r--r--r--  1 6058     system       2387 Apr 20  1991 timedc.h
+
+usr.sbin/traceroute:
+total 50
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        125 May 11  1990 Makefile
+-r--r--r--  1 6058     system       3830 Jan 14  1989 README
+-r--r--r--  1 6058     system       2148 Apr 19  1991 mean.awk
+-r--r--r--  1 6058     system       2474 Apr 19  1991 median.awk
+lrwxrwxr-x  1 6058     system         28 Mar 16 16:27 obj -> /usr/obj/usr.sbin/traceroute
+-r--r--r--  1 6058     system      11580 Apr 19  1991 traceroute.8
+-r--r--r--  1 6058     system      24027 Apr 19  1991 traceroute.c
+
+usr.sbin/update:
+total 10
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:26 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        105 Jun 29  1990 Makefile
+lrwxrwxr-x  1 6058     system         24 Mar 16 16:26 obj -> /usr/obj/usr.sbin/update
+-r--r--r--  1 6058     system       2620 Aug  5  1991 update.8
+-r--r--r--  1 6058     system       2572 Jun  6  1991 update.c
+
+usr.sbin/vipw:
+total 17
+dr-xrwxr-x  2 6058     system        512 Mar 16 16:27 .
+dr-xrwxr-x 23 6058     system        512 Mar 16 16:27 ..
+-r--r--r--  1 6058     system        110 Feb 12  1991 Makefile
+lrwxrwxr-x  1 6058     system         22 Mar 16 16:27 obj -> /usr/obj/usr.sbin/vipw
+-r--r--r--  1 6058     system       5468 May 21  1991 pw_util.c
+-r--r--r--  1 6058     system       3275 Apr 19  1991 vipw.8
+-r--r--r--  1 6058     system       3024 Apr 19  1991 vipw.c

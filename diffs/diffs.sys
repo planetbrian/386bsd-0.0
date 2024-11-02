@@ -1,0 +1,2487 @@
+Only in net2/usr/src/sys: hp300
+Only in net2/usr/src/sys: netccitt
+Only in net2/usr/src/sys: netimp
+Only in net2/usr/src/sys: netiso
+Only in net2/usr/src/sys: netns
+Only in net2/usr/src/sys: netrmp
+Only in net2/usr/src/sys: tahoe
+Only in net2/usr/src/sys: tests
+Only in net2/usr/src/sys: vax
+Only in src/sys.386bsd/compile: SMALL
+diff -r net2/usr/src/sys/conf/files src/sys.386bsd/conf/files
+6c6
+< kern/kern_exec.c	standard
+---
+> kern/kern_execve.c	standard
+12c12
+< kern/kern_physio.c	standard
+---
+> kern/kern__physio.c	standard
+27c27
+< kern/subr_rmap.c	standard
+---
+> kern/subr_rlist.c	standard
+36c36
+< kern/tty_subr.c		standard
+---
+> kern/tty_ring.c		standard
+39c39
+< kern/vfs_bio.c		standard
+---
+> kern/vfs__bio.c		standard
+94,106d93
+< kdb/kdb_access.c	optional kadb
+< kdb/kdb_command.c	optional kadb
+< kdb/kdb_ctype.c		optional kadb
+< kdb/kdb_expr.c		optional kadb
+< kdb/kdb_format.c	optional kadb
+< kdb/kdb_input.c		optional kadb
+< kdb/kdb_message.c	optional kadb
+< kdb/kdb_output.c	optional kadb
+< kdb/kdb_pcs.c		optional kadb
+< kdb/kdb_print.c		optional kadb
+< kdb/kdb_runpcs.c	optional kadb
+< kdb/kdb_sym.c		optional kadb
+< kdb/kdb_trap.c		optional kadb
+Only in net2/usr/src/sys/conf: tags
+Only in net2/usr/src/sys/i386: eisa
+Only in net2/usr/src/sys/i386: mca
+Only in net2/usr/src/sys/i386/conf: ARGO
+Only in net2/usr/src/sys/i386/conf: GENERIC.i386
+diff -r net2/usr/src/sys/i386/conf/Makefile.i386 src/sys.386bsd/i386/conf/Makefile.i386
+33a34,43
+> NORMAL_C= ${CC} -c ${CFLAGS} ${PROF} $<
+> NORMAL_C_C= ${CC} -c ${CFLAGS} ${PROF} ${PARAM} $<
+> DRIVER_C= ${CC} -c ${CFLAGS} ${PROF} $<
+> DRIVER_C_C= ${CC} -c ${CFLAGS} ${PROF} ${PARAM} $<
+> SYSTEM_OBJS=locore.o ${OBJS} param.o ioconf.o conf.o
+> SYSTEM_DEP=Makefile symbols.sort ${SYSTEM_OBJS}
+> SYSTEM_LD_HEAD= 	@echo loading $@; rm -f $@
+> SYSTEM_LD= @${LD} -z -T FE000000 -o $@ -X ${SYSTEM_OBJS}
+> SYSTEM_LD_TAIL= @echo rearranging symbols; symorder symbols.sort $@; size $@; chmod 755 $@
+> 
+41c51
+< 	rm -f eddep *vmunix tags *.o locore.i [a-uw-z]*.s \
+---
+> 	rm -f eddep *386bsd tags *.o locore.i [a-uw-z]*.s \
+73c83
+<     $S/sys/vmmeter.h $S/sys/map.h \
+---
+>     $S/sys/vmmeter.h \
+84,85c94,95
+< 	mkdep ${COPTS} ${CFILES} ioconf.c
+< 	mkdep -a -p ${INCLUDES} ${IDENT} ${PARAM} ${I386}/i386/genassym.c
+---
+> 	sh /usr/bin/mkdep ${COPTS} ${CFILES} ioconf.c
+> 	sh /usr/bin/mkdep -a -p ${INCLUDES} ${IDENT} ${PARAM} ${I386}/i386/genassym.c
+98c108
+< ioconf.o: ioconf.c $S/sys/param.h machine/pte.h $S/sys/buf.h $S/sys/map.h \
+---
+> ioconf.o: ioconf.c $S/sys/param.h machine/pte.h $S/sys/buf.h \
+100c110,114
+< 	${CC} -traditional -c ${CFLAGS} ioconf.c
+---
+> 	${CC} -c ${CFLAGS} ioconf.c
+> 
+> conf.o: $S/sys/param.h $S/sys/systm.h $S/sys/buf.h $S/sys/ioctl.h \
+> 	$S/sys/tty.h $S/sys/conf.h ${I386}/i386/conf.c
+> 	${CC} -traditional -c ${CFLAGS} ${I386}/i386/conf.c
+Only in src/sys.386bsd/i386/conf: ODYSSEUS
+Only in src/sys.386bsd/i386/conf: PHOENIX
+Only in src/sys.386bsd/i386/conf: SMALL
+diff -r net2/usr/src/sys/i386/conf/devices.i386 src/sys.386bsd/i386/conf/devices.i386
+4d3
+< xd	4
+diff -r net2/usr/src/sys/i386/conf/files.i386 src/sys.386bsd/i386/conf/files.i386
+2d1
+< i386/i386/conf.c		standard
+6,9d4
+< i386/i386/kdb_machdep.c	optional kadb
+< i386/i386/kdb_opset.c	optional kadb
+< i386/i386/kgdb_stub.c	optional kgdb
+< i386/i386/kgdb_glue.c	optional kgdb
+22d16
+< i386/isa/xd.c		optional xd device-driver
+27d20
+< i386/isa/if_hy.notreally.c	optional hy device-driver
+diff -r net2/usr/src/sys/i386/floppy/Makefile src/sys.386bsd/i386/floppy/Makefile
+3,5c3,5
+< SUBDIR=	arp bad144 cat cp dd disklabel dump ed fsck ftp ifconfig \
+< 	init ls mkdir mknod mount mv netstat newfs ping restore \
+< 	rm route rsh sh slattach stty sync tar telnet umount
+---
+> SUBDIR=	bad144 cat compress cp disklabel elvis fsck \
+> 	ls mkdir mknod mount mv newfs \
+> 	rm rsh stty sync umount
+15d14
+< 	cd bin; strip [a-z]*
+Only in net2/usr/src/sys/i386/floppy: arp
+Only in src/sys.386bsd/i386/floppy: compress
+Only in net2/usr/src/sys/i386/floppy: dd
+Only in net2/usr/src/sys/i386/floppy: dump
+Only in net2/usr/src/sys/i386/floppy: ed
+Only in src/sys.386bsd/i386/floppy: elvis
+Only in net2/usr/src/sys/i386/floppy: ftp
+Only in net2/usr/src/sys/i386/floppy: ifconfig
+Only in net2/usr/src/sys/i386/floppy: netstat
+Only in net2/usr/src/sys/i386/floppy: ping
+Only in net2/usr/src/sys/i386/floppy: restore
+Only in net2/usr/src/sys/i386/floppy: route
+Only in net2/usr/src/sys/i386/floppy: slattach
+Only in net2/usr/src/sys/i386/floppy: tar
+Only in net2/usr/src/sys/i386/floppy: telnet
+diff -r net2/usr/src/sys/i386/floppy/bad144/Makefile src/sys.386bsd/i386/floppy/bad144/Makefile
+7c7
+< LDFLAGS=-N
+---
+> LDFLAGS=-s -N
+diff -r net2/usr/src/sys/i386/floppy/disklabel/Makefile src/sys.386bsd/i386/floppy/disklabel/Makefile
+7c7
+< LDFLAGS=-N
+---
+> LDFLAGS=-s -N
+diff -r net2/usr/src/sys/i386/floppy/fsck/Makefile src/sys.386bsd/i386/floppy/fsck/Makefile
+8c8
+< LDFLAGS=-N
+---
+> LDFLAGS=-s -N
+diff -r net2/usr/src/sys/i386/floppy/init/Makefile src/sys.386bsd/i386/floppy/init/Makefile
+10c10
+< LDFLAGS=-N
+---
+> LDFLAGS=-s -N
+diff -r net2/usr/src/sys/i386/floppy/ls/Makefile src/sys.386bsd/i386/floppy/ls/Makefile
+9c9
+< LDFLAGS=-N
+---
+> LDFLAGS=-s -N
+diff -r net2/usr/src/sys/i386/floppy/mount/mount.c src/sys.386bsd/i386/floppy/mount/mount.c
+47a48
+> 	int update =0;
+50,51c51,57
+< 		err("no options available", 0);
+< 		_exit(1);
+---
+> 		if (strcmp(*argv, "-u") == 0) {
+> 			update = MNT_UPDATE;
+> 			++argv; argc--;
+> 		} else {
+> 			err("option not available", 0);
+> 			_exit(1);
+> 		}
+54c60
+< 		err("usage: mount dev dir", 0);
+---
+> 		err("usage: mount [-u] dev dir", 0);
+61c67
+< 	if (mount(MOUNT_UFS, argv[1], 0, &args)) {
+---
+> 	if (mount(MOUNT_UFS, argv[1], update, &args)) {
+diff -r net2/usr/src/sys/i386/floppy/newfs/Makefile src/sys.386bsd/i386/floppy/newfs/Makefile
+5c5
+< CFLAGS+=-DLETS_GET_SMALL -DMFS
+---
+> CFLAGS+=-DLETS_GET_SMALL
+7c7
+< LDFLAGS=-N
+---
+> LDFLAGS=-s -N
+diff -r net2/usr/src/sys/i386/floppy/rsh/Makefile src/sys.386bsd/i386/floppy/rsh/Makefile
+9c9
+< LDFLAGS=-N
+---
+> LDFLAGS=-s -N
+diff -r net2/usr/src/sys/i386/floppy/sh/Makefile src/sys.386bsd/i386/floppy/sh/Makefile
+12c12
+< LDFLAGS=-N
+---
+> LDFLAGS=-s -N
+diff -r net2/usr/src/sys/i386/floppy/stty/Makefile src/sys.386bsd/i386/floppy/stty/Makefile
+4c4
+< SRCS=	cchar.c gfmt.c modes.c print.c stty.c util.c
+---
+> SRCS=	cchar.c gfmt.c key.c modes.c print.c stty.c util.c
+7c7
+< LDFLAGS=-N
+---
+> LDFLAGS=-s -N
+diff -r net2/usr/src/sys/i386/floppy/sync/Makefile src/sys.386bsd/i386/floppy/sync/Makefile
+7c7
+< LDFLAGS=-N
+---
+> LDFLAGS=-s -N
+diff -r net2/usr/src/sys/i386/i386/autoconf.c src/sys.386bsd/i386/i386/autoconf.c
+37a38
+> static char rcsid[] = "$Header: /usr/src/sys.386bsd/i386/i386/RCS/autoconf.c,v 1.2 92/01/21 14:21:31 william Exp Locker: root $";
+49d49
+< #include "map.h"
+103,106c103,107
+< 		if ( swp->sw_dev < 0 || swp->sw_dev > nblkdev ) break;
+< 		if (bdevsw[major(swp->sw_dev)].d_psize) {
+< 			nblks =
+< 			  (*bdevsw[major(swp->sw_dev)].d_psize)(swp->sw_dev);
+---
+> 		unsigned d = major(swp->sw_dev);
+> 
+> 		if (d > nblkdev) break;
+> 		if (bdevsw[d].d_psize) {
+> 			nblks = (*bdevsw[d].d_psize)(swp->sw_dev);
+110a112
+> 		swp->sw_nblks = ctod(dtoc(swp->sw_nblks));
+144a147
+> /*printf("howto %x bootdev %x ", boothowto, bootdev);*/
+diff -r net2/usr/src/sys/i386/i386/conf.c src/sys.386bsd/i386/i386/conf.c
+37a38
+> static char rcsid[] = "$Header: /usr/src/sys.386bsd/i386/i386/RCS/conf.c,v 1.2 92/01/21 14:21:57 william Exp Locker: toor $";
+51c52
+< int	wdopen(),wdclose(),wdstrategy(),wdread(),wdwrite(),wdioctl();
+---
+> int	wdopen(),wdclose(),wdstrategy(),wdioctl();
+57,58d57
+< #define	wdread		enxio
+< #define	wdwrite		enxio
+64,78d62
+< #include "xd.h"
+< #if NXD > 0
+< int	xdopen(),xdclose(),xdstrategy(),xdread(),xdwrite(),xdioctl();
+< int	xddump(),xdsize();
+< #else
+< #define	xdopen		enxio
+< #define	xdclose		enxio
+< #define	xdstrategy	enxio
+< #define	xdread		enxio
+< #define	xdwrite		enxio
+< #define	xdioctl		enxio
+< #define	xddump		enxio
+< #define	xdsize		NULL
+< #endif
+< 
+81c65
+< int	wtopen(),wtclose(),wtstrategy(),wtread(),wtwrite(),wtioctl();
+---
+> int	wtopen(),wtclose(),wtstrategy(),wtioctl();
+87,88d70
+< #define	wtread		enxio
+< #define	wtwrite		enxio
+96c78
+< int	Fdopen(),fdclose(),fdstrategy(),fdread(),fdwrite();
+---
+> int	Fdopen(),fdclose(),fdstrategy();
+104,105d85
+< #define	fdread		enxio
+< #define	fdwrite		enxio
+122,124c102
+< 	  wtdump,	wtsize,		B_TAPE },
+< 	{ xdopen,	xdclose,	xdstrategy,	xdioctl,	/*4*/
+< 	  xddump,	xdsize,		NULL }
+---
+> 	  wtdump,	wtsize,		B_TAPE }
+190c168
+< 	{ wdopen,	wdclose,	wdread,		wdwrite,	/*3*/
+---
+> 	{ wdopen,	wdclose,	rawread,	rawwrite,	/*3*/
+208c186
+< 	{ Fdopen,	fdclose,	fdread,		fdwrite,	/*9*/
+---
+> 	{ Fdopen,	fdclose,	rawread,	rawwrite,	/*9*/
+211c189
+< 	{ wtopen,	wtclose,	wtread,		wtwrite,	/*A*/
+---
+> 	{ wtopen,	wtclose,	rawread,	rawwrite,	/*A*/
+214,216c192,194
+< 	{ xdopen,	xdclose,	xdread,		xdwrite,	/*B*/
+< 	  xdioctl,	enodev,		nullop,		NULL,
+< 	  seltrue,	enodev,		xdstrategy },
+---
+> 	{ enodev,	enodev,		enodev,		enodev,		/*B*/
+> 	  enodev,	enodev,		nullop,		NULL,
+> 	  seltrue,	enodev,		enodev },
+diff -r net2/usr/src/sys/i386/i386/genassym.c src/sys.386bsd/i386/i386/genassym.c
+37a38
+> static char rcsid[] = "$Header: /usr/bill/working/sys/i386/i386/RCS/genassym.c,v 1.2 92/01/21 14:22:02 william Exp $";
+46,47d46
+< #include "sys/cmap.h"
+< #include "sys/map.h"
+diff -r net2/usr/src/sys/i386/i386/locore.s src/sys.386bsd/i386/i386/locore.s
+66c66
+< #define	NOP	;
+---
+> #define	NOP	jmp 7f ; nop ; 7: jmp 7f ; nop ; 7:
+73c73
+< 	.globl	_PTmap, _PTD, _PTDpde
+---
+> 	.globl	_PTmap, _PTD, _PTDpde, _Sysmap
+75a76
+> 	.set	_Sysmap,0xFDFF8000
+116a118
+> rcsid:	.asciz "$Header: /usr/bill/working/sys/i386/i386/RCS/locore.s,v 1.2 92/01/21 14:22:04 william Exp $"
+511a514,515
+> 	popl	%edi
+> 	popl	%esi
+940a945,949
+> 
+> 	/* if no process to save, don't bother */
+> 	cmpl	$0,%ecx
+> 	je	sw1
+> 
+1027,1030d1035
+< 	movl	%esp,%ecx
+< 	movl	$tmpstk,%esp
+<  	orl	$ I386_CR3PAT,%ebx
+< 	inb	$0x84,%al	# flush write buffers
+1032,1034d1036
+< 	movl	(%ecx),%eax	# touch stack, fault if not there
+< 	movl	%eax,(%ecx)
+< 	movl	%ecx,%esp
+1063a1066,1068
+> 	.globl	_mvesp
+> _mvesp:	movl	%esp,%eax
+> 	ret
+diff -r net2/usr/src/sys/i386/i386/machdep.c src/sys.386bsd/i386/i386/machdep.c
+37a38
+> static char rcsid[] = "$Header: /usr/src/sys.386bsd/i386/i386/RCS/machdep.c,v 1.2 92/01/21 14:22:09 william Exp Locker: root $";
+44d44
+< #include "map.h"
+51d50
+< #include "clist.h"
+130,131c129,131
+< 	printf(version);
+< 	printf("real mem  = %d\n", ctob(physmem));
+---
+> 	/*printf(version);
+> 	printf("real mem  = %d\n", ctob(physmem));*/
+> printf("386BSD Release 0.0\n");
+157d156
+< 	valloc(cfree, struct cblock, nclist);
+159d157
+< 	valloc(swapmap, struct map, nswapmap = maxproc * 2);
+203,231d200
+< 	 * Now allocate buffers proper.  They are different than the above
+< 	 * in that they usually occupy more virtual memory than physical.
+< 	 */
+< 	size = MAXBSIZE * nbuf;
+< 	buffer_map = kmem_suballoc(kernel_map, (vm_offset_t)&buffers,
+< 				   &maxaddr, size, FALSE);
+< 	minaddr = (vm_offset_t)buffers;
+< 	if (vm_map_find(buffer_map, vm_object_allocate(size), (vm_offset_t)0,
+< 			&minaddr, size, FALSE) != KERN_SUCCESS)
+< 		panic("startup: cannot allocate buffers");
+< 	base = bufpages / nbuf;
+< 	residual = bufpages % nbuf;
+< 	for (i = 0; i < nbuf; i++) {
+< 		vm_size_t curbufsize;
+< 		vm_offset_t curbuf;
+< 
+< 		/*
+< 		 * First <residual> buffers get (base+1) physical pages
+< 		 * allocated for them.  The rest get (base) physical pages.
+< 		 *
+< 		 * The rest of each buffer occupies virtual space,
+< 		 * but has no physical memory allocated for it.
+< 		 */
+< 		curbuf = (vm_offset_t)buffers + i * MAXBSIZE;
+< 		curbufsize = CLBYTES * (i < residual ? base+1 : base);
+< 		vm_map_pageable(buffer_map, curbuf, curbuf+curbufsize, FALSE);
+< 		vm_map_simplify(buffer_map, curbuf);
+< 	}
+< 	/*
+259,261c228
+< 	printf("avail mem = %d\n", ptoa(vm_page_free_count));
+< 	printf("using %d buffers containing %d bytes of memory\n",
+< 		nbuf, bufpages * CLBYTES);
+---
+> 	/*printf("avail mem = %d\n", ptoa(vm_page_free_count));*/
+884,900c851,852
+< #ifdef notyet
+< 	/* determine amount of memory present so we can scale kernel PT */
+< 	for (i= RAM_BEGIN; i < IOM_BEGIN; i += NBPG)
+< 		if (probemem(i) == 0) break;
+< 	if (i == IOM_BEGIN) {
+< 		if (maxphysmem == 0) maxphysmem = RAM_END;
+< 		for (i= IOM_END; i < maxphysmem; i += NBPG)
+< 			if (probemem(i) == 0) break;
+< 	}
+< 	maxmem = i / NBPG;
+< #else
+< Maxmem = 8192 *1024 /NBPG;
+< 	maxmem = Maxmem;
+< #endif
+< 
+< 	/* reconcile against BIOS's recorded values in RTC
+< 	 * we trust neither of them, as both can lie!
+---
+> 	/* Use BIOS values stored in RTC CMOS RAM, since probing
+> 	 * breaks certain 386 AT relics.
+903a856,857
+> 
+> 	/* if either bad, just assume base memory */
+905,906c859
+< 		if (maxmem > 0xffc)
+< 			maxmem = 640/4;
+---
+> 		maxmem = min (maxmem, 640/4);
+908,912c861,877
+< 		int totbios = (biosbasemem + 0x60000 + biosextmem)/4;
+< 		if (totbios < maxmem) maxmem = totbios;
+< 	} else	maxmem = 640/4;
+< 	maxmem = maxmem-1;
+< 	physmem = maxmem - (0x100 -0xa0);
+---
+> 		int pagesinbase, pagesinext;
+> 
+> 		pagesinbase = 640/4 - first/NBPG;
+> 		pagesinext = biosextmem/4;
+> 		/* use greater of either base or extended memory. do this
+> 		 * until I reinstitue discontigous allocation of vm_page
+> 		 * array.
+> 		 */
+> 		if (pagesinbase > pagesinext)
+> 			Maxmem = 640/4;
+> 		else {
+> 			Maxmem = pagesinext + 0x100000/NBPG;
+> 			first = 0x100000; /* skip hole */
+> 		}
+> 	}
+> 	maxmem = Maxmem - 1;	/* highest page of usable memory */
+> 	physmem = maxmem;	/* number of pages of physmem addr space */
+diff -r net2/usr/src/sys/i386/i386/pmap.c src/sys.386bsd/i386/i386/pmap.c
+38a39
+> static char rcsid[] = "$Header: /usr/src/sys.386bsd/i386/i386/RCS/pmap.c,v 1.3 92/01/21 14:26:44 william Exp Locker: root $";
+90c91
+< /*#include "machine/isa.h"*/
+---
+> #include "i386/isa/isa.h"
+225d225
+< firstaddr = 0x100000;	/*XXX basemem completely fucked (again) */
+290,291c290,291
+< 	/**(int *)PTD = 0;
+< 	load_cr3(rcr3());*/
+---
+> 	*(int *)PTD = 0;
+> 	load_cr3(rcr3());
+750,751d749
+< 	pte = pmap_pte(pmap, sva);
+< 	if(!pte) return;
+763,764d760
+< 			pte = pmap_pte(pmap, va);
+< 			pte += i386pagesperpage;
+767c763,766
+< 		if(!pte) return;
+---
+> 
+> 		pte = pmap_pte(pmap, va);
+> 		if (pte == 0) panic("pmap_protect: cannot happen");
+> 
+772,773c771
+< 		if (!pmap_pte_v(pte)) {
+< 			pte += i386pagesperpage;
+---
+> 		if (!pmap_pte_v(pte))
+775c773
+< 		}
+---
+> 
+1452d1449
+< static
+1478d1474
+< static
+1520d1515
+< static
+diff -r net2/usr/src/sys/i386/i386/symbols.raw src/sys.386bsd/i386/i386/symbols.raw
+1,2c1,3
+< #	symbols.raw	1.1	86/01/05
+< 	_version
+---
+> #	@(#)symbols.raw	7.6 (Berkeley) 5/8/91
+> 
+> #	_version
+4c5,6
+< 	_msgbuf
+---
+> 	_msgbufp
+> #	_msgbuf
+14c16
+< 	_dk_mspw
+---
+> 	_dk_wpms
+17,20d18
+< 	_proc
+< 	_Usrptmap
+< 	_usrpt
+< 	_text
+24,26d21
+< 	_ecmx
+< 	_nproc
+< 	_ntext
+28,36c23
+< 	_inode
+< 	_text
+< 	_proc
+< #	_dz_tty
+< #	_dz_cnt
+< 	_cons
+< 	_file
+< 	_Usrptmap
+< 	_usrpt
+---
+> #	_cons
+39,40d25
+< #	_dh11
+< #	_ndh11
+45,46d29
+< 	_deficit
+< 	_forkstat
+48,49d30
+< 	_firstfree
+< 	_maxfree
+55d35
+< 	_proc
+57,58d36
+< 	_Usrptmap
+< 	_usrpt
+60c38
+< 	_avenrun
+---
+> 	_averunnable
+71d48
+< 	_Syssize
+79d55
+< 	_avenrun
+80a57,58
+> #deprecated
+> #	_avenrun
+Only in net2/usr/src/sys/i386/i386: tags
+diff -r net2/usr/src/sys/i386/i386/trap.c src/sys.386bsd/i386/i386/trap.c
+37a38
+> static char rcsid[] = "$Header: /usr/bill/working/sys/i386/i386/RCS/trap.c,v 1.2 92/01/21 14:22:13 william Exp $";
+51d51
+< #include "seg.h"
+64d63
+< #include "machine/dbg.h"
+93a93
+> if(curpcb == 0 || curproc == 0) goto we_re_toast;
+120a121
+> 	eva = rcr2();
+122c123
+< 		type &= ~T_USER;
+---
+> 		/* type &= ~T_USER; */ /* XXX what the hell is this */
+126a128
+> 	case T_STKFLT|T_USER:
+309a312
+> 		(void) splnone();
+331d333
+< 	spl0(); /*XXX*/
+360a363
+> 	curpcb->pcb_flags &= ~FM_TRAP;	/* used by sendsig */
+427a431
+> 		(void) splnone();
+diff -r net2/usr/src/sys/i386/i386/vm_machdep.c src/sys.386bsd/i386/i386/vm_machdep.c
+43a44
+> static char rcsid[] = "$Header: /usr/bill/working/sys/i386/i386/RCS/vm_machdep.c,v 1.2 92/01/21 14:22:17 william Exp $";
+71a73
+> 	extern int mvesp();
+85c87
+< 	offset = (caddr_t)&foo - kstack;
+---
+> 	offset = mvesp() - (int)kstack;
+91c93
+< 	 * Wire top of address space of child to it's u.
+---
+> 	 * Wire top of address space of child to it's kstack.
+95,96c97
+< 	(void)vm_fault(&p2->p_vmspace->vm_map,
+< 		trunc_page((u_int)vtopte(kstack)), VM_PROT_READ, FALSE);
+---
+> 	vm_map_pageable(&p2->p_vmspace->vm_map, addr, addr+NBPG, FALSE);
+162d162
+< 	curproc = p;
+Only in src/sys.386bsd/i386/include: mtpr.h
+diff -r net2/usr/src/sys/i386/include/psl.h src/sys.386bsd/i386/include/psl.h
+47d46
+< #define	PSL_ALLCC	0x000000d5	/* all cc bits - unlikely */
+Only in net2/usr/src/sys/i386/include: tags
+diff -r net2/usr/src/sys/i386/isa/com.c src/sys.386bsd/i386/isa/com.c
+34a35
+> static char rcsid[] = "$Header: /usr/bill/working/sys/i386/isa/RCS/com.c,v 1.2 92/01/21 14:34:11 william Exp $";
+218c219
+< 		if (error = ttysleep(tp, (caddr_t)&tp->t_rawq, TTIPRI | PCATCH,
+---
+> 		if (error = ttysleep(tp, (caddr_t)&tp->t_raw, TTIPRI | PCATCH,
+524c525
+< 	if (tp->t_outq.c_cc <= tp->t_lowat) {
+---
+> 	if (RB_LEN(&tp->t_out) <= tp->t_lowat) {
+527c528
+< 			wakeup((caddr_t)&tp->t_outq);
+---
+> 			wakeup((caddr_t)&tp->t_out);
+535c536
+< 	if (tp->t_outq.c_cc == 0)
+---
+> 	if (RB_LEN(&tp->t_out) == 0)
+538c539
+< 		c = getc(&tp->t_outq);
+---
+> 		c = getc(&tp->t_out);
+542,543c543,544
+< 			for (c = 1; c < 16 && tp->t_outq.c_cc; ++c)
+< 				outb(com+com_data, getc(&tp->t_outq));
+---
+> 			for (c = 1; c < 16 && RB_LEN(&tp->t_out); ++c)
+> 				outb(com+com_data, getc(&tp->t_out));
+diff -r net2/usr/src/sys/i386/isa/fd.c src/sys.386bsd/i386/isa/fd.c
+52a53,57
+> #undef NFD
+> #define NFD 2
+> /*#define	FDDEBUG
+> #define FDTEST
+> #define FDOTHER*/
+54,55c59,60
+< #define	FDUNIT(s)	((s)&1)
+< #define	FDTYPE(s)	(((s)>>1)&7)
+---
+> #define	FDUNIT(s)	((s>>3)&1)
+> #define	FDTYPE(s)	((s)&7)
+316a322
+> 	return(0);
+319,341d324
+< /****************************************************************************/
+< /*                            fdread/fdwrite                                */
+< /****************************************************************************/
+< /*
+<  * Routines to do raw IO for a unit.
+<  */
+< fdread(dev, uio)			/* character read routine */
+< dev_t dev;
+< struct uio *uio;
+< {
+<  	int unit = FDUNIT(minor(dev)) ;
+< 	if (unit >= NFD) return(ENXIO);
+< 	return(physio(fdstrategy,&fd_unit[unit].rhead,dev,B_READ,minphys,uio));
+< }
+< 
+< fdwrite(dev, uio)			/* character write routine */
+< dev_t dev;
+< struct uio *uio;
+< {
+<  	int unit = FDUNIT(minor(dev)) ;
+< 	if (unit >= NFD) return(ENXIO);
+< 	return(physio(fdstrategy,&fd_unit[unit].rhead,dev,B_WRITE,minphys,uio));
+< }
+diff -r net2/usr/src/sys/i386/isa/isa.c src/sys.386bsd/i386/isa/isa.c
+37a38
+> static char rcsid[] = "$Header: /usr/src/sys.386bsd/i386/isa/RCS/isa.c,v 1.2 92/01/21 14:34:23 william Exp Locker: root $";
+63d63
+< 	for (dvp = isa_devtab_bio; config_isadev(dvp,&biomask); dvp++);
+64a65
+> 	for (dvp = isa_devtab_bio; config_isadev(dvp,&biomask); dvp++);
+73c74
+< 	printf("biomask %x ttymask %x netmask %x\n", biomask, ttymask, netmask);
+---
+> 	/*printf("biomask %x ttymask %x netmask %x\n", biomask, ttymask, netmask);*/
+diff -r net2/usr/src/sys/i386/isa/npx.c src/sys.386bsd/i386/isa/npx.c
+35a36
+> static char rcsid[] = "$Header: /usr/bill/working/sys/i386/isa/RCS/npx.c,v 1.2 92/01/21 14:34:27 william Exp $";
+76a78,79
+> 	load_cr0(rcr0() & ~CR0_EM);	/* stop emulating */
+> /*pg("init");*/
+80c83
+< 	status = 0xa5a5;	
+---
+> 	status = 0x5a5a;	
+83c86
+< 	if (status == 0) {
+---
+> 	if ((status&0xff) == 0) {
+86,87c89
+< 		control = 0xa5a5;	
+< 		asm ("	fnstcw %0 " : "=m" (control) : "m" (control));
+---
+> 		asm ("	fnstcw %0 " : "=m" (status) : "m" (status));
+89c91
+< 		if ((control&0x103f) == 0x3f) {
+---
+> 		if ((status&0x103f) == 0x3f) {
+96a99
+> 	load_cr0(rcr0() | CR0_EM);	/* start emulating */
+108d110
+< 	/* check for ET bit to decide 387/287 */
+117a120
+> static short wd;
+121a125
+> wd = control;
+123,125c127,129
+< #ifdef INTEL_COMPAT
+< 	asm ("	finit");
+< 	asm("	fldcw %0" : : "g" (control));
+---
+> #ifndef NOINTEL_COMPAT
+> 	asm ("	fninit");
+> 	asm("	fldcw %0" : : "g" (wd));
+161a166
+> /*pg("npxintr");*/
+191a197
+> /*pg("npxdna");*/
+192a199
+> 
+194,196c201,202
+< 	if (!(curpcb->pcb_flags & FP_WASUSED)
+< 	    ||(curpcb->pcb_flags & FP_NEEDSRESTORE)) {
+< 		load_cr0(rcr0() & ~CR0_EM);	/* stop emulating */
+---
+> 	load_cr0(rcr0() & ~CR0_EM);	/* stop emulating */
+>     	if (curpcb->pcb_flags & FP_NEEDSRESTORE)
+198,205c204,208
+< 		curpcb->pcb_flags |= FP_WASUSED | FP_NEEDSSAVE;
+< 		curpcb->pcb_flags &= ~FP_NEEDSRESTORE;
+< 		npxproc = curproc;
+< 		npxpcb = curpcb;
+< 		
+< 		return(1);
+< 	}
+< 	return (0);
+---
+> 	curpcb->pcb_flags |= FP_WASUSED | FP_NEEDSSAVE;
+> 	curpcb->pcb_flags &= ~FP_NEEDSRESTORE;
+> 	npxproc = curproc;
+> 	npxpcb = curpcb;
+> 	return (1);
+diff -r net2/usr/src/sys/i386/isa/pccons.c src/sys.386bsd/i386/isa/pccons.c
+37a38
+> static char rcsid[] = "$Header: /usr/bill/working/sys/i386/isa/RCS/pccons.c,v 1.2 92/01/21 14:35:28 william Exp $";
+101a103
+> extern pcopen __P((dev_t, int, int, struct proc *));
+289c291
+< 	if (tp->t_outq.c_cc <= tp->t_lowat) {
+---
+> 	if (RB_LEN(&tp->t_out) <= tp->t_lowat) {
+292c294
+< 			wakeup((caddr_t)&tp->t_outq);
+---
+> 			wakeup((caddr_t)&tp->t_out);
+300c302
+< 	if (tp->t_outq.c_cc == 0)
+---
+> 	if (RB_LEN(&tp->t_out) == 0)
+302c304
+< 	c = getc(&tp->t_outq);
+---
+> 	c = getc(&tp->t_out);
+315d316
+< 	extern int pcopen();
+835d835
+< #include "machine/dbg.h"
+838a839
+> #define	DPAUSE 1
+Only in net2/usr/src/sys/i386/isa: tags
+diff -r net2/usr/src/sys/i386/isa/wd.c src/sys.386bsd/i386/isa/wd.c
+65,67c65,67
+< #define wdctlr(dev)	((minor(dev) & 0x80) >> 7)
+< #define wdunit(dev)	((minor(dev) & 0x60) >> 5)
+< #define wdpart(dev)	((minor(dev) & 0x1f))
+---
+> #define wdctlr(dev)	((minor(dev) & 0x20) >> 5)
+> #define wdunit(dev)	((minor(dev) & 0x18) >> 3)
+> #define wdpart(dev)	((minor(dev) & 0x7))
+145c145
+< 	{21600,	40, 0,0,0,0},
+---
+> 	{21600,	21600, 0,0,0,0},
+449,452c449,450
+< #ifdef	WDDEBUG
+< 	dprintf(DDSK,"sector %d cylin %d head %d addr %x sts %x\n",
+< 	    sector, cylin, head, addr, inb(wdc+wd_altsts));
+< #endif
+---
+> 	/*printf("sector %d cylin %d head %d addr %x sts %x\n",
+> 	    sector, cylin, head, addr, inb(wdc+wd_altsts));*/
+694,695c692,694
+< 		error = ENXIO ;
+< 		du->dk_state = OPENRAW;
+---
+> 		/*error = ENXIO ;
+> 		du->dk_state = OPENRAW;*/
+> 		du->dk_state = OPEN;
+708c707
+< #define RAWPART         8               /* 'x' partition */     /* XXX */
+---
+> #define RAWPART         2               /* 'c' partition */     /* XXX */
+802c801
+< if( cyloffset < 0 || cyloffset > 8192) cyloffset=0;
+---
+> /*if( cyloffset < 0 || cyloffset > 8192) */cyloffset=0;
+809a809
+> /*printf("sec %d ", LABELSECTOR);*/
+839c839,841
+< 			printf("wd%d: bad disk label\n", du->dk_unit);
+---
+> 			printf("wd%d: bad disk label (%x)\n", du->dk_unit,
+>     ((struct disklabel *)(bp->b_un.b_addr + LABELOFFSET))->d_magic
+> );
+874,875c876,877
+< 	outb(wdc+wd_cyl_lo, du->dk_dd.d_ncylinders);
+< 	outb(wdc+wd_cyl_hi, (du->dk_dd.d_ncylinders)>>8);
+---
+> 	outb(wdc+wd_cyl_lo, du->dk_dd.d_ncylinders+1);
+> 	outb(wdc+wd_cyl_hi, (du->dk_dd.d_ncylinders+1)>>8);
+894a897
+> 	return(0);
+1007,1030d1009
+< 
+< /*
+<  * Routines to do raw IO for a unit.
+<  */
+< wdread(dev, uio)			/* character read routine */
+< 	dev_t dev;
+< 	struct uio *uio;
+< {
+< 	int unit = wdunit(dev) ;
+< 
+< 	if (unit >= NWD) return(ENXIO);
+< 	return(physio(wdstrategy, &rwdbuf[unit], dev, B_READ, minphys, uio));
+< }
+< 
+< 
+< wdwrite(dev, uio)			/* character write routine */
+< 	dev_t dev;
+< 	struct uio *uio;
+< {
+< 	int unit = wdunit(dev) ;
+< 
+< 	if (unit >= NWD) return(ENXIO);
+< 	return(physio(wdstrategy, &rwdbuf[unit], dev, B_WRITE, minphys, uio));
+< }
+diff -r net2/usr/src/sys/i386/isa/wt.c src/sys.386bsd/i386/isa/wt.c
+489,523d488
+< wt_minphys(bp)
+< struct buf	*bp;
+< {
+< 	if (bp->b_bcount > PAGESIZ)
+< 		bp->b_bcount = PAGESIZ;
+< }
+< 
+< /*
+<  * raw read routine
+<  */
+< wtread(dev, uio)
+< struct uio	*uio;
+< {
+< 	if (wtflags & TPSESS) {
+< 		return(EIO);
+< 	}
+< 	physio(wtrawio, &rwtbuf, dev, B_READ, wt_minphys, uio);
+< 	return(0);
+< }
+< 
+< /*
+<  * raw write routine
+<  */
+< wtwrite(dev, uio)
+< struct uio	*uio;
+< {
+< 	if (wtflags & TPSESS) {
+< 		return(EIO);
+< 	}
+< 	physio(wtrawio, &rwtbuf, dev, B_WRITE, wt_minphys, uio);
+< 	return(0);
+< }
+< 
+< 
+< 
+diff -r net2/usr/src/sys/i386/stand/Makefile src/sys.386bsd/i386/stand/Makefile
+1c1
+< #	@(#)Makefile	7.9 (Berkeley) 5/8/91
+---
+> #	from: @(#)Makefile	7.9 (Berkeley) 5/8/91
+4,5c4,5
+< STAND=	../../stand
+< INCPATH=-I../../sys -I../../  -I${STAND}
+---
+> STAND=	/sys/stand
+> INCPATH=-I/sys/sys -I/sys -I/sys/ufs  -I${STAND}
+10d9
+< C2=	/usr/libexec/c2
+19c18
+< SRCS=	boot.c bootxx.c conf.c confxx.c copy.c fd.c fdbootblk.c prf.c \
+---
+> SRCS=	boot.c fdbootblk.c prf.c \
+21,22d19
+< LIBS=	libsa/libsa.a libdrive.a ${DESTDIR}/usr/lib/libc.a
+< SMLIBS=	libsmsa/libsmsa.a libdrive.a ${DESTDIR}/usr/lib/libc.a
+24,26c21
+< BOOTBLOCKS= wdboot bootwd fdboot bootfd
+< DISKUTILS= boot copy cat ls
+< ALL=	${BOOTBLOCKS} ${DISKUTILS}
+---
+> ALL= wdboot bootwd fdboot bootfd
+30,38d24
+< libsa/libsa.a::
+< 	cd libsa; make
+< libsmsa/libsmsa.a::
+< 	cd libsmsa; make
+< 
+< libdrive.a: conf.o prf.o ${DRIVERS:.c=.o}
+< 	ar crv $@ $?
+< 	ranlib $@
+< 
+59,79d44
+< # bootable from floppy or real disks
+< 
+< boot:	boot.o bootconf.o cga.o relsrt0.o ${LIBS}
+< 	ld -N -T ${RELOC} -o $@ boot.o bootconf.o cga.o relsrt0.o ${LIBS}
+< 
+< bootconf.o: conf.o
+< 	ln -s conf.c bootconf.c
+< 	${CC} -c ${CFLAGS} -DBOOT bootconf.c
+< 	rm -f bootconf.c
+< 
+< # utilities
+< 
+< cat:	cat.o srt0.o conf.o ${LIBS}
+< 	ld -N -o $@ srt0.o cat.o conf.o ${LIBS}
+< 
+< ls:	ls.o srt0.o conf.o ${LIBS}
+< 	ld -N -o $@ srt0.o ls.o conf.o ${LIBS}
+< 
+< copy:	copy.o srt0.o conf.o ${LIBS}
+< 	ld -N -o $@ srt0.o copy.o conf.o ${LIBS}
+< 
+85,87c50
+< 	rm -f wdboot
+< 	strip a.out;dd if=a.out of=wdboot ibs=32 skip=1;rm -f a.out
+< 	ls -l wdboot
+---
+> 	rm -f $@; strip a.out; trimhd 32 <a.out >$@; rm -f a.out; ls -l $@
+89,91c52,54
+< bootwd: wdbootblk.o wsrt0.o bootxx.o sm_confwd.o sm_wd.o sm_cga.o ${SMLIBS}
+< 	ld -N -T ${RELOC2} wsrt0.o bootxx.o sm_confwd.o sm_wd.o \
+< 	    sm_cga.o ${SMLIBS}
+---
+> bootwd:	wsrt0.o boot.o bmap.o cga.o fs.o kbd.o prf.o wd.o printf.o breadwd.o
+> 	ld -N -T ${RELOC2} wsrt0.o boot.o bmap.o cga.o kbd.o prf.o printf.o \
+> 		breadwd.o fs.o wd.o -lc
+94,96c57
+< 	rm -f bootwd
+< 	strip a.out;dd if=a.out of=bootwd ibs=32 skip=1;rm -f a.out
+< 	ls -l bootwd
+---
+> 	rm -f $@; strip a.out; trimhd 32 <a.out >$@; rm -f a.out; ls -l $@
+101,103c62
+< 	rm -f fdboot
+< 	strip a.out;dd if=a.out of=fdboot ibs=32 skip=1;rm -f a.out
+< 	ls -l fdboot
+---
+> 	rm -f $@; strip a.out; trimhd 32 <a.out >$@; rm -f a.out; ls -l $@
+105,106c64,66
+< bootfd: fdbootblk.o wsrt0.o bootxx.o fd.o sm_cga.o sm_conffd.o ${SMLIBS}
+< 	ld -N -T ${RELOC2} wsrt0.o bootxx.o fd.o sm_cga.o sm_conffd.o ${SMLIBS}
+---
+> bootfd:	wsrt0.o boot.o bmap.o cga.o fs.o kbd.o prf.o fd.o printf.o breadfd.o
+> 	ld -N -T ${RELOC2} wsrt0.o boot.o bmap.o cga.o kbd.o prf.o printf.o \
+> 		breadfd.o fs.o fd.o -lc
+109,111c69
+< 	rm -f bootfd
+< 	strip a.out; dd if=a.out of=bootfd ibs=32 skip=1;rm -f a.out
+< 	ls -l bootfd
+---
+> 	rm -f $@; strip a.out; trimhd 32 <a.out >$@; rm -f a.out; ls -l $@
+113,118c71,72
+< sm_conffd.o: conffd.c
+< 	rm -f sm_conffd.c
+< 	ln -s conffd.c sm_conffd.c
+< 	${CC} -S -DSMALL ${CFLAGS} sm_conffd.c
+< 	${AS} sm_conffd.s -o sm_conffd.o
+< 	rm -f sm_conffd.s sm_conffd.c
+---
+> breadwd.o: breadwd.c breadxx.o
+> breadfd.o: breadfd.c breadxx.o
+120,125c74,75
+< sm_confwd.o: confwd.c
+< 	rm -f sm_confwd.c
+< 	ln -s confwd.c sm_confwd.c
+< 	${CC} -S -DSMALL ${CFLAGS} sm_confwd.c
+< 	${AS} sm_confwd.s -o sm_confwd.o
+< 	rm -f sm_confwd.s sm_confwd.c
+---
+> breadxx.o:
+> 	touch breadxx.o
+127,132c77,79
+< sm_cga.o: cga.c
+< 	rm -f sm_cga.c
+< 	ln -s cga.c sm_cga.c
+< 	${CC} -S -DSMALL ${CFLAGS} sm_cga.c
+< 	${AS} sm_cga.s -o sm_cga.o
+< 	rm -f sm_cga.s sm_cga.c
+---
+> breadwd.c: breadxx.c
+> 	rm -f breadwd.c
+> 	sed -e 's/XX/wd/' -e 's/xx/wd/g'	< breadxx.c >> breadwd.c
+134,139c81,83
+< sm_wd.o: wd.c
+< 	rm -f sm_wd.c
+< 	ln -s wd.c sm_wd.c
+< 	${CC} -S -DSMALL ${CFLAGS} sm_wd.c
+< 	${AS} sm_wd.s -o sm_wd.o
+< 	rm -f sm_wd.s sm_wd.c
+---
+> breadfd.c: breadxx.c
+> 	rm -f breadfd.c
+> 	sed -e 's/XX/fd/' -e 's/xx/fd/g'	< breadxx.c >> breadfd.c
+141,156d84
+< confwd.o: confwd.c confxx.o
+< conffd.o: conffd.c confxx.o
+< 
+< confxx.o:
+< 	touch confxx.o
+< 
+< confwd.c: confxx.c
+< 	rm -f confwd.c
+< 	sed -e 's/io->i_dev/0/g'		< ${STAND}/dev.c > confwd.c
+< 	sed -e 's/XX/wd/' -e 's/xx/wd/g'	< confxx.c >> confwd.c
+< 
+< conffd.c: confxx.c
+< 	rm -f conffd.c
+< 	sed -e 's/io->i_dev/0/g'		< ${STAND}/dev.c > conffd.c
+< 	sed -e 's/XX/fd/' -e 's/xx/fd/g'	< confxx.c >> conffd.c
+< 
+173,177c101
+< 	install -c -s boot ${DESTDIR}
+< 	cp ${DISKUTILS} ../dist/floppy
+< 	cp ${TAPEUTILS} ../dist/tp
+< 	cp ${BOOTBLOCKS} ${STANDDIR}
+< 	cp ${DISKUTILS} ${STANDDIR}
+---
+> 	cp ${ALL} ${STANDDIR}
+Only in src/sys.386bsd/i386/stand: bmap.c
+diff -r net2/usr/src/sys/i386/stand/boot.c src/sys.386bsd/i386/stand/boot.c
+37c37
+< #ifndef lint
+---
+> #ifdef lint
+43,44c43,44
+< #ifndef lint
+< static char sccsid[] = "@(#)boot.c	7.3 (Berkeley) 5/4/91";
+---
+> #ifdef lint
+> static char sccsid[] = "from:@(#)boot.c	7.3 (Berkeley) 5/4/91";
+50d49
+< #include <setjmp.h>
+51a51,52
+> #include "disklabel.h"
+> #include "dinode.h"
+54,56c55,58
+<  * Boot program... arguments from lower-level bootstrap determine
+<  * whether boot stops to ask for system name and which device
+<  * boot comes from.
+---
+>  * Boot program, loaded by boot block from remaing 7.5K of boot area.
+>  * Sifts through disklabel and attempts to load an program image of
+>  * a standalone program off the disk. If keyboard is hit during load,
+>  * or if an error is encounter, try alternate files.
+59,60c61
+< char line[100] = UNIX;
+< extern	int opendev, bootdev, cyloffset;
+---
+> char *files[] = { "386bsd", "386bsd.alt", "386bsd.old", "boot" , "vmunix", 0};
+62c63,64
+< extern jmp_buf  exception;
+---
+> extern struct disklabel disklabel;
+> extern	int bootdev, cyloffset;
+64c66,71
+< main(howto, dev, off)
+---
+> /*
+>  * Boot program... loads /boot out of filesystem indicated by arguements.
+>  * We assume an autoboot unless we detect a misconfiguration.
+>  */
+> 
+> main(dev, unit, off)
+66c73,76
+< 	int io;
+---
+> 	register struct disklabel *lp;
+> 	register int io;
+> 	register char **bootfile = files;
+> 	int howto = 0;
+68,71c78,80
+< 	if((dev&B_MAGICMASK) == B_DEVMAGIC) {
+< 		bootdev = dev;
+< 		cyloffset = off;
+< 	} else	goto again;
+---
+> 	/*printf("dev %x unit %x off %d\n", dev, unit, off);*/
+> /*unit = off = 0;
+> dev = 2;*/
+73,78c82,112
+< 	if(_setjmp(exception)) {
+< 		close(io);
+< 		printf("- load aborted\n");
+< again:
+< 		howto = RB_SINGLE|RB_ASKNAME;
+< 		cyloffset = 0; 
+---
+> 	/* are we a disk, if so look at disklabel and do things */
+> 	lp = &disklabel;
+> 	if (lp->d_magic == DISKMAGIC) {
+> 	    /*
+> 	     * Synthesize bootdev from dev, unit, type and partition
+> 	     * information from the block 0 bootstrap.
+> 	     * It's dirty work, but someone's got to do it.
+> 	     * This will be used by the filesystem primatives, and
+> 	     * drivers. Ultimately, opendev will be created corresponding
+> 	     * to which drive to pass to top level bootstrap.
+> 	     */
+> 	    for (io = 0; io < lp->d_npartitions; io++) {
+> #ifdef notyetSCSI
+> 		if (lp->d_type == DTYPE_SCSI) {
+> 			if (lp->d_partitions[io].p_offset == off)
+> 				break;
+> 		} else
+> #endif
+> 		if (lp->d_partitions[io].p_size == 0)
+> 			continue;
+> 		if (lp->d_partitions[io].p_offset == off*lp->d_secpercyl)
+> 			break;
+> 	    }
+> 
+> 	    if (io == 8) goto screwed;
+>             cyloffset = off;
+> 	} else {
+> screwed:
+> 		/* probably a bad or non-existant disklabel */
+> 		io = 0 ;
+> 		howto |= RB_SINGLE|RB_ASKNAME ;
+80,83d113
+< 		
+< 	for (;;) {
+< 		if (howto & RB_ASKNAME) {
+< 			char *cp;
+85,86c115,118
+< 			printf("Boot: ");
+< 			gets(line);
+---
+> 	/* construct bootdev */
+> 	/* currently, PC has no way of booting off alternate controllers */
+> 	bootdev = MAKEBOOTDEV(/*i_dev*/ dev, /*i_adapt*/0, /*i_ctlr*/0,
+> 	    unit, /*i_part*/io);
+88,93c120,125
+< 			/* process additional flags if any */
+< 			if(cp = (char *)index(line, ' ')) {
+< 				howto = strtol (cp, 0, 0);
+< 				*cp = '\0';
+< 			}
+< 			cyloffset = 0;
+---
+> 	for (;;) {
+> 
+> /*printf("namei %s", *bootfile);*/
+> 		io = namei(*bootfile);
+> 		if (io > 2) {
+> 			copyunix(io, howto);
+95c127
+< 			printf("Boot: %s\n", line);
+---
+> 			printf("File not found");
+97,100c129,131
+< 		if (line[0] == 0) {
+< 			strcpy(line, UNIX);
+< 			printf("Boot: %s\n", line);
+< 		}
+---
+> 		printf(" - didn't load %s, ",*bootfile);
+> 		if(*++bootfile == 0) bootfile = files;
+> 		printf("will try %s\n", *bootfile);
+102,107c133
+< 		io = open(line, 0);
+< 		if (io >= 0) {
+< 			copyunix(io, howto);
+< 			goto again;
+< 		} else if (++retry > 2)
+< 			goto again;
+---
+> 		wait(1<<((retry++) + 10));
+117a144,145
+> 	struct dinode fil;
+> 	int off;
+119,122c147,152
+< 	i = read(io, (char *)&x, sizeof x);
+< 	if (i != sizeof x ||
+< 	    (x.a_magic != 0407 && x.a_magic != 0413 && x.a_magic != 0410)) {
+< 		printf("Bad format\n");
+---
+> 	fetchi(io, &fil);
+> /*printf("mode %o ", fil.di_mode);*/
+> 	i = iread(&fil, 0,  (char *)&x, sizeof x);
+> 	off = sizeof x;
+> 	if (i != sizeof x || x.a_magic != 0413) {
+> 		printf("Not an executable format");
+126,127c156,157
+< 	printf("%d", x.a_text);
+< 	if (x.a_magic == 0413 && lseek(io, 0x400, 0) == -1)
+---
+> 	off = 4096;
+> 	if (iread(&fil, off, (char *)0, x.a_text) != x.a_text)
+129,130c159
+< 	if (read(io, (char *)0, x.a_text) != x.a_text)
+< 		goto shread;
+---
+> 	off += x.a_text;
+133,137c162,165
+< 	if (x.a_magic == 0413 || x.a_magic == 0410)
+< 		while ((int)addr & CLOFSET)
+< 			*addr++ = 0;
+< 	printf("+%d", x.a_data);
+< 	if (read(io, addr, x.a_data) != x.a_data)
+---
+> 	while ((int)addr & CLOFSET)
+> 		*addr++ = 0;
+> 	
+> 	if (iread(&fil, off, addr, x.a_data) != x.a_data)
+141,144c169
+< 	printf("+%d", x.a_bss);
+< 	x.a_bss += 128*512;	/* slop */
+< 	for (i = 0; i < x.a_bss; i++)
+< 		*addr++ = 0;
+---
+> 	bzero(addr, x.a_bss);
+147,148c172
+< 	x.a_entry &= 0xfff00000;
+< 	printf(" start 0x%x\n", x.a_entry);
+---
+> 	x.a_entry &= ~0xfff00000;
+150,151c174,178
+< 	if(c=scankbd())
+< 		_longjmp(&exception,1);
+---
+> 	/*if (scankbd()) {
+> 		printf("Operator abort");
+> 		kbdreset();
+> 		return;
+> 	}*/
+153c180,181
+< 	i = (*((int (*)()) x.a_entry))(howto, opendev, 0, cyloffset);
+---
+> 	/* howto, bootdev, cyl */
+> 	i = (*((int (*)()) x.a_entry))(3, bootdev, 0);
+155c183
+< 	if (i) printf("exit %d\n", i) ; 
+---
+> 	if (i) printf("Program exits with %d", i) ; 
+158c186
+< 	printf("Short read\n");
+---
+> 	printf("Read of file is incomplete");
+Only in net2/usr/src/sys/i386/stand: bootxx.c
+Only in src/sys.386bsd/i386/stand: breadxx.c
+diff -r net2/usr/src/sys/i386/stand/cga.c src/sys.386bsd/i386/stand/cga.c
+89c89
+< 			att = crtat[1];	/* use current attribute present */
+---
+> 			/* att = crtat[1];	/* use current attribute present */
+126c126
+< #ifndef SMALL
+---
+> #ifdef SMALL
+Only in net2/usr/src/sys/i386/stand: conf.c
+Only in net2/usr/src/sys/i386/stand: confxx.c
+diff -r net2/usr/src/sys/i386/stand/fd.c src/sys.386bsd/i386/stand/fd.c
+43,44c43
+< #include "dkbad.h"
+< #include "i386/isa/disk.h"
+---
+> #include "disklabel.h"
+55a55,56
+> extern struct disklabel disklabel;
+> 
+111c112
+<  	nblocks = fd_types[fd_type].size;
+---
+>  	nblocks = disklabel.d_secperunit;
+113c114
+< #ifndef SMALL
+---
+> #ifdef SMALL
+122a124
+> /*printf("iosize %d ", iosize);*/
+139a142
+> /*printf("fdio ");*/
+141,143d143
+< #ifdef FDDEBUG
+< printf("fdio ");
+< #endif
+145,146c145,146
+<  	sectrac = ft->sectrac;
+< 	cyl = blknum / (2 * sectrac);
+---
+>  	sectrac = disklabel.d_nsectors;
+> 	cyl = blknum / disklabel.d_secpercyl;
+163c163
+< #ifndef SMALL
+---
+> #ifdef SMALL
+173c173
+< 	sec = blknum %  (sectrac * 2);
+---
+> 	sec = blknum %  disklabel.d_secpercyl;
+198,199c198
+< 		if (numretry) goto retry;
+< #ifndef SMALL
+---
+> #ifdef SMALL
+203a203
+> 		if (numretry) goto retry;
+diff -r net2/usr/src/sys/i386/stand/fdbootblk.c src/sys.386bsd/i386/stand/fdbootblk.c
+228c228
+< 	cmpb	$16,%bl
+---
+> 	cmpb	$15,%bl
+Only in src/sys.386bsd/i386/stand: fs.c
+diff -r net2/usr/src/sys/i386/stand/kbd.c src/sys.386bsd/i386/stand/kbd.c
+51a52
+> #ifdef notdef
+129a131
+> #endif
+136c138
+< u_char odt;
+---
+> u_char odt, bdt;
+137a140
+> #ifdef notdef
+195a199
+> #endif
+201,202c205,212
+< 	if (c == 0xaa) { odt = 0x2a; return (0); }
+< 	if (c == 0xfa) { odt = 0x7a; return (0); }
+---
+> 	if (c == 83) exit();
+> 	/*if (c == 0xaa) return (0);
+> 	if (c == 0xfa) return (0);*/
+> 
+> 	if (bdt == 0) {  bdt = c&0x7f; return(0); }
+> 
+> 	if(odt) return(1);
+> 
+205,207c215,217
+< 	if ( (odt&0x7f) == c )return(0);
+< 	if(odt == 0) { odt = c;  return(0); }
+< 	return(kbd());
+---
+> 	if (bdt == c) return(0);
+> 	odt = c;
+> 	return(1);
+228a239,240
+> 	odt = bdt = 0;
+> 	inb(0x60);
+230a243
+> #ifdef notdef;
+239a253
+> #endif
+Only in net2/usr/src/sys/i386/stand: libsa
+Only in net2/usr/src/sys/i386/stand: libsmsa
+diff -r net2/usr/src/sys/i386/stand/prf.c src/sys.386bsd/i386/stand/prf.c
+50c50,55
+< wait(n) { while(n--) ; }
+---
+> wait(n) {
+> 	int v;
+> 
+> 	while(n-- && (v = scankbd()) == 0);
+> 	if (v) kbdreset();
+> }
+Only in src/sys.386bsd/i386/stand: saio.h
+diff -r net2/usr/src/sys/i386/stand/srt0.c src/sys.386bsd/i386/stand/srt0.c
+61c61,62
+< entry:	.globl	entry
+---
+> 	.globl	entry
+> 	.set entry,0
+136c137
+< 	movl	%esi,%esp
+---
+> 	/*movl	%esi,%esp*/
+138,139c139,140
+< 	pushl	$0
+< 	popf
+---
+> 	/*pushl	$0
+> 	popf*/
+141d141
+< #ifndef	SMALL
+143d142
+< #endif
+153,155d151
+< #ifndef	SMALL
+< 	.globl _getchar
+< #endif
+159,162d154
+< #ifndef	SMALL
+< 	call	_getchar
+< #else
+< _exit:
+166d157
+< #endif
+169c160
+< #ifndef	SMALL
+---
+> 
+171,172c162,164
+< 	call	_getchar
+< #endif
+---
+> 	pushl	$1000000
+> 	call	_wait
+> 	popl	%eax
+191a184
+> 	jmp 7f ; nop ; 7: jmp 7f ; nop ; 7: ;
+192a186
+> 	jmp 7f ; nop ; 7: jmp 7f ; nop ; 7: ;
+197a192
+> 	jmp 7f ; nop ; 7: jmp 7f ; nop ; 7: ;
+198a194
+> 	jmp 7f ; nop ; 7: jmp 7f ; nop ; 7: ;
+280a277,281
+> 	.globl _scream
+> _scream: inb	$0x61,%al
+> 	orb	$3,%al
+> 	outb	%al, $0x61
+> 	ret
+Only in net2/usr/src/sys/i386/stand: tags
+Only in src/sys.386bsd/i386/stand: trimhd.c
+diff -r net2/usr/src/sys/i386/stand/wd.c src/sys.386bsd/i386/stand/wd.c
+253c253
+< printf("+");
+---
+> printf("addr %x",addr);
+316a317
+> #ifdef nada
+330a332
+> #endif
+391a394
+> #ifdef nada
+398a402
+> #endif
+401c405
+< 	outb(wdc+wd_precomp, dd->d_precompcyl / 4);
+---
+> 	/*outb(wdc+wd_precomp, dd->d_precompcyl / 4);*/
+Only in net2/usr/src/sys/kern: Makefile
+diff -r net2/usr/src/sys/kern/init_main.c src/sys.386bsd/kern/init_main.c
+34a35
+> static char rcsid[] = "$Header: /usr/src/sys.386bsd/kern/RCS/init_main.c,v 1.3 92/01/21 21:28:49 william Exp Locker: root $";
+40d40
+< #include "map.h"
+46d45
+< #include "seg.h"
+49d47
+< #include "clist.h"
+62c60
+< "Copyright (c) 1982,1986,1989,1991 The Regents of the University of California.\nAll rights reserved.\n\n";
+---
+> "Copyright (c) 1982,1986,1989,1991 The Regents of the University of California.\nCopyright (c) 1989,1990,1991,1992 William F. Jolitz. All rights reserved.\n";
+213d210
+< 	cinit();
+Only in src/sys.386bsd/kern: kern__physio.c
+diff -r net2/usr/src/sys/kern/kern_descrip.c src/sys.386bsd/kern/kern_descrip.c
+34a35
+> static char rcsid[] = "$Header: /usr/bill/working/sys/kern/RCS/kern_descrip.c,v 1.2 92/01/21 21:29:09 william Exp $";
+604a606,624
+> }
+> 
+> /*
+>  * Close any files on exec?
+>  */
+> void
+> fdcloseexec(p)
+> 	struct proc *p;
+> {
+> 	register struct filedesc *fdp = p->p_fd;
+> 	struct file **fpp;
+> 	register int i;
+> 
+> 	fpp = fdp->fd_ofiles;
+> 	for (i = fdp->fd_lastfile; i-- >= 0; fpp++)
+> 		if (*fpp && (fdp->fd_ofileflags[i] & UF_EXCLOSE)) {
+> 			(void) closef(*fpp, p);
+> 			*fpp = 0;
+> 		}
+Only in net2/usr/src/sys/kern: kern_exec.c
+Only in src/sys.386bsd/kern: kern_execve.c
+diff -r net2/usr/src/sys/kern/kern_exit.c src/sys.386bsd/kern/kern_exit.c
+38d37
+< #include "map.h"
+160,162d158
+< 	(void) acct(p);
+< 	if (--p->p_limit->p_refcnt == 0)
+< 		FREE(p->p_limit, M_SUBPROC);
+170a167,176
+> 	/* current process does not exist, as far as other parts of the
+> 	 * system (clock) is concerned, since parts of it might not be
+> 	 * there anymore */
+> 	curproc = NULL;
+> 
+> 	if (--p->p_limit->p_refcnt == 0) {
+> 		FREE(p->p_limit, M_SUBPROC);
+> 		p->p_limit = (struct plimit *) -1;
+> 	}
+> 
+182d187
+< 	curproc = NULL;
+260,266c265,266
+< 	if ((p->p_regs[PS] & PSL_ALLCC) != PSL_ALLCC) {
+< 		uap->options = 0;
+< 		uap->rusage = 0;
+< 	} else {
+< 		uap->options = p->p_regs[R0];
+< 		uap->rusage = (struct rusage *)p->p_regs[R1];
+< 	}
+---
+> 	uap->options = 0;
+> 	uap->rusage = 0;
+348a349
+> 				p->p_cred = (struct pcred *) -1;
+diff -r net2/usr/src/sys/kern/kern_fork.c src/sys.386bsd/kern/kern_fork.c
+38d37
+< #include "map.h"
+45d43
+< #include "seg.h"
+diff -r net2/usr/src/sys/kern/kern_malloc.c src/sys.386bsd/kern/kern_malloc.c
+38d37
+< #include "map.h"
+Only in net2/usr/src/sys/kern: kern_physio.c
+diff -r net2/usr/src/sys/kern/kern_proc.c src/sys.386bsd/kern/kern_proc.c
+38d37
+< #include "map.h"
+42d40
+< #include "seg.h"
+diff -r net2/usr/src/sys/kern/kern_sig.c src/sys.386bsd/kern/kern_sig.c
+47d46
+< #include "seg.h"
+diff -r net2/usr/src/sys/kern/kern_subr.c src/sys.386bsd/kern/kern_subr.c
+34a35
+> static char rcsid[] = "$Header: /usr/bill/working/sys/kern/RCS/kern_subr.c,v 1.3 92/01/21 21:29:28 william Exp $";
+92a94,130
+> }
+> 
+> uioapply(func, arg1, arg2, uio)
+> 	int (*func)() ;
+> 	register struct uio *uio;
+> {
+> 	register struct iovec *iov;
+> 	u_int cnt, cnt1;
+> 	int error = 0;
+> 
+> 
+> /*#ifdef DIAGNOSTIC*/
+> 	if (uio->uio_rw != UIO_READ && uio->uio_rw != UIO_WRITE)
+> 		panic("uioapply: mode");
+> 	if (uio->uio_segflg == UIO_USERSPACE && uio->uio_procp != curproc)
+> 		panic("uioapply proc");
+> /*#endif*/
+> 	while (uio->uio_resid) {
+> 		iov = uio->uio_iov;
+> 		cnt = iov->iov_len;
+> 		if (cnt == 0) {
+> 			uio->uio_iov++;
+> 			uio->uio_iovcnt--;
+> 			continue;
+> 		}
+> 		cnt1 = cnt;
+> 		error = (*func)(arg1, arg2, uio->uio_offset, uio->uio_rw,
+> 			iov->iov_base, &cnt1, uio->uio_procp);
+> 		cnt -= cnt1;
+> 		iov->iov_base += cnt;
+> 		iov->iov_len -= cnt;
+> 		uio->uio_resid -= cnt;
+> 		uio->uio_offset += cnt;
+> 		if (error || cnt1)
+> 			return (error);
+> 	}
+> 	return (0);
+Only in net2/usr/src/sys/kern: makesyscalls.sh
+Only in src/sys.386bsd/kern: subr_rlist.c
+Only in net2/usr/src/sys/kern: subr_rmap.c
+diff -r net2/usr/src/sys/kern/sys_process.c src/sys.386bsd/kern/sys_process.c
+40d39
+< #include "seg.h"
+Only in net2/usr/src/sys/kern: syscalls.master
+Only in net2/usr/src/sys/kern: tags
+diff -r net2/usr/src/sys/kern/tty.c src/sys.386bsd/kern/tty.c
+35a36
+> static char rcsid[] = "$Header: /usr/bill/working/sys/kern/RCS/tty.c,v 1.3 92/01/21 21:31:11 william Exp $";
+175c176
+< 	while ((tp->t_outq.c_cc || tp->t_state&TS_BUSY) &&
+---
+> 	while ((RB_LEN(&tp->t_out) || tp->t_state&TS_BUSY) &&
+180c181
+< 		if (error = ttysleep(tp, (caddr_t)&tp->t_outq, 
+---
+> 		if (error = ttysleep(tp, (caddr_t)&tp->t_out, 
+189,191c190,191
+< 	register struct clist *q = qq; \
+< 	if (q->c_cc) \
+< 		ndflush(q, q->c_cc); \
+---
+> 	register struct ringb *r = qq; \
+> 	r->rb_hd = r->rb_tl; \
+205,206c205,206
+< 		flushq(&tp->t_canq);
+< 		flushq(&tp->t_rawq);
+---
+> 		flushq(&tp->t_can);
+> 		flushq(&tp->t_raw);
+215,216c215,216
+< 		flushq(&tp->t_outq);
+< 		wakeup((caddr_t)&tp->t_outq);
+---
+> 		flushq(&tp->t_out);
+> 		wakeup((caddr_t)&tp->t_out);
+232a233
+> 	int rawcc, cancc;
+234,235c235,238
+< 	x = tp->t_rawq.c_cc + tp->t_canq.c_cc;
+< 	if (tp->t_rawq.c_cc > TTYHOG) {
+---
+> 	rawcc = RB_LEN(&tp->t_raw);
+> 	cancc = RB_LEN(&tp->t_can);
+> 	x = rawcc + cancc;
+> 	if (rawcc > TTYHOG) {
+244c247
+< 	    ((tp->t_lflag&ICANON) == 0) || (tp->t_canq.c_cc > 0) &&
+---
+> 	    ((tp->t_lflag&ICANON) == 0) || (cancc > 0) &&
+246c249
+< 		if (putc(tp->t_cc[VSTOP], &tp->t_outq) == 0) {
+---
+> 		if (putc(tp->t_cc[VSTOP], &tp->t_out) == 0) {
+397c400
+< 		*(int *)data = tp->t_outq.c_cc;
+---
+> 		*(int *)data = RB_LEN(&tp->t_out);
+479c482
+< 					struct clist tq;
+---
+> 					struct ringb tb;
+481,484c484,487
+< 					catq(&tp->t_rawq, &tp->t_canq);
+< 					tq = tp->t_rawq;
+< 					tp->t_rawq = tp->t_canq;
+< 					tp->t_canq = tq;
+---
+> 					catb(&tp->t_raw, &tp->t_can);
+> 					tb = tp->t_raw;
+> 					tp->t_raw = tp->t_can;
+> 					tp->t_can = tb;
+586c589
+< 	nread = tp->t_canq.c_cc;
+---
+> 	nread = RB_LEN(&tp->t_can);
+588c591
+< 		nread += tp->t_rawq.c_cc;
+---
+> 		nread += RB_LEN(&tp->t_raw);
+614c617
+< 		if (tp->t_outq.c_cc <= tp->t_lowat)
+---
+> 		if (RB_LEN(&tp->t_out) <= tp->t_lowat)
+641a645,647
+> 		initrb(&tp->t_raw);
+> 		initrb(&tp->t_can);
+> 		initrb(&tp->t_out);
+749c755
+< 	struct clist tq;
+---
+> 	struct ringb tb;
+754,757c760,762
+< 	tq = tp->t_rawq;
+< 	tp->t_rawq.c_cc = 0;
+< 	tp->t_rawq.c_cf = tp->t_rawq.c_cl = 0;
+< 	while ((c = getc(&tq)) >= 0)
+---
+> 	tb = tp->t_raw;
+> 	tp->t_raw.rb_hd = tp->t_raw.rb_tl = tp->t_raw.rb_buf;
+> 	while ((c = getc(&tb)) >= 0)
+808,810c813,815
+< 				putc(0377|TTY_QUOTE, &tp->t_rawq);
+< 				putc(0|TTY_QUOTE, &tp->t_rawq);
+< 				putc(c|TTY_QUOTE, &tp->t_rawq);
+---
+> 				putc(0377|TTY_QUOTE, &tp->t_raw);
+> 				putc(0|TTY_QUOTE, &tp->t_raw);
+> 				putc(c|TTY_QUOTE, &tp->t_raw);
+860c865
+< 					if (tp->t_rawq.c_cc + tp->t_canq.c_cc)
+---
+> 					if (RB_LEN(&tp->t_raw) + RB_LEN(&tp->t_can))
+928,929c933,934
+< 			if (tp->t_rawq.c_cc)
+< 				ttyrub(unputc(&tp->t_rawq), tp);
+---
+> 			if (RB_LEN(&tp->t_raw))
+> 				ttyrub(unputc(&tp->t_raw), tp);
+936c941
+< 			if (lflag&ECHOKE && tp->t_rawq.c_cc == tp->t_rocount &&
+---
+> 			if (lflag&ECHOKE && RB_LEN(&tp->t_raw) == tp->t_rocount &&
+938,939c943,944
+< 				while (tp->t_rawq.c_cc)
+< 					ttyrub(unputc(&tp->t_rawq), tp);
+---
+> 				while (RB_LEN(&tp->t_raw))
+> 					ttyrub(unputc(&tp->t_raw), tp);
+944c949
+< 				while (getc(&tp->t_rawq) > 0)
+---
+> 				while (getc(&tp->t_raw) > 0)
+961c966
+< 			while ((c = unputc(&tp->t_rawq)) == ' ' || c == '\t')
+---
+> 			while ((c = unputc(&tp->t_raw)) == ' ' || c == '\t')
+970c975
+< 			c = unputc(&tp->t_rawq);
+---
+> 			c = unputc(&tp->t_raw);
+979c984
+< 				c = unputc(&tp->t_rawq);
+---
+> 				c = unputc(&tp->t_raw);
+984c989
+< 			(void) putc(c, &tp->t_rawq);
+---
+> 			(void) putc(c, &tp->t_raw);
+1007c1012
+< 	if (tp->t_rawq.c_cc + tp->t_canq.c_cc >= TTYHOG) {
+---
+> 	if (RB_LEN(&tp->t_raw)+RB_LEN(&tp->t_can) >= TTYHOG) {
+1009c1014
+< 			if (tp->t_outq.c_cc < tp->t_hiwat)
+---
+> 			if (RB_LEN(&tp->t_out) < tp->t_hiwat)
+1019c1024
+< 	if (putc(c, &tp->t_rawq) >= 0) {
+---
+> 	if (putc(c, &tp->t_raw) >= 0) {
+1027c1032
+< 			catq(&tp->t_rawq, &tp->t_canq);
+---
+> 			catb(&tp->t_raw, &tp->t_can);
+1081c1086
+< 		if (putc(c, &tp->t_outq))
+---
+> 		if (putc(c, &tp->t_out))
+1099a1105,1106
+> 			int i;
+> 
+1100a1108
+> #ifdef was
+1101a1110,1123
+> #else
+> 			i = min (c, RB_CONTIGPUT(&tp->t_out));
+> 			bcopy("        ", tp->t_out.rb_tl, i);
+> 			tp->t_out.rb_tl =
+> 				RB_ROLLOVER(&tp->t_out, tp->t_out.rb_tl+i);
+> 			i = min (c-i, RB_CONTIGPUT(&tp->t_out));
+> 
+> 			/* off end and still have space? */
+> 			if (i) {
+> 				bcopy("        ", tp->t_out.rb_tl, i);
+> 				tp->t_out.rb_tl =
+> 				   RB_ROLLOVER(&tp->t_out, tp->t_out.rb_tl+i);
+> 			}
+> #endif
+1119c1141
+< 	if ((tp->t_lflag&FLUSHO) == 0 && putc(c, &tp->t_outq))
+---
+> 	if ((tp->t_lflag&FLUSHO) == 0 && putc(c, &tp->t_out))
+1158c1180
+< 	register struct clist *qp;
+---
+> 	register struct ringb *qp;
+1193,1194d1214
+< 	 *
+< 	 * (should get rid of clists...)
+1196c1216
+< 	qp = lflag&ICANON ? &tp->t_canq : &tp->t_rawq;
+---
+> 	qp = lflag&ICANON ? &tp->t_can : &tp->t_raw;
+1204c1224
+< 	if (qp->c_cc <= 0) {
+---
+> 	if (RB_LEN(qp) <= 0) {
+1216c1236
+< 		error = ttysleep(tp, (caddr_t)&tp->t_rawq, TTIPRI | PCATCH,
+---
+> 		error = ttysleep(tp, (caddr_t)&tp->t_raw, TTIPRI | PCATCH,
+1268c1288
+< 	if (tp->t_state&TS_TBLOCK && tp->t_rawq.c_cc < TTYHOG/5) {
+---
+> 	if (tp->t_state&TS_TBLOCK && RB_LEN(&tp->t_raw) < TTYHOG/5) {
+1270c1290
+< 		    putc(cc[VSTART], &tp->t_outq) == 0) {
+---
+> 		    putc(cc[VSTART], &tp->t_out) == 0) {
+1296,1297c1316,1317
+< 	if (tp->t_outq.c_cc > hiwat + 200)
+< 		while (tp->t_outq.c_cc > hiwat) {
+---
+> 	if (RB_LEN(&tp->t_out) > hiwat + 200)
+> 		while (RB_LEN(&tp->t_out) > hiwat) {
+1303c1323
+< 			timeout(wakeup, (caddr_t)&tp->t_outq, hz);
+---
+> 			timeout(wakeup, (caddr_t)&tp->t_out, hz);
+1305c1325
+< 			sleep((caddr_t)&tp->t_outq, PZERO - 1);
+---
+> 			sleep((caddr_t)&tp->t_out, PZERO - 1);
+1341c1361
+< 			error = ttysleep(tp, (caddr_t)&tp->t_rawq, 
+---
+> 			error = ttysleep(tp, (caddr_t)&tp->t_raw, 
+1375c1395
+< 		if (tp->t_outq.c_cc > hiwat)
+---
+> 		if (RB_LEN(&tp->t_out) > hiwat)
+1422c1442
+< 					    tp->t_outq.c_cc > hiwat)
+---
+> 					    RB_LEN(&tp->t_out) > hiwat)
+1435a1456
+> #ifdef was
+1436a1458,1463
+> #else
+> 			i = min (ce, RB_CONTIGPUT(&tp->t_out));
+> 			bcopy(cp, tp->t_out.rb_tl, i);
+> 			tp->t_out.rb_tl = RB_ROLLOVER(&tp->t_out, tp->t_out.rb_tl+i);
+> 			i = ce - i;
+> #endif
+1442c1469
+< 				/* out of c-lists, wait a bit */
+---
+> 				/* out of space, wait a bit */
+1449c1476
+< 			if (tp->t_lflag&FLUSHO || tp->t_outq.c_cc > hiwat)
+---
+> 			if (tp->t_lflag&FLUSHO || RB_LEN(&tp->t_out) > hiwat)
+1471c1498
+< 	if (tp->t_outq.c_cc <= hiwat) {
+---
+> 	if (RB_LEN(&tp->t_out) <= hiwat) {
+1483c1510
+< 	error = ttysleep(tp, (caddr_t)&tp->t_outq, TTOPRI | PCATCH, ttyout, 0);
+---
+> 	error = ttysleep(tp, (caddr_t)&tp->t_out, TTOPRI | PCATCH, ttyout, 0);
+1498c1525
+< 	register char *cp;
+---
+> 	char *cp;
+1501d1527
+< 	char *nextc();
+1534c1560
+< 			if (tp->t_rocount < tp->t_rawq.c_cc) {
+---
+> 			if (tp->t_rocount < RB_LEN(&tp->t_raw)) {
+1543,1546c1569,1571
+< 			cp = tp->t_rawq.c_cf;
+< 			if (cp)
+< 				c = *cp;	/* XXX FIX NEXTC */
+< 			for (; cp; cp = nextc(&tp->t_rawq, cp, &c))
+---
+> 			cp = tp->t_raw.rb_hd;
+> 			for (c = nextc(&tp->t_raw, &cp); c ;
+> 				c = nextc(&tp->t_raw, cp))
+1600,1601c1625
+< 	register char *cp;
+< 	char *nextc();
+---
+> 	char *cp;
+1606a1631
+> 
+1608,1610c1633,1634
+< 	/*** XXX *** FIX *** NEXTC IS BROKEN - DOESN'T CHECK QUOTE
+< 	  BIT OF FIRST CHAR ****/
+< 	for (cp = tp->t_canq.c_cf, c=(cp?*cp:0); cp; cp = nextc(&tp->t_canq, cp, &c)) {
+---
+> 	cp = tp->t_can.rb_hd;
+> 	for (c = nextc(&tp->t_can, &cp); c ; c = nextc(&tp->t_can, cp))
+1612,1613c1636,1637
+< 	}
+< 	for (cp = tp->t_rawq.c_cf, c=(cp?*cp:0); cp; cp = nextc(&tp->t_rawq, cp, &c)) {
+---
+> 	cp = tp->t_raw.rb_hd;
+> 	for (c = nextc(&tp->t_raw, &cp); c ; c = nextc(&tp->t_raw, cp))
+1615d1638
+< 	}
+1618c1641,1642
+< 	tp->t_rocount = tp->t_rawq.c_cc;
+---
+> 
+> 	tp->t_rocount = RB_LEN(&tp->t_raw);
+1675c1699
+< 	wakeup((caddr_t)&tp->t_rawq);
+---
+> 	wakeup((caddr_t)&tp->t_raw);
+diff -r net2/usr/src/sys/kern/tty_pty.c src/sys.386bsd/kern/tty_pty.c
+34a35
+> static char rcsid[] = "$Header: /usr/bill/working/sys/kern/RCS/tty_pty.c,v 1.3 92/01/21 21:31:23 william Exp $";
+113c114
+< 		if (error = ttysleep(tp, (caddr_t)&tp->t_rawq, TTIPRI | PCATCH,
+---
+> 		if (error = ttysleep(tp, (caddr_t)&tp->t_raw, TTIPRI | PCATCH,
+157c158
+< 		if (tp->t_canq.c_cc == 0) {
+---
+> 		if (RB_LEN(&tp->t_can) == 0) {
+160c161
+< 			if (error = ttysleep(tp, (caddr_t)&tp->t_canq,
+---
+> 			if (error = ttysleep(tp, (caddr_t)&tp->t_can,
+165,166c166,167
+< 		while (tp->t_canq.c_cc > 1 && uio->uio_resid > 0)
+< 			if (ureadc(getc(&tp->t_canq), uio) < 0) {
+---
+> 		while (RB_LEN(&tp->t_can) > 1 && uio->uio_resid > 0)
+> 			if (ureadc(getc(&tp->t_can), uio) < 0) {
+170,172c171,173
+< 		if (tp->t_canq.c_cc == 1)
+< 			(void) getc(&tp->t_canq);
+< 		if (tp->t_canq.c_cc)
+---
+> 		if (RB_LEN(&tp->t_can) == 1)
+> 			(void) getc(&tp->t_can);
+> 		if (RB_LEN(&tp->t_can))
+227c228
+< 		wakeup((caddr_t)&tp->t_outq.c_cf);
+---
+> 		wakeup((caddr_t)&tp->t_out.rb_hd);
+235c236
+< 		wakeup((caddr_t)&tp->t_rawq.c_cf);
+---
+> 		wakeup((caddr_t)&tp->t_raw.rb_hd);
+315c316
+< 			if (tp->t_outq.c_cc && (tp->t_state&TS_TTSTOP) == 0)
+---
+> 			if (RB_LEN(&tp->t_out) && (tp->t_state&TS_TTSTOP) == 0)
+322c323
+< 		if (error = tsleep((caddr_t)&tp->t_outq.c_cf, TTIPRI | PCATCH,
+---
+> 		if (error = tsleep((caddr_t)&tp->t_out.rb_hd, TTIPRI | PCATCH,
+328a330
+> #ifdef was
+329a332,339
+> #else
+> 		cc = min(MIN(uio->uio_resid, BUFSIZ), RB_CONTIGGET(&tp->t_out));
+> 		if (cc) {
+> 			bcopy(tp->t_out.rb_hd, buf, cc);
+> 			tp->t_out.rb_hd =
+> 				RB_ROLLOVER(&tp->t_out, tp->t_out.rb_hd+cc);
+> 		}
+> #endif
+334c344
+< 	if (tp->t_outq.c_cc <= tp->t_lowat) {
+---
+> 	if (RB_LEN(&tp->t_out) <= tp->t_lowat) {
+337c347
+< 			wakeup((caddr_t)&tp->t_outq);
+---
+> 			wakeup((caddr_t)&tp->t_out);
+391c401
+< 		     tp->t_outq.c_cc && (tp->t_state&TS_TTSTOP) == 0) {
+---
+> 		     RB_LEN(&tp->t_out) && (tp->t_state&TS_TTSTOP) == 0) {
+413c423
+< 			    if (tp->t_canq.c_cc == 0)
+---
+> 			    if (RB_LEN(&tp->t_can) == 0)
+416c426
+< 			    if (tp->t_rawq.c_cc + tp->t_canq.c_cc < TTYHOG-2)
+---
+> 			    if (RB_LEN(&tp->t_raw) + RB_LEN(&tp->t_can) < TTYHOG-2)
+418c428
+< 			    if (tp->t_canq.c_cc == 0 && (tp->t_iflag&ICANON))
+---
+> 			    if (RB_LEN(&tp->t_can) == 0 && (tp->t_iflag&ICANON))
+448c458
+< 		if (tp->t_canq.c_cc)
+---
+> 		if (RB_LEN(&tp->t_can))
+450c460
+< 		while (uio->uio_resid > 0 && tp->t_canq.c_cc < TTYHOG - 1) {
+---
+> 		while (uio->uio_resid > 0 && RB_LEN(&tp->t_can) < TTYHOG - 1) {
+453c463
+< 				cc = min(cc, TTYHOG - 1 - tp->t_canq.c_cc);
+---
+> 				cc = min(cc, TTYHOG - 1 - RB_CONTIGPUT(&tp->t_can));
+461a472
+> #ifdef was
+463a475,481
+> #else
+> 			if (cc) {
+> 				bcopy(cp, tp->t_can.rb_tl, cc);
+> 				tp->t_can.rb_tl =
+> 				  RB_ROLLOVER(&tp->t_can, tp->t_can.rb_tl+cc);
+> 			}
+> #endif
+466c484
+< 		(void) putc(0, &tp->t_canq);
+---
+> 		(void) putc(0, &tp->t_can);
+468c486
+< 		wakeup((caddr_t)&tp->t_canq);
+---
+> 		wakeup((caddr_t)&tp->t_can);
+483,485c501,503
+< 			if ((tp->t_rawq.c_cc + tp->t_canq.c_cc) >= TTYHOG - 2 &&
+< 			   (tp->t_canq.c_cc > 0 || !(tp->t_iflag&ICANON))) {
+< 				wakeup((caddr_t)&tp->t_rawq);
+---
+> 			if ((RB_LEN(&tp->t_raw) + RB_LEN(&tp->t_can)) >= TTYHOG - 2 &&
+> 			   (RB_LEN(&tp->t_can) > 0 || !(tp->t_iflag&ICANON))) {
+> 				wakeup((caddr_t)&tp->t_raw);
+509c527
+< 	if (error = tsleep((caddr_t)&tp->t_rawq.c_cf, TTOPRI | PCATCH,
+---
+> 	if (error = tsleep((caddr_t)&tp->t_raw.rb_hd, TTOPRI | PCATCH,
+598c616
+< 			while (getc(&tp->t_outq) >= 0)
+---
+> 			while (getc(&tp->t_out) >= 0)
+Only in src/sys.386bsd/kern: tty_ring.c
+Only in net2/usr/src/sys/kern: tty_subr.c
+diff -r net2/usr/src/sys/kern/uipc_mbuf.c src/sys.386bsd/kern/uipc_mbuf.c
+39d38
+< #include "map.h"
+Only in src/sys.386bsd/kern: vfs__bio.c
+Only in net2/usr/src/sys/kern: vfs_bio.c
+diff -r net2/usr/src/sys/net/bpf.c src/sys.386bsd/net/bpf.c
+40c40
+<  * "$Header: bpf.c,v 1.23 91/01/30 18:22:13 mccanne Exp $";
+---
+>  * "$Header: /usr/bill/working/sys/net/RCS/bpf.c,v 1.1 92/01/15 20:28:02 william Exp Locker: william $";
+55d54
+< #include <sys/map.h>
+diff -r net2/usr/src/sys/net/if_sl.c src/sys.386bsd/net/if_sl.c
+67c67
+< /* $Header: if_sl.c,v 1.7 89/05/31 02:24:52 van Exp $ */
+---
+> /* $Header: /usr/bill/working/sys/net/RCS/if_sl.c,v 1.2 92/01/15 17:36:38 william Exp $ */
+393c393
+< 	if (sc->sc_ttyp->t_outq.c_cc == 0)
+---
+> 	if (RB_LEN(&sc->sc_ttyp->t_out) == 0)
+412d411
+< 	extern int cfreecount;
+420c419
+< 		if (tp->t_outq.c_cc != 0) {
+---
+> 		if (RB_LEN(&tp->t_out) != 0) {
+422c421
+< 			if (tp->t_outq.c_cc > SLIP_HIWAT)
+---
+> 			if (RB_LEN(&tp->t_out) > SLIP_HIWAT)
+447c446
+< 		if (cfreecount < CLISTRESERVE + SLMTU) {
+---
+> 		if (RB_LEN(&tp->t_out) < SLMTU) {
+458c457
+< 		if (tp->t_outq.c_cc == 0) {
+---
+> 		if (RB_LEN(&tp->t_out) == 0) {
+460c459
+< 			(void) putc(FRAME_END, &tp->t_outq);
+---
+> 			(void) putc(FRAME_END, &tp->t_out);
+483a483
+> 					int cc;
+487a488
+> #ifdef was
+489a491,500
+> #else
+> 					if (cc = RB_CONTIGPUT(&tp->t_out)) {
+> 						cc = min (cc, cp - bp);
+> 						bcopy((char *)bp,
+> 							tp->t_out.rb_tl, cc);
+> 						tp->t_out.rb_tl =
+> 				  RB_ROLLOVER(&tp->t_out, tp->t_out.rb_tl + cc);
+> 					} else
+> 						break;
+> #endif
+498c509
+< 					if (putc(FRAME_ESCAPE, &tp->t_outq))
+---
+> 					if (putc(FRAME_ESCAPE, &tp->t_out))
+502,503c513,514
+< 					   &tp->t_outq)) {
+< 						(void) unputc(&tp->t_outq);
+---
+> 					   &tp->t_out)) {
+> 						(void) unputc(&tp->t_out);
+513c524
+< 		if (putc(FRAME_END, &tp->t_outq)) {
+---
+> 		if (putc(FRAME_END, &tp->t_out)) {
+521,522c532,533
+< 			(void) unputc(&tp->t_outq);
+< 			(void) putc(FRAME_END, &tp->t_outq);
+---
+> 			(void) unputc(&tp->t_out);
+> 			(void) putc(FRAME_END, &tp->t_out);
+Only in net2/usr/src/sys/net: tags
+diff -r net2/usr/src/sys/netinet/in_proto.c src/sys.386bsd/netinet/in_proto.c
+159,177d158
+< #include "hy.h"
+< #if NHY > 0
+< /*
+<  * HYPERchannel protocol family: raw interface.
+<  */
+< int	rhy_output();
+< extern	struct domain hydomain;
+< 
+< struct protosw hysw[] = {
+< { SOCK_RAW,	&hydomain,	0,		PR_ATOMIC|PR_ADDR,
+<   0,		rhy_output,	0,		0,
+<   rip_usrreq,
+<   0,		0,		0,		0,
+< },
+< };
+< 
+< struct domain hydomain =
+<     { AF_HYLINK, "hy", 0, 0, 0, hysw, &hysw[sizeof (hysw)/sizeof(hysw[0])] };
+< #endif
+Only in net2/usr/src/sys/netinet: tags
+diff -r net2/usr/src/sys/nfs/nfs_subs.c src/sys.386bsd/nfs/nfs_subs.c
+54d53
+< #include "map.h"
+87d85
+< extern struct map nfsmap[NFS_MSIZ];
+531d528
+< 	rminit(nfsmap, (long)NFS_MAPREG, (long)1, "nfs mapreg", NFS_MSIZ);
+diff -r net2/usr/src/sys/nfs/nfs_vnops.c src/sys.386bsd/nfs/nfs_vnops.c
+56d55
+< #include "map.h"
+70,71d68
+< #include "machine/mtpr.h"
+< 
+198d194
+< struct map nfsmap[NFS_MSIZ];
+202d197
+< static int nfsmap_want = 0;
+1589d1583
+< #if defined(hp300) || defined(i386)
+1592,1594d1585
+< #else
+< 		o = (int)bp->b_un.b_addr & PGOFSET;
+< 		npf2 = npf = btoc(bp->b_bcount + o);
+1597,1633d1587
+< 		 * Get some mapping page table entries
+< 		 */
+< 		while ((reg = rmalloc(nfsmap, (long)npf)) == 0) {
+< 			nfsmap_want++;
+< 			(void) tsleep((caddr_t)&nfsmap_want, PZERO-1, "nfsmap",
+< 					0);
+< 		}
+< 		reg--;
+< 		if (bp->b_flags & B_PAGET)
+< 			pte = &Usrptmap[btokmx((struct pte *)bp->b_un.b_addr)];
+< 		else {
+< 			v = btop(bp->b_un.b_addr);
+< 			if (bp->b_flags & B_UAREA)
+< 				pte = &uiop->uio_procp->p_addr[v];
+< 			else
+< 				pte = vtopte(uiop->uio_procp, v);
+< 		}
+< 
+< 		/*
+< 		 * Play vmaccess() but with the Nfsiomap page table
+< 		 */
+< 		ppte = &Nfsiomap[reg];
+< 		vbase = vaddr = &nfsiobuf[reg*NBPG];
+< 		while (npf != 0) {
+< 			mapin(ppte, (u_int)vaddr, pte->pg_pfnum, (int)(PG_V|PG_KW));
+< #if defined(tahoe)
+< 			mtpr(P1DC, vaddr);
+< #endif
+< 			ppte++;
+< 			pte++;
+< 			vaddr += NBPG;
+< 			--npf;
+< 		}
+< 		io.iov_base = vbase+o;
+< #endif /* !defined(hp300) */
+< 
+< 		/*
+1653,1659d1606
+< #if !defined(hp300) && !defined(i386)
+< 		rmfree(nfsmap, (long)npf2, (long)++reg);
+< 		if (nfsmap_want) {
+< 			nfsmap_want = 0;
+< 			wakeup((caddr_t)&nfsmap_want);
+< 		}
+< #endif
+Only in net2/usr/src/sys/nfs: tags
+diff -r net2/usr/src/sys/stand/printf.c src/sys.386bsd/stand/printf.c
+97a98
+> #ifdef notdef
+117a119
+> #endif
+Only in net2/usr/src/sys/sys: map.h
+Only in src/sys.386bsd/sys: rlist.h
+Only in net2/usr/src/sys/sys: seg.h
+Only in net2/usr/src/sys/sys: tags
+diff -r net2/usr/src/sys/sys/tty.h src/sys.386bsd/sys/tty.h
+33a34
+>  * $Header: /usr/bill/working/sys/sys/RCS/tty.h,v 1.3 92/01/21 21:51:49 william Exp $
+39,40c40,41
+<  * Clists are character lists, which is a variable length linked list
+<  * of cblocks, wiht a count of the number of characters in the list.
+---
+>  * Ring buffers provide a contiguous, dense storage for
+>  * character data used by the tty driver.
+42,45c43,48
+< struct clist {
+< 	int	c_cc;		/* count of characters in queue */
+< 	char	*c_cf;		/* first character/cblock */
+< 	char	*c_cl;		/* last chararacter/cblock */
+---
+> #define	RBSZ 2048
+> 
+> struct ringb {
+> 	char	*rb_hd;	  /* head of buffer segment to be read */
+> 	char	*rb_tl;	  /* tail of buffer segment to be written */
+> 	char	rb_buf[RBSZ];	/* segment contents */
+47a51,72
+> #define	RB_SUCC(rbp, p) \
+> 		((p) >= (rbp)->rb_buf + RBSZ - 1 ? (rbp)->rb_buf : (p) + 1)
+> 
+> #define	RB_ROLLOVER(rbp, p) \
+> 		((p) > (rbp)->rb_buf + RBSZ - 1 ? (rbp)->rb_buf : (p))
+> 
+> #define	RB_PRED(rbp, p) \
+> 		((p) <= (rbp)->rb_buf ? (rbp)->rb_buf + RBSZ - 1 : (p) - 1)
+> 
+> #define	RB_LEN(rp) \
+> 		((rp)->rb_hd <= (rp)->rb_tl ? (rp)->rb_tl - (rp)->rb_hd : \
+> 		RBSZ - ((rp)->rb_hd - (rp)->rb_tl))
+> 
+> #define	RB_CONTIGPUT(rp) \
+> 		(RB_PRED(rp, (rp)->rb_hd) < (rp)->rb_tl ?  \
+> 			(rp)->rb_buf + RBSZ - (rp)->rb_tl : \
+> 			RB_PRED(rp, (rp)->rb_hd) - (rp)->rb_tl)
+> 
+> #define	RB_CONTIGGET(rp) \
+> 		((rp)->rb_hd <= (rp)->rb_tl ? (rp)->rb_tl - (rp)->rb_hd : \
+> 		(rp)->rb_buf + RBSZ - (rp)->rb_hd)
+> 
+56,58d80
+< 	struct	clist t_rawq;		/* queues */
+< 	struct	clist t_canq;
+< 	struct	clist t_outq;
+89a112,115
+> 	short	t_mask;			/* interrupt mask */
+> 	struct	ringb t_raw;		/* ring buffers */
+> 	struct	ringb t_can;
+> 	struct	ringb t_out;
+100,101c126,127
+< #define TTMAXHIWAT	roundup(2048, CBSIZE)
+< #define TTMINHIWAT	roundup(100, CBSIZE)
+---
+> #define TTMAXHIWAT	(RBSZ-10)	/* XXX */
+> #define TTMINHIWAT	128
+diff -r net2/usr/src/sys/ufs/mfs_vnops.c src/sys.386bsd/ufs/mfs_vnops.c
+42d41
+< #include "map.h"
+49d47
+< #include "machine/mtpr.h"
+51,56d48
+< #if !defined(hp300) && !defined(i386)
+< static int mfsmap_want;		/* 1 => need kernel I/O resources */
+< struct map mfsmap[MFS_MAPSIZE];
+< extern char mfsiobuf[];
+< #endif
+< 
+157d148
+< #if defined(vax) || defined(tahoe)
+161,164c152
+<  * Essentially play ubasetup() and disk interrupt service routine by
+<  * doing the copies to or from the memfs process. If doing physio
+<  * (i.e. pagein), we must map the I/O through the kernel virtual
+<  * address space.
+---
+>  * Trivial since buffer has already been mapping into KVA space.
+170,243d157
+< 	register struct pte *pte, *ppte;
+< 	register caddr_t vaddr;
+< 	int off, npf, npf2, reg;
+< 	caddr_t kernaddr, offset;
+< 
+< 	/*
+< 	 * For phys I/O, map the b_addr into kernel virtual space using
+< 	 * the Mfsiomap pte's.
+< 	 */
+< 	if ((bp->b_flags & B_PHYS) == 0) {
+< 		kernaddr = bp->b_un.b_addr;
+< 	} else {
+< 		if (bp->b_flags & (B_PAGET | B_UAREA | B_DIRTY))
+< 			panic("swap on memfs?");
+< 		off = (int)bp->b_un.b_addr & PGOFSET;
+< 		npf = btoc(bp->b_bcount + off);
+< 		/*
+< 		 * Get some mapping page table entries
+< 		 */
+< 		while ((reg = rmalloc(mfsmap, (long)npf)) == 0) {
+< 			mfsmap_want++;
+< 			sleep((caddr_t)&mfsmap_want, PZERO-1);
+< 		}
+< 		reg--;
+< 		pte = vtopte(bp->b_proc, btop(bp->b_un.b_addr));
+< 		/*
+< 		 * Do vmaccess() but with the Mfsiomap page table.
+< 		 */
+< 		ppte = &Mfsiomap[reg];
+< 		vaddr = &mfsiobuf[reg * NBPG];
+< 		kernaddr = vaddr + off;
+< 		for (npf2 = npf; npf2; npf2--) {
+< 			mapin(ppte, (u_int)vaddr, pte->pg_pfnum,
+< 				(int)(PG_V|PG_KW));
+< #if defined(tahoe)
+< 			if ((bp->b_flags & B_READ) == 0)
+< 				mtpr(P1DC, vaddr);
+< #endif
+< 			ppte++;
+< 			pte++;
+< 			vaddr += NBPG;
+< 		}
+< 	}
+< 	offset = base + (bp->b_blkno << DEV_BSHIFT);
+< 	if (bp->b_flags & B_READ)
+< 		bp->b_error = copyin(offset, kernaddr, bp->b_bcount);
+< 	else
+< 		bp->b_error = copyout(kernaddr, offset, bp->b_bcount);
+< 	if (bp->b_error)
+< 		bp->b_flags |= B_ERROR;
+< 	/*
+< 	 * Release pte's used by physical I/O.
+< 	 */
+< 	if (bp->b_flags & B_PHYS) {
+< 		rmfree(mfsmap, (long)npf, (long)++reg);
+< 		if (mfsmap_want) {
+< 			mfsmap_want = 0;
+< 			wakeup((caddr_t)&mfsmap_want);
+< 		}
+< 	}
+< 	biodone(bp);
+< }
+< #endif	/* vax || tahoe */
+< 
+< #if defined(hp300) || defined(i386)
+< /*
+<  * Memory file system I/O.
+<  *
+<  * Trivial on the HP since buffer has already been mapping into KVA space.
+<  */
+< mfs_doio(bp, base)
+< 	register struct buf *bp;
+< 	caddr_t base;
+< {
+253d166
+< #endif
+359,361d271
+< #if !defined(hp300) && !defined(i386)
+< 	rminit(mfsmap, (long)MFS_MAPREG, (long)1, "mfs mapreg", MFS_MAPSIZE);
+< #endif
+Only in net2/usr/src/sys/ufs: tags
+diff -r net2/usr/src/sys/vm/swap_pager.c src/sys.386bsd/vm/swap_pager.c
+41a42
+> static char rcsid[] = "$Header: /usr/bill/working/sys/vm/RCS/swap_pager.c,v 1.3 92/01/21 21:57:58 william Exp $";
+56d56
+< #include "map.h"
+61a62
+> #include "rlist.h"
+77c78
+< int	swpagerdebug = 0x100;
+---
+> int	swpagerdebug = 0 /*0x100*/;
+355c356,357
+< 			rmfree(swapmap, swp->sw_bsize, bp->swb_block);
+---
+> 			rlist_free(&swapmap, (unsigned)bp->swb_block,
+> 				(unsigned)bp->swb_block + swp->sw_bsize - 1);
+534a537
+> #ifdef old
+536a540,543
+> #else
+> 		if (!rlist_alloc(&swapmap, (unsigned)swp->sw_bsize,
+> 			(unsigned *)&swb->swb_block)) {
+> #endif
+Only in net2/usr/src/sys/vm: tags
+diff -r net2/usr/src/sys/vm/vm_fault.c src/sys.386bsd/vm/vm_fault.c
+64a65,66
+> static char rcsid[] = "$Header: /usr/bill/working/sys/vm/RCS/vm_fault.c,v 1.2 92/01/21 21:58:17 william Exp $";
+> 
+255a258
+> thread_wakeup(&vm_pages_needed); /* XXX! */
+290a294
+> thread_wakeup(&vm_pages_needed); /* XXX */
+639a644
+> thread_wakeup(&vm_pages_needed); /* XXX */
+diff -r net2/usr/src/sys/vm/vm_glue.c src/sys.386bsd/vm/vm_glue.c
+61a62
+> static char rcsid[] = "$Header: /usr/bill/working/sys/vm/RCS/vm_glue.c,v 1.2 92/01/21 21:58:21 william Exp $";
+188a190
+> #ifdef notyet
+190a193,195
+> #else
+> 	addr = kmem_alloc(kernel_map, ctob(UPAGES));
+> #endif
+214,215c219,221
+< 	(void)vm_map_pageable(vp, addr, 0xfe000000 - addr, TRUE);
+< 	(void)vm_deallocate(vp, addr, 0xfe000000 - addr);
+---
+> 
+> 	/* ream out old pagetables and kernel stack */
+> 	(void)vm_deallocate(vp, addr, UPT_MAX_ADDRESS - addr);
+217d222
+< 	(void)vm_map_inherit(vp, addr, UPT_MAX_ADDRESS, VM_INHERIT_NONE);
+431a437
+> #ifdef notyet
+453a460
+> #endif
+diff -r net2/usr/src/sys/vm/vm_kern.c src/sys.386bsd/vm/vm_kern.c
+500a501
+> thread_wakeup(&vm_pages_needed); /* XXX */
+diff -r net2/usr/src/sys/vm/vm_swap.c src/sys.386bsd/vm/vm_swap.c
+34a35
+> static char rcsid[] = "$Header: /usr/bill/working/sys/vm/RCS/vm_swap.c,v 1.3 92/01/21 21:58:25 william Exp $";
+45d45
+< #include "map.h"
+46a47
+> #include "rlist.h"
+248,263c249,257
+< 		if (vsbase == 0) {
+< 			/*
+< 			 * First of all chunks... initialize the swapmap
+< 			 * the second half of the hunk.
+< 			 */
+< 			rminit(swapmap, (long)(blk/2), (long)(blk/2),
+< 			    "swap", nswapmap);
+< 		} else if (dvbase == 0) {
+< 			/*
+< 			 * Don't use the first cluster of the device
+< 			 * in case it starts with a label or boot block.
+< 			 */
+< 			rmfree(swapmap, blk - ctod(CLSIZE),
+< 			    vsbase + ctod(CLSIZE));
+< 		} else
+< 			rmfree(swapmap, blk, vsbase);
+---
+> 		/*
+> 		 * Don't use the first cluster of the device
+> 		 * in case it starts with a label or boot block.
+> 		 */
+> 		if (dvbase == 0)
+> 			rlist_free(&swapmap, vsbase + ctod(CLSIZE),
+> 				vsbase + blk - 1); 
+> 		else
+> 			rlist_free(&swapmap, vsbase, vsbase + blk - 1); 
